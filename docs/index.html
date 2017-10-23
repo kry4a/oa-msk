@@ -7,6 +7,35 @@
   <link rel="stylesheet" href="./css/bundle.css">
 </head>
 <body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>F
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+          <input class="input input--grey input--required" value="" placeholder="Имя" id="name" name="name" type="text"> 
+        </div>
+        <div class="input-group">
+          <label class="input-group__label" for="name">Телефон*</label>
+          <input class="input input--grey im--phone input--required" value="" placeholder="" id="name" name="name" type="text" required> 
+        </div>
+        <div class="input-group">
+          <label class="input-group__label" for="name">E-mail</label>
+          <input class="input input--grey" value="" placeholder="Имя" id="name" name="name" type="text"> 
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+
+    
+  
+  </div>
 	<header class="header">
 		<div class="container">
       <div class="header__items">
@@ -112,7 +141,8 @@
         
       </div>
     </div>
-    <div class="section section--green-1">
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
       <div class="container">
         <h1 class="section__title">Основные возможности</h1>
         <p class="section__text">1С: Бухгалтерия 8.3 автоматизирует бухгалтерский и налоговый учет компании. Применяется для удобной работы с документацией, отслеживанием производственных, торговых и логистических операций, а также подготовки обязательной, регламентной отчетности.</p>
@@ -212,59 +242,102 @@
       <div class="container">
         <h1 class="section__title">Сравнение версий</h1>
         <div class="table">
-          <div class="table__row table__row--head">
-            <div class="table__cell">Версии 1С:Бухгалтерия</div>
-            <div class="table__cell">Базовая</div>
-            <div class="table__cell">Проф</div>
-            <div class="table__cell">Корп</div>
+          <div class="table__head">
+            <div class="table__row table__row--head">
+              <div class="table__cell">Версии 1С:Бухгалтерия</div>
+              <div class="table__cell">Базовая</div>
+              <div class="table__cell">Проф</div>
+              <div class="table__cell">Корп</div>
+            </div>  
           </div>
-          <div class="table__row">
-            <div class="table__cell">Готовое решение для ведения бухгалтерского и налогового учета</div>
-            <div class="table__cell"><span class="checked"></span></div>
-            <div class="table__cell"><span class="checked"></span></div>
-            <div class="table__cell"><span class="checked"></span></div>
+          <div class="table__body">
+            <div class="table__row">
+              <div class="table__cell">Готовое решение для ведения бухгалтерского и налогового учета</div>
+              <div class="table__cell"><span class="checked"></span></div>
+              <div class="table__cell"><span class="checked"></span></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Подготовка бухгалтерской и налоговой отчетности</div>
+              <div class="table__cell"><span class="checked"></span></div>
+              <div class="table__cell"><span class="checked"></span></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Ведение налогового учета по налогу на прибыль</div>
+              <div class="table__cell"><span class="checked"></span></div>
+              <div class="table__cell"><span class="checked"></span></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Налоговый учет: УСН и ЕНВД</div>
+              <div class="table__cell"></div>
+              <div class="table__cell"><span class="checked"></span></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Ведение партионного учета</div>
+              <div class="table__cell"></div>
+              <div class="table__cell"><span class="checked"></span></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Возможность настройки счетов учета материально-производственных  запасов и расчетов с контрагентами</div>
+              <div class="table__cell"></div>
+              <div class="table__cell"><span class="checked"></span></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Учет по нескольким организациям в отдельных информационных базах</div>
+              <div class="table__cell"><span class="checked"></span></div>
+              <div class="table__cell"><span class="checked"></span></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Учет по нескольким организациям в единой информационной базе</div>
+              <div class="table__cell"></div>
+              <div class="table__cell"></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Учет в обособленных подразделениях</div>
+              <div class="table__cell"></div>
+              <div class="table__cell"></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+
+            <div class="table__row">
+              <div class="table__cell">Возможность изменения (конфигурирования) прикладного решения</div>
+              <div class="table__cell"></div>
+              <div class="table__cell"></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Многопользовательский режим работы, в том числе поддержка клиент-серверного варианта работы</div>
+              <div class="table__cell"></div>
+              <div class="table__cell"></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Работа территориально распределенных информационных баз</div>
+              <div class="table__cell"></div>
+              <div class="table__cell"></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell">Поддержка COM-соединения и Automation-сервера</div>
+              <div class="table__cell"></div>
+              <div class="table__cell"></div>
+              <div class="table__cell"><span class="checked"></span></div>
+            </div>
           </div>
-          <div class="table__row">
-            <div class="table__cell">Подготовка бухгалтерской и налоговой отчетности</div>
-            <div class="table__cell"><span class="checked"></span></div>
-            <div class="table__cell"><span class="checked"></span></div>
-            <div class="table__cell"><span class="checked"></span></div>
-          </div>
-          <div class="table__row">
-            <div class="table__cell">Ведение налогового учета по налогу на прибыль</div>
-            <div class="table__cell"><span class="checked"></span></div>
-            <div class="table__cell"><span class="checked"></span></div>
-            <div class="table__cell"><span class="checked"></span></div>
-          </div>
-          <div class="table__row">
-            <div class="table__cell">Налоговый учет: УСН и ЕНВД</div>
-            <div class="table__cell"></div>
-            <div class="table__cell"><span class="checked"></span></div>
-            <div class="table__cell"><span class="checked"></span></div>
-          </div>
-          <div class="table__row">
-            <div class="table__cell">Ведение партионного учета</div>
-            <div class="table__cell"></div>
-            <div class="table__cell"><span class="checked"></span></div>
-            <div class="table__cell"><span class="checked"></span></div>
-          </div>
-          <div class="table__row">
-            <div class="table__cell">Готовое решение для ведения бухгалтерского и налогового учета</div>
-            <div class="table__cell"></div>
-            <div class="table__cell"><span class="checked"></span></div>
-            <div class="table__cell"><span class="checked"></span></div>
-          </div>
-          <div class="table__row">
-            <div class="table__cell">Готовое решение для ведения бухгалтерского и налогового учета</div>
-            <div class="table__cell"><span class="checked"></span></div>
-            <div class="table__cell"><span class="checked"></span></div>
-            <div class="table__cell"><span class="checked"></span></div>
-          </div>
-          <div class="table__row">
-            <div class="table__cell"></div>
-            <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>
-            <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>
-            <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>
+          <div class="table__footer">
+            <div class="table__row">
+              <div class="table__cell"></div>
+              <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>
+              <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>
+              <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>
+            </div>
           </div>
         </div>
         <p class="table__info">У Вас уже установлена 1С: бухгалтерия? Сделайте апгрейд до последней версии, доплатив только разницу! <a href="#" class="link">Рассчитать стоимость.</a></p>
@@ -296,7 +369,8 @@
         </div>
       </div>
     </div>
-    <div class="section section--green-2">
+    <div class="section section--green">
+      <div class="parallax"></div>
       <div class="container">
         <h1 class="section__title">Получайте последние новости по продуктам 1С</h1>
         <p class="section__text">Подпишитесь на рассылку и узнавайте о важных обновлениях программы, акциях и скидках  первыми!</p>
@@ -317,7 +391,14 @@
         <h1 class="section__title">1С: Бухгалтерия 8.3 — незаменимый инструмент современного бухгалтера</h1>
         <p class="section__text">О существовании прикладного решения от фирмы 1С знают все. Фактически, уже является отраслевым стандартом программа 1С Бухгалтерия. Купить легко, цена достаточно демократична. Но если вы никогда не пользовались этими программными продуктами, то могут возникнуть вполне обоснованные сомнения в том, стоит ли тратить деньги. Однозначно – стоит. Почему вам выгодно купить 1С Бухгалтерия?</p>
         <p class="section__text">1. У вас большой штат бухгалтерии и рабочее время нерационально тратится на рутинные операции;<br>2. Вы вынуждены постоянно делать сверки и ревизии, чтобы контролировать персонал;<br>3. Вы хотите вести чистую белую бухгалтерию, не бояться проверок и не платить штрафы</p>
-        <p class="section__text">Этот список можно продолжать еще долго. И если вы хотите наладить работу и максимально упростить ее, то вам нужно купить программу 1С Бухгалтерия. <a href="#" class="link">Подробнее</a></p>
+        <p class="section__text">Этот список можно продолжать еще долго. И если вы хотите наладить работу и максимально упростить ее, то вам нужно купить программу 1С Бухгалтерия. <a href="#" data-target="readmore" class="link link--green link--readmore">Подробнее</a></p>
+        <div id="readmore" class="section__readmore">
+          <p class="section__text">Могут возникнуть вопросы: купить 1С Бухгалтерия 8 или 1С Бухгалтерия 8.3, а то и  другую, более раннюю  версию? Если у Вас несколько юридических лиц с разной системой бухгалтерского учета, то как сделать правильный выбор и понять, в чем отличительные особенности продуктов 1С Бухгалтерия базовая версия или лучше купить сразу 1С Бухгалтерия ПРОФ или даже КОРП? Как правильно настроить процессы учета?</p>
+          <p class="section__text">И это еще не все: в огромном количестве информации не всегда просто сразу разобраться, что лучше: подходит ли 1С Бухгалтерия упрощенка  или лучше 1С Бухгалтерия базовая версия, как купить в Мск программу с лицензией и гарантией качества? Ведь на рынке работает огромное количество фирм, которые предлагают, казалось бы, одно и  то же. И цена у всех тоже практически одинаковая. Как сделать правильный выбор? Часто приходится сталкиваться с вопросом: насколько универсальна  1С Бухгалтерия 8 базовая? Купить именно ее или предпочесть более функциональную следующую версию?</p>
+          <p class="section__text">При выборе программ 1С обязательно нужно учесть специфику деятельности Вашей компании, количество пользователей (бухгалтеров), юридических лиц и перспективы роста на ближайший период. Наши специалисты помогут сделать оптимальный выбор.</p>
+          <p class="section__text">Возможно, Вам будет достаточно недорогой и простой в обслуживании версии 1С 8 Бухгалтерия базовая купить ее можно достаточно бюджетно, а возможно, будет выгоднее 1С Бухгалтерия 8 3 купить программу, цена же последующих возможных улучшений будет выше, чем  стоимость более подходящего для Вас продукта. И Вам не придется  тратить в дальнейшем время и средства на апгрейды и обновления версий, доработки и страдать от нехватки функционала.</p>
+          <p class="section__text">На все эти и другие вопросы Вам ответят наши специалисты, имеющие многолетний опыт работы с разными версиями программы 1С Бухгалтерия предприятия, сертификаты 1С Специалистов и 1С Профессионалов по продукту, можно купить у нас лицензии для любого количества пользователей и получить квалифицированные услуги по установке, настройке и поддержке.</p>
+        </div>
       </div>
     </div>
     <div class="section accomps">
@@ -378,7 +459,8 @@
         <a href="#" class="btn btn--orange btn--280 btn--inline">Узнать больше об ИТС</a>
       </div>
     </div>
-    <div class="section section--green-3">
+    <div class="section section--green">
+      <div class="parallax"></div>
       <div class="container">
         <h1 class="section__title">Почему именно мы?</h1>
         <div class="advantages">
