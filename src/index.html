@@ -9,12 +9,28 @@
 <body>
 	<header class="header">
 		<div class="container">
+      <div class="header__items">
+        <div class="header__item header__item--logo">
+          Профессиональная разработка и внедрение 1С в Москве
+        </div>
+        <div class="header__item header__item--address">
+          <a href="mailto:1c@oa-msk.ru" class="link link--green">1c@oa-msk.ru</a><br/>
+           МСК, Орджоникидзе, д. 11
+        </div>
+        <div class="header__item header__item--times">
+          Пн.-пт. с 9:00<br/>до 18:00
+        </div>
+        <div class="header__item header__item--callback">
+          <a class="header__phone" href="tel:+74952680749"><span>+7 (495)</span> 268-07-49</a>
+          <a href="#" class="btn btn--inline btn--orange btn--callback"></a>
+        </div>
+      </div>
 		</div>
 	</header>
 	<nav class="nav--top">
     <div class="container">
       <ul class="nav">
-        <li class="nav__item nav__item--parent nav__item--active">
+        <li class="nav__item nav__item--parent">
           <a href="#" class="nav__link link">Продукты 1С</a>
           <ul class="dropdown">
             <li class="dropdown__block">
@@ -77,21 +93,59 @@
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Программные продукты 1С</a></li>
           <li class="breadcrumbs__item">1C: Бухгалтерия</li>
         </ul>
-
-        <h1 class="page__title">1С: Бухгалтерия</h1>
-        <p class="page__subtitle">Самая популярная программа для бухгалтерского и налогового учета в России</p>
-        <ul class="list list--dash list--info">
-          <li class="list__item">Автоматизация бухгалтерского и налогового учета</li>
-          <li class="list__item">Полное соответствие законодательству</li>
-          <li class="list__item">Отслеживание всех изменений в отчетности</li>
-        </ul>
-        <a href="#" class="btn btn--orange">Заказать</a>
+        
+        <div class="row">
+          <div class="page__info col-sm-6">
+            <h1 class="page__title">1С: Бухгалтерия</h1>
+            <p class="page__subtitle">Самая популярная программа для бухгалтерского и налогового учета в России</p>
+            <ul class="list list--dash list--info">
+              <li class="list__item">Автоматизация бухгалтерского и налогового учета</li>
+              <li class="list__item">Полное соответствие законодательству</li>
+              <li class="list__item">Отслеживание всех изменений в отчетности</li>
+            </ul>
+            <a href="#" class="btn btn--orange btn--inline">Заказать</a>
+          </div>
+          <div class="page__image col-sm-6">
+            <img src="./img/bookkeeping.png" alt="Бухгалтерия" class="img img--auto">
+          </div>
+        </div>
+        
       </div>
     </div>
     <div class="section section--green-1">
       <div class="container">
         <h1 class="section__title">Основные возможности</h1>
         <p class="section__text">1С: Бухгалтерия 8.3 автоматизирует бухгалтерский и налоговый учет компании. Применяется для удобной работы с документацией, отслеживанием производственных, торговых и логистических операций, а также подготовки обязательной, регламентной отчетности.</p>
+        <ul class="capabilities">
+          <li class="capabilities__item">Учет документации</li>
+          <li class="capabilities__item">Учет материально-производственных запасов</li>
+          <li class="capabilities__item">Учет основных средств и нематериальных активов</li>
+          <li class="capabilities__item">Учет зарплаты, кадровый учет</li>
+          <li class="capabilities__item">Учет косвенных расходов</li>
+          <li class="capabilities__item">Учет полуфабрикатов и операций с тарой</li>
+          <li class="capabilities__item">Учет банковских и кассовых операций</li>
+          <li class="capabilities__item">Учет расчетов с контрагентами</li>
+          <li class="capabilities__item">Учет комиссионной торговли и агентских договоров</li>
+          <li class="capabilities__item">Учет основного и вспомогательного производства</li>
+          <li class="capabilities__item">Складской учет</li>
+          <li class="capabilities__item">Учет торговых операций</li>
+          <li class="capabilities__item">Учет доходов и расходов ИП – плательщиков НДФЛ</li>
+          <li class="capabilities__item">Учет деятельности, облагаемой ЕНВД или УСН</li>
+        </ul>
+
+        <form action="#" class="form form--white">
+          <div class="form-group row">
+            <div class="col-sm-6">
+              <p class="form__text">Есть вопрос по функциям и возможностям программы? Наши специалисты с радостью помогут!</p>
+            </div>
+            <div class="col-sm-3">
+              <input name="lastname" value="" id="input-lastname" class="input input--grey" type="text" placeholder="Ваш E-mail">
+            </div>
+            <div class="col-sm-3">
+              <a href="#" class="btn btn--green">Подписаться</a>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <div class="section">
@@ -100,7 +154,7 @@
         <p class="section__text">Вы можете купить программу 1С: Бухгалтерия по специальному предложению: 3 месяца льготного бесплатного периода 
         на ИТС-ПРОФ или подписка на 12 месяцев по цене 8-ми. Стоимость не облагается НДС.</p>
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="config">
               <div class="config__title">Базовая</div>
               <div class="config__types">
@@ -112,13 +166,11 @@
               </div>
               <div class="config__info">
                 <div class="config__price">4 800 р.</div>
-                <div class="config__link">
-                  <a href="#" class="config__btn btn btn--orange">Заказать</a>
-                </div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4"">
             <div class="config">
               <div class="config__title">Проф</div>
               <div class="config__types">
@@ -132,13 +184,11 @@
               </div>
               <div class="config__info">
                 <div class="config__price">13 000 р.</div>
-                <div class="config__link">
-                  <a href="#" class="config__btn btn btn--orange">Заказать</a>
-                </div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4"">
             <div class="config">
               <div class="config__title">Корп</div>
               <div class="config__types">
@@ -151,9 +201,7 @@
               </div>
               <div class="config__info">
                 <div class="config__price">33 000 р.</div>
-                <div class="config__link">
-                  <a href="#" class="config__btn btn btn--orange">Заказать</a>
-                </div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
               </div>
             </div>
           </div>
@@ -253,9 +301,13 @@
         <h1 class="section__title">Получайте последние новости по продуктам 1С</h1>
         <p class="section__text">Подпишитесь на рассылку и узнавайте о важных обновлениях программы, акциях и скидках  первыми!</p>
         <form action="#" class="form--news">
-          <div class="form-group">
-            <input name="lastname" value="" id="input-lastname" class="form-control col-sm-9" type="text">
-            <a href="#" class="col-sm-3 btn btn--tr">Подписаться</a>
+          <div class="form-group row">
+            <div class="col-sm-9">
+              <input name="lastname" value="" id="input-lastname" class="input" type="text" placeholder="Ваш E-mail">  
+            </div>
+            <div class="col-sm-3">
+              <a href="#" class="btn btn--tr">Подписаться</a>
+            </div>
           </div>
         </form>
       </div>
@@ -274,25 +326,25 @@
         <div class="row ">
           <div class="col-3">
             <div class="accomp">
-              <div class="accomp__icon"></div>
+              <div class="accomp__icon"><img src="./img/accomp-1.png" alt=""></div>
               <div class="accomp__title">Начальные настройки для ведения учета</div>
             </div>
           </div>
           <div class="col-3">
             <div class="accomp">
-              <div class="accomp__icon"></div>
+              <div class="accomp__icon"><img src="./img/accomp-2.png" alt=""></div>
               <div class="accomp__title">Доработка функционала продуктов</div>
             </div>
           </div>
           <div class="col-3">
             <div class="accomp">
-              <div class="accomp__icon"></div>
+              <div class="accomp__icon"><img src="./img/accomp-3.png" alt=""></div>
               <div class="accomp__title">Базовая поддержка 1С: ИТС-ПРОФ</div>
             </div>
           </div>
           <div class="col-3">
             <div class="accomp">
-              <div class="accomp__icon"></div>
+              <div class="accomp__icon"><img src="./img/accomp-4.png" alt=""></div>
               <div class="accomp__title">Консультации по ведению учета</div>
             </div>
           </div>
@@ -300,25 +352,25 @@
         <div class="row">
           <div class="col-3">
             <div class="accomp">
-              <div class="accomp__icon"></div>
+              <div class="accomp__icon"><img src="./img/accomp-5.png" alt=""></div>
               <div class="accomp__title">Настройка интерфейсов и прав доступа </div>
             </div>
           </div>
           <div class="col-3">
             <div class="accomp">
-              <div class="accomp__icon"></div>
+              <div class="accomp__icon"><img src="./img/accomp-6.png" alt=""></div>
               <div class="accomp__title">Перенос данных из прошлых систем</div>
             </div>
           </div>
           <div class="col-3">
             <div class="accomp">
-              <div class="accomp__icon"></div>
+              <div class="accomp__icon"><img src="./img/accomp-7.png" alt=""></div>
               <div class="accomp__title">Настройка обмена данными и интеграция</div>
             </div>
           </div>
           <div class="col-3">
             <div class="accomp">
-              <div class="accomp__icon"></div>
+              <div class="accomp__icon"><img src="./img/accomp-8.png" alt=""></div>
               <div class="accomp__title">(Не)типовое обновление конфигураций</div>
             </div>
           </div>
@@ -405,6 +457,7 @@
 		</div>
 	</footer>
 
-  <script src="./js/bundle.js" type="text/javascript"></script>
+  <script src="./js/libs.min.js" type="text/javascript"></script>
+  <script src="./js/scripts.js" type="text/javascript"></script>
 </body>
 </html>
