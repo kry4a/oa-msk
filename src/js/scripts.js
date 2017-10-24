@@ -10,7 +10,20 @@ $(function (){
     console.log('readmore');
     var target = $(this).data('target');
     $('#'+target).toggleClass('section__readmore--active');
+    
+    $(this).hide();
+    
     return false;
+  });
+
+  $('.link--less').click(function(e){
+    console.log('less');
+    var target = $(this).data('target');
+    $('#'+target).removeClass('section__readmore--active');
+    
+    $('.link--readmore').show();
+    return false;
+    
   });
 
   $('.btn--orange').click(function(e){
