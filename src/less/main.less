@@ -18,7 +18,11 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   padding: 30px 0;
-
+  
+  @media @mobile-xs {
+    display: none;
+  }
+  
   &__items {
     display: flex;
     flex-direction: row;
@@ -26,6 +30,8 @@ body {
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
+
+
   }
 
   &__item {
@@ -113,6 +119,10 @@ body {
   }
   .container {
     padding: 0 70px;
+
+    @media @mobiles {
+      padding: 0 20px;
+    }
   }
 }
 
@@ -337,8 +347,15 @@ body {
   padding:70px 0;
   background-color: #f2f5f8;
   
+  @media @mobiles {
+    padding: 50px 0;
+  }
   .container {
     padding: 0 70px;
+
+    @media @mobiles {
+      padding: 0 20px;      
+    }
   }
   &--page {
     padding: 30px 0;
@@ -354,10 +371,15 @@ body {
   }
   
   &__title {
-    font-style: 30px;
+    font-size: 30px;
     line-height: 42px;
     margin-bottom: 30px;
     margin-top: 0;
+
+    @media @mobiles {
+      font-size: 25px;
+      line-height: 35px;
+    }
   }
 
   &__text {
@@ -386,6 +408,11 @@ body {
     font-size: 48px;
     font-weight: 700;
     line-height: 66px;
+
+    @media @mobiles {
+      font-size: 30px;
+      line-height: 42px;
+    }
   }
 
   &__subtitle {
@@ -399,6 +426,10 @@ body {
 
   &__image {
     text-align: right;
+
+    @media @mobiles {
+      display: none;
+    }
   }
 }
 
@@ -512,7 +543,6 @@ body {
     &:first-child {
       text-align: left;
     }
-    
   }
   &__info {
     text-align: center;
@@ -632,12 +662,13 @@ body {
   background-color: #ffffff;
   padding: 30px;
 
+
   &::after {
     display: block;
     content: "";
     clear: both;
   }
-
+  
   &__title {
     height: 60px;
     line-height: 60px;
@@ -672,6 +703,15 @@ body {
   &__btn {
     width: auto;
     float: right;
+  }
+
+  @media @mobile-xs {
+    border-radius: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+
+    padding: 30px 20px;
   }
 }
 
@@ -742,9 +782,17 @@ body {
   justify-content: space-between;
   align-items: stretch;
   align-content: stretch;
+
+  @media @mobiles {
+    display: block;
+  }
 }
 
 .links {
+  @media @mobiles {
+    text-align: center;
+  }
+
   &__title {
     color: #16a69f;
     font-size: 16px;
@@ -762,6 +810,11 @@ body {
 
 
 .info {
+  @media @mobiles {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
   &__title {
     color: #16a69f;
     font-size: 16px;
@@ -792,12 +845,24 @@ body {
     color: #16a69f;
   }
 
-  
+  @media @mobiles {
+    text-align: center;
+
+    &__link,&__text {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .develop {
   float: right;
   color: #ffffff;
+
+  @media @mobiles {
+    float: none;
+    margin-top: 15px;
+  }
 }
 
 
@@ -813,6 +878,10 @@ body {
   align-content: stretch;
 
   padding-top:40px;
+
+  @media @mobiles {
+    flex-direction:column;
+  }
 }
 
 .advantage {
@@ -862,6 +931,18 @@ body {
     
     text-align: center;    
   }
+
+
+  @media @mobiles {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 60px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
 }
 
 
@@ -910,6 +991,19 @@ body {
   &--box { 
     &:before {
       background-image: url('../img/package.png');
+    }
+  }
+
+  @media @mobiles {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+
+    .list {
+      text-align: left;
+    }
+    &:before {
+      content: none;
     }
   }
 
@@ -980,6 +1074,10 @@ body {
   &--success {
     border:1px solid #01bca7;
   }
+
+  @media @mobiles {
+    margin-bottom: 15px;
+  }
 }
 
 
@@ -1046,6 +1144,15 @@ body {
     &:nth-child(13) { &:before { background-image: url('../img/cap-13.png'); }}
     &:nth-child(14) { &:before { background-image: url('../img/cap-14.png'); }}
     
+
+
+    @media @mobiles {
+      width: 100%;
+      float: none;
+      height: 40px;
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 }
 
