@@ -644,9 +644,12 @@ p {
   overflow: hidden;
   
   @media @mobiles {
-    width: 100%;
+    width: auto;
     box-shadow: none;
     border-radius: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+
   }
 
   &__body {
@@ -658,6 +661,10 @@ p {
     .table__row {
       background-color: #ffffff !important;
       box-shadow: 0 1px 0 rgba(153, 153, 153, 0.1), 0 -1px 4px rgba(0, 0, 0, 0.27);
+    }
+
+    @media @mobiles {
+      display: none;
     }
   }
   
@@ -729,6 +736,8 @@ p {
 
     @media @mobiles {
       display: block;
+      margin-top: -5px;
+      margin-bottom: 15px;
     }
     .table__cell {
       text-align: center;
@@ -742,20 +751,22 @@ p {
       }
     }
     
-    transition: all 0.3s ease;
+    
 
     @media @mobiles {
-      visibility: hidden;
-      opacity: 0;
-      height: 0;
+      max-height: 0;
+      transition: max-height 0.25s ease-out;
+      overflow: hidden;
     }
 
     &.active {
-      visibility: visible;
-      opacity: 1;
-      height: auto; 
+      max-height: 500px;
+      transition: max-height 0.35s ease-in;
     }
   }
+
+
+
 
   &__title, &__body {
     display: inline-block;
@@ -884,12 +895,13 @@ p {
   
   @media @mobiles {
     font-size: 16px;
-    padding: 0 0 0 60px;
+    padding: 0 0 0 40px;
     width: auto;
     height: auto;
 
     &:before {
       top:0;
+      left: 0;
     }
   }
 }
@@ -1626,4 +1638,8 @@ p {
       background-image: url('../img/gift.png');
     }
   }
+}
+
+.baron._simple .baron__track {
+  background-color: darken(#f2f5f8, 10%);
 }
