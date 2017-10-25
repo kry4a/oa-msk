@@ -31,7 +31,7 @@ p {
 
   padding: 30px 0;
   
-  @media @mobile-xs {
+  @media @mobiles {
     display: none;
   }
   
@@ -68,6 +68,9 @@ p {
         background-repeat: no-repeat;
         background-position: center;
       }
+      @media @tablet {
+        width: auto;
+      }
     }
     &--callback {
       line-height: 40px;
@@ -86,6 +89,9 @@ p {
         background-repeat: no-repeat;
         background-position: center;
       }
+      @media @tablet {
+        display: none;
+      }
     }
     
     &--times {
@@ -100,6 +106,9 @@ p {
         background-image: url('../img/clock.png');
         background-repeat: no-repeat;
         background-position: center;
+      }
+      @media @tablet {
+        display: none;
       }
     }
 
@@ -231,8 +240,31 @@ p {
 
   height: 50px;
   
+  
+  
   @media @mobiles {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    max-height: 0;
+    height: auto;
+    transition: max-height 0.25s ease-out;
+    overflow: hidden;
+    
+    z-index: 99;
+    background-color: #ffffff;
+
+    width: 100%;
+    
+    &--active {
+      max-height: 500px;
+      transition: max-height 0.35s ease-in;
+    }
+  }
+
+  &--active {
+    max-height: 500px;
+    transition: max-height 0.35s ease-in;
   }
 
   &__item {
@@ -256,6 +288,16 @@ p {
         border-left: 1px solid #fff;
         transform: rotateZ(-45deg);
       }
+
+      @media @mobiles {
+        &:after {
+          content: none;
+        }
+      }
+
+      @media @desktop {
+        margin-right:10px;
+      }
     }
 
     &--active {
@@ -270,7 +312,25 @@ p {
       }
     }
     &--right {
+      @media @desktop {
+        float:none;
+      }
+
+      @media @not-desktop {
+        
+        display: none;
+      }
+
+
+      
       float: right;
+      
+    }
+
+    @media @mobiles {
+      display: block;
+      width: 100%;
+      padding-right: 0;
     }
   }
 
@@ -282,6 +342,19 @@ p {
     text-decoration:none;
     
     transition: all 0.3s ease;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+    @media @mobiles {
+      color: #2d3e50;
+      padding: 0 15px;
+
+      &:hover {
+        color:#ffffff;
+        background-color: #01BDA6;
+      }
+    }
   }
 }
 
@@ -357,6 +430,10 @@ p {
 
     text-decoration: none;
     white-space: nowrap;
+  }
+
+  @media @mobiles {
+    display: none;
   }
 }
 
@@ -447,12 +524,19 @@ p {
   
   
   transition: height 0.3s ease;
+  
   .container {
     padding: 0 70px;
 
-    @media @mobiles {
-      padding: 0 20px;      
+    @media @not-desktop {
+      padding: 0 30px;  
     }
+
+    @media @mobiles {
+      padding: 0 20px !important;      
+    }
+
+
   }
   
   &--page {
@@ -546,9 +630,10 @@ p {
   }
 
   &__image {
+    
     text-align: right;
-
-    @media @mobiles {
+  
+    @media @not-desktop {
       display: none;
     }
   }
@@ -666,6 +751,16 @@ p {
     .table__row {
       background-color: #ffffff !important;
       box-shadow: 0 1px 0 rgba(153, 153, 153, 0.1), 0 -1px 4px rgba(0, 0, 0, 0.27);
+    }
+
+    .table__cell {
+      padding: 25px 5px;
+
+      @media @tablet {
+        .btn {
+          padding:0 !important;
+        }
+      }
     }
 
     @media @mobiles {
@@ -971,20 +1066,36 @@ p {
     font-weight: 700;
     
     line-height: 50px;
+    @media @desktop {
+      float: none;
+      text-align: center;
+    }
   }
 
   &__btn {
     width: auto;
     float: right;
+
+    @media @desktop {
+      float: none;
+      text-align: center;
+    }
   }
 
   @media @mobile-xs {
     border-radius: 0;
     margin-left: -20px;
     margin-right: -20px;
-    margin-bottom: 15px;
-
+    
     padding: 30px 20px;
+  }
+  
+  @media @mobiles {
+    margin-bottom: 15px;
+  }
+
+  @media @tablet {
+    margin-bottom: 15px;
   }
 }
 
@@ -1051,24 +1162,28 @@ p {
 .footer__links {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
   align-content: stretch;
   
-
+  
   margin-bottom: 70px;
 
+  @media @tablet {
+    justify-content: space-around;
+  }
   @media @mobiles {
     display: block;
   }
 }
 
 .links {
+  min-width: 160px;
   @media @mobiles {
     text-align: center;
   }
-
+  
   &__title {
     color: #16a69f;
     font-size: 16px;
@@ -1251,7 +1366,7 @@ p {
     content:'';
     position: absolute;
 
-    top: 30;
+    top: 30px;
     right: 30px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1287,7 +1402,15 @@ p {
     }
   }
 
-  @media @mobile-xs {
+  @media @tablet {
+    padding: 20px 25px;
+    &:before {
+      top:15px;
+      right: 15px;
+    }
+  }
+
+  @media @mobiles {
     padding: 20px 25px;
   }
 
@@ -1297,7 +1420,22 @@ p {
 /* ACCOMPS */
 
 .accomps {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  
+  
+  margin-bottom: 70px;
+
+  @media @tablet {
+    justify-content: space-around;
+  }
+  @media @mobile-xs {
+    display: block;
+  }
 }
 
 .accomp {
@@ -1311,9 +1449,13 @@ p {
   border-radius: 10px;
   background-color: #ffffff;  
   
+  width: 235px;
+  height: 235px;
+
+  text-align: center;
+  
   @media @mobiles {
-    width: 235px;
-    height: 235px;
+    
     margin-left: auto;
     margin-right: auto;
 
@@ -1462,6 +1604,10 @@ p {
     line-height: 22px;
     color: #2d3e50;
     margin: 0;
+
+    @media @mobiles {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -1623,6 +1769,7 @@ p {
     width: 100%;
     display: block;
     margin-bottom: 15px;
+    padding: 0 30px 0 50px;
   }
   &:hover {
     text-decoration: underline;

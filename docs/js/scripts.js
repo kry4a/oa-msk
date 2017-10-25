@@ -1,5 +1,11 @@
 $(function (){
   console.log('init');
+
+  $('.navbar-toggler').click(function(e){
+    var target = $(this).data('target');
+    $('#'+target).toggleClass('nav--active');
+  });
+
   $('.nav__item--parent').click(function(e){
     console.log('clicked');
     $(this).toggleClass('nav__item--active');
