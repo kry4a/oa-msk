@@ -389,9 +389,14 @@ p {
   }
 
   &--green {
-    color:#16a69f;
+    color:#149aa8;
+    border-bottom: 1px dashed #149aa8;
   }
-
+  
+  &--grey {
+    color: #2d3e50;
+    border-bottom: 1px dashed #2d3e50;
+  }
   &--bold {
     font-weight: 400;
   }
@@ -847,6 +852,9 @@ p {
 
   &--280 {
     width: 280px;
+    @media @mobiles {
+      width: auto;
+    }
   }
 
   &--callback {
@@ -1233,6 +1241,10 @@ p {
     font-weight: 700;
     line-height: 48px;
     margin-bottom: 12px;
+
+    @media @mobile-xs {
+      line-height: 26px;
+    }
   }
 
   &:before {
@@ -1275,6 +1287,10 @@ p {
     }
   }
 
+  @media @mobile-xs {
+    padding: 20px 25px;
+  }
+
 }
 
 
@@ -1298,6 +1314,9 @@ p {
   @media @mobiles {
     width: 235px;
     height: 235px;
+    margin-left: auto;
+    margin-right: auto;
+
   }
   &__title {
     font-size: 16px;
