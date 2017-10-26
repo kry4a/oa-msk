@@ -12,6 +12,10 @@
 <body>
   <div class="popup__bg"></div>
   <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
     <div class="popup__header">
       <p class="popup__title">Заказать 1С:Бухгалтерия</p>
     </div>
@@ -19,16 +23,19 @@
       <hr>
       <div class="popup__form">
         <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
           <label class="input-group__label" for="name">Фамилия, Имя*</label>
-          <input class="input input--grey input--required" value="" placeholder="Имя" id="name" name="name" type="text"> 
         </div>
         <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
           <label class="input-group__label" for="name">Телефон*</label>
-          <input class="input input--grey im--phone input--required" value="" placeholder="" id="name" name="name" type="text" required> 
         </div>
         <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
           <label class="input-group__label" for="name">E-mail</label>
-          <input class="input input--grey" value="" placeholder="Имя" id="name" name="name" type="text"> 
         </div>
       </div>
       <div class="popup__buttons">
@@ -118,8 +125,20 @@
         <li class="nav__item nav__item"><a href="#" class="nav__link link">Сопровождение</a></li>
         <li class="nav__item nav__item"><a href="#" class="nav__link link">Внедрение</a></li>
         <li class="nav__item nav__item"><a href="#" class="nav__link link">Бизнес-задачи</a></li>
-        <li class="nav__item nav__item--right"><a href="#" class="nav__link link">О компании</a></li>
-        <li class="nav__item nav__item--right"><a href="#" class="nav__link link">Отзывы</a></li>
+        
+        <li class="nav__item nav__item--right">
+          <a href="#" class="nav__link link">О компании</a>
+          <a href="#" class="nav__link link">Отзывы</a>
+          <div id="search" class="header__search search">
+            <div class="search__toggler" data-target="search"></div>
+            <div class="search__input" style="">
+              <input class="input input--search" name="search" placeholder="Поиск" type="text">
+              <span class="search-close glyphicon glyphicon-remove"></span>
+            </div>
+          </div>
+        </li>
+        
+
       </ul>
     </div>
   </nav>
@@ -135,7 +154,7 @@
         <div class="row">
           <div class="page__info col-lg-7">
             <h1 class="page__title">1С: Бухгалтерия</h1>
-            <p class="page__subtitle">Самая популярная программа для бухгалтерского и налогового учета в России</p>
+            <p class="page__subtitle">Самая популярная программа для<br/>бухгалтерского и налогового учета в России</p>
             <ul class="list list--dash list--info">
               <li class="list__item">Автоматизация бухгалтерского и налогового учета</li>
               <li class="list__item">Полное соответствие законодательству</li>
@@ -247,9 +266,21 @@
           </div>
         </div>
         <div class="tips">
-          <a href="#" class="tip tip--gear">Установка бесплатно</a>
-          <a href="#" class="tip tip--settings">Настройка ИПП</a>
-          <a href="#" class="tip tip--gift">3 месяца ИТС в подарок</a>
+          <div href="#" class="tip tip--gear">
+            <div class="tip__text">Установка бесплатно</div>
+            
+            <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
+          </div>
+          <div href="#" class="tip tip--settings">
+            <div class="tip__text">Настройка ИПП</div>
+            
+            <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
+          </div>
+          <div href="#" class="tip tip--gift">
+            <div class="tip__text">3 месяца ИТС в подарок</div>
+            
+            <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
+          </div>
         </div>
       </div>
     </div>
@@ -435,7 +466,7 @@
               <ul class="list list--icons">
                 <li class="list__item list__item--icon-circle">Электронная поставка (рекомендуется)</li>
                 <li class="list__item list__item--icon-circle">Курьерской службой / Самовывоз из офиса</li>
-                <li class="list__item list__item--icon-percent">% Безналичный расчет</li>
+                <li class="list__item list__item--icon-percent">Безналичный расчет</li>
               </ul>
             </div>
           </div>
@@ -528,7 +559,10 @@
             <div class="accomp__title">(Не)типовое обновление конфигураций</div>
           </div>
         </div>
-        <a href="#" class="btn btn--orange btn--280 btn--inline">Узнать больше об ИТС</a>
+        <div class="accomps__info">
+          <a href="#" class="btn btn--orange btn--280 btn--inline">Узнать больше об ИТС</a>
+        </div>
+        
       </div>
     </div>
     <div class="section section--green">

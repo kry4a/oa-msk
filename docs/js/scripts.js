@@ -6,6 +6,12 @@ $(function (){
     $('#'+target).toggleClass('nav--active');
   });
 
+  $('.search__toggler').click(function(e){
+    var target = $(this).data('target');
+    $('#'+target).toggleClass('search--active');
+  });
+
+
   $('.nav__item--parent').click(function(e){
     console.log('clicked');
     $(this).toggleClass('nav__item--active');
@@ -38,12 +44,12 @@ $(function (){
   });
 
 
-  $('body').on('click','.popup__close',function(){
+  $('body').on('click','.popup__closer',function(){
     $('.popup').removeClass('popup--active');
     $('.popup__bg').removeClass('popup__bg--active');
   });
 
-  $('.im--phone').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  $('.im--phone').mask('+7 (000) 000-00-00');
 
 
 
