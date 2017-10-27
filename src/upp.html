@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
+          <label class="input-group__label" for="name">Телефон*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">E-mail</label>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+  </div>
+  @@include('_html/_header.html')
+  <main class="main">
+    <div class="section section--page">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Продукты 1С</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Программные продукты 1С</a></li>
+          <li class="breadcrumbs__item">1С: Управление производственным предприятием</li>
+        </ul>
+        
+        <div class="row">
+          <div class="page__info col-lg-7">
+            <h1 class="page__title">1С: Управление производственным предприятием</h1>
+            <p class="page__subtitle">Решение ключевых задач управления производством и автоматизации учета</p>
+            <a href="#" class="btn btn--orange btn--inline btn--200">Заказать</a>
+          </div>
+          <div class="page__image col-lg-5">
+            <img src="./img/upp.png" alt="1С: Управление производственным предприятием" class="img img--auto">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Основные возможности</h1>
+        <p class="section__text">1С Предприятие: Управление производственным предприятием — комплексное прикладное решение, охватывающее основные контуры управления и учета на производственном предприятии. Имеет открытый код, что позволяет, при необходимости, настраивать программный продукт под нужды предприятия.</p>
+        <div class="row" style="margin: 0;">
+          <ul class="capabilities">
+            <li class="capabilities__item capabilities__item--tag">Ценообразование</li>
+            <li class="capabilities__item capabilities__item--shopping-cart">Розничная, оптовая и коммисионная торговля</li>
+            <li class="capabilities__item capabilities__item--cash-register">Подключение торгового оборудования</li>
+            <li class="capabilities__item capabilities__item--package-for-delivery">Управление данными об изделиях</li>
+            <li class="capabilities__item capabilities__item--barcode-scanner">Регистрация в системе штрихового кодирования</li>
+            <li class="capabilities__item capabilities__item--abacus-2">Регламентированный учет</li>
+            <li class="capabilities__item capabilities__item--file-4">Учет товарно-материальных ценностей</li>
+          </ul>
+          <ul class="capabilities">
+            <li class="capabilities__item capabilities__item--budget-2">Расчет себестоимости</li>
+            <li class="capabilities__item capabilities__item--partners">Управление отношениями с клиентами</li>
+            <li class="capabilities__item capabilities__item--presentation">Планирование продаж</li>
+            <li class="capabilities__item capabilities__item--factory-stock-house">Планирование закупок</li>
+            <li class="capabilities__item capabilities__item--icon">Формирование укрупненного плана производства</li>
+            <li class="capabilities__item capabilities__item--file-3">Бухгалтерский и налоговый учет</li>
+            <li class="capabilities__item capabilities__item--manager">Расчет заработной платы, кадровый учет</li>
+          </ul>
+        </div>
+        <form action="#" class="form form--white">
+          <div class="form-group row">
+            <div class="col-md-6">
+              <p class="form__text">Есть вопрос по функциям и возможностям программы? Наши специалисты с радостью помогут!</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <input name="lastname" value="" id="input-lastname" class="input input--grey im--phone" type="text" placeholder="Ваш телефон">  
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <a href="#" class="btn btn--green">Заказать заонок</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h1 class="section__title">Стоимость 1С: Управление производственным предприятием</h1>
+        <p class="section__text section__text--mb">Вы можете купить 1С Предприятие: Управление производственным предприятием по специальному предложению: 3 месяца льготного бесплатного периода на ИТС-ПРОФ или подписка на 12 месяцев по цене 8-ми.</p>
+        <div class="configs row">
+          <div class="col-lg-4">
+            <div class="config">
+              <div class="config__title">УДАЛЕННЫЙ ОФИС</div>
+              <div class="config__types">
+                <div class="radioblock">
+                  <input type="hidden" class="radioblock__input" name="type">
+                  <div class="radioblock__item radioblock__item--active">Электронная поставка<div class="radioblock__icon radioblock__icon--earth"></div></div>
+                  <div class="radioblock__item">Программная лицензия<div class="radioblock__icon radioblock__icon--package"></div></div>
+                </div>
+              </div>
+              <div class="config__info">
+                <div class="config__price">50 400 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="config">
+              <div class="config__title">Базовая</div>
+              <div class="config__types">
+                <div class="radioblock">
+                  <input type="hidden" class="radioblock__input" name="type">
+                  <div class="radioblock__item radioblock__item--active">Электронная поставка<div class="radioblock__icon radioblock__icon--earth"></div></div>
+                  <div class="radioblock__item">Программная лицензия<div class="radioblock__icon radioblock__icon--package"></div></div>
+                </div>
+              </div>
+              <div class="config__info">
+                <div class="config__price">233 700 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="tips">
+              <div href="#" class="tip tip--gear tip--fw">
+                <div class="tip__text">Установка бесплатно</div>
+                
+                <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
+              </div>
+              <div href="#" class="tip tip--settings tip--fw">
+                <div class="tip__text">Настройка ИПП</div>
+                
+                <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
+              </div>
+              <div href="#" class="tip tip--gift tip--fw">
+                <div class="tip__text">3 месяца ИТС в подарок</div>
+                
+                <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section--white">
+      <div class="container">
+        <h1 class="section__title">1С Предприятие: Управление производственным предприятием</h1>
+
+        <p class="section__text">1C Управление производственным предприятием (1С УПП) – широко распространенная программа для автоматизации, представляет собой комплексное решение, охватывающим основные контуры учета и управления на производственном предприятии. 1С УПП позволяет автоматизировать:</p>
+        
+        <ul class="list list--dash">
+          <li class="list__item">Управление поставками и запасами;</li>
+          <li class="list__item">Планирование;</li>
+          <li class="list__item">Управление производством;</li>
+          <li class="list__item">Бюджетирование и Финансы, МСФО;</li>
+          <li class="list__item">Бухгалтерский и налоговый учет;</li>
+          <li class="list__item">Управление торговлей (в том числе розничной);</li>
+          <li class="list__item">Управление отношениями с клиентами;</li>
+          <li class="list__item">Расчет заработной платы, кадровый учет.</li>        
+        </ul>
+  
+
+        <p class="section__text">Этот программный продукт гибко настраивается под нужды предприятия и доступен для доработок, что позволяет сделать открытый код. Учет финансово-хозяйственной деятельности предприятия ведется по международным и  российским стандартам, обеспечивая в полном соответствии с законодательством:</p>
+        <ul class="list list--dash">
+          <li class="list__item">бухгалтерский учет;</li>
+          <li class="list__item">налоговый учет;</li>
+          <li class="list__item">учет по МСФО;</li>
+          <li class="list__item">формирование консолидированной отчетности.</li>
+        </ul>
+        <p class="section__text">В «1С Управление производственным предприятием» (1С УПП) права и доступы пользователей разграничены, что обеспечивает дополнительную информационную безопасность. Конфигурация 1С Управление производственным предприятием предназначена для автоматизации управления и учета в подразделениях и службах производственных предприятий, включая: </p>
+        
+        <ul class="list list--dash">
+          <li class="list__item">планово-экономический отдел;</li>
+          <li class="list__item">производственные цеха;</li>
+          <li class="list__item">отдел сбыта (продаж);</li>
+          <li class="list__item">отдел маркетинга;</li>
+          <li class="list__item">склады материалов;</li>
+          <li class="list__item">склады готовой продукции;</li>
+          <li class="list__item">отдел материально технического обеспечения (снабжения);</li>
+          <li class="list__item">бухгалтерию;</li>
+          <li class="list__item">отдел кадров;</li>
+          <li class="list__item">отдел организации труда и занятости;</li>
+          <li class="list__item">ИТ-службу;</li>
+          <li class="list__item">информационно-аналитический отдел;</li>
+          <li class="list__item">административно-хозяйственный отдел.</li>
+        </ul>
+        
+        <p class="section__text">Купить 1С УПП 8 3 в нашей компании можно, оформив заявку.</p>
+
+        <p class="section__text">Нельзя не отметить, что пришедшая на смену «1С Управление производственным предприятием» (1С УПП) программа 1C ERP предоставляет более универсальный функционал по сравнению с 1С УПП. Цена ее выше, но, по мнению многих пользователей, это окупается быстро. В частности, это очень заметно в разделах «Складской учет», «Отражение торговой деятельности», организация оперативного управления в производстве. Подробнее о 1С ERP.</p>
+        <ul class="list list--dash">
+          <li class="list__item">обеспечить высокую надежность, производительность и масштабируемость системы;</li>
+          <li class="list__item">использовать различные операционные системы (Linux, Windows, Mac OS) и системы управления базами данных (MS SQL Server, IBM DB2, Oracle Database, PostgreSQL);</li>
+          <li class="list__item">организовать работу с системой через Интернет, в режиме тонкого клиента или веб- клиента (через обычный интернет-браузер), в том числе в облачном режиме;</li>
+          <li class="list__item">создавать мобильные рабочие места с использованием планшетов и смартфонов под управлением iOS, Android, Windows;</li>
+          <li class="list__item">настраивать интерфейс для конкретного пользователя или группы пользователей с учетом роли пользователя, его прав доступа и индивидуальных настроек.</li>
+          <li class="list__item">Механизм функциональных опций позволяет включать или выключать различные функциональные части прикладного решения без программирования (изменения конфигурации).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Последние новости по продуктам 1С</h1>
+        <p class="section__text section__text--big">Подпишитесь на рассылку и узнавайте о важных обновлениях программы, акциях и скидках  первыми!</p>
+        <form action="#" class="form--news">
+          <div class="form-group row">
+            <div class="col-sm-8 col-lg-9">
+              <input name="lastname" value="" id="input-lastname" class="input" type="text" placeholder="Ваш E-mail">  
+            </div>
+            <div class="col-sm-4 col-lg-3">
+              <a href="#" class="btn btn--tr">Подписаться</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="delivery delivery--rocket">
+              <div class="delivery__title">Доставка и оплата</div>    
+              <ul class="list list--icons">
+                <li class="list__item list__item--icon-circle">Электронная поставка (рекомендуется)</li>
+                <li class="list__item list__item--icon-circle">Курьерской службой / Самовывоз из офиса</li>
+                <li class="list__item list__item--icon-percent">Безналичный расчет</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="delivery delivery--box">
+              <div class="delivery__title">Варианты поставки</div>    
+              <ul class="list list--dash-green">
+                <li class="list__item">Электронная поставка (рекомендуется)</li>
+                <li class="list__item">Программная лицензия (доступ по ПИН-коду)</li>
+                <li class="list__item">USB-лицензия (с флеш-накопителем)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+    <div class="section">
+      <div class="container">
+        <h1 class="section__title">Профессиональное Сопровождение 1С</h1>
+        <div class="accomps">
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-1.png" alt=""></div>
+            <div class="accomp__title">Начальные настройки для ведения учета</div>
+          </div>
+        
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-2.png" alt=""></div>
+            <div class="accomp__title">Доработка функционала продуктов</div>
+          </div>
+        
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-3.png" alt=""></div>
+            <div class="accomp__title">Базовая поддержка 1С: <a href="#" class="link link--grey">ИТС-ПРОФ</a></div>
+          </div>
+        
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-4.png" alt=""></div>
+            <div class="accomp__title">Консультации по ведению учета</div>
+          </div>
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-5.png" alt=""></div>
+            <div class="accomp__title">Настройка интерфейсов и прав доступа </div>
+          </div>
+      
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-6.png" alt=""></div>
+            <div class="accomp__title">Перенос данных из прошлых систем</div>
+          </div>
+      
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-7.png" alt=""></div>
+            <div class="accomp__title">Настройка обмена данными и интеграция</div>
+          </div>
+      
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-8.png" alt=""></div>
+            <div class="accomp__title">(Не)типовое обновление конфигураций</div>
+          </div>
+        </div>
+        <div class="accomps__info">
+          <a href="#" class="btn btn--orange btn--280 btn--inline">Узнать больше об ИТС</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Почему именно мы?</h1>
+        <div class="advantages">
+          <div class="advantage">
+            <p class="advantage__title">95%</p>
+            <p class="advantage__text">95% наших клиентов рекомендует нас друзьям и партнерам</p>
+          </div>
+          <div class="advantage">
+            <p class="advantage__title">36</p>
+            <p class="advantage__text">36 сертификатов «1С Специалист» и «1С Профессионал»</p>
+          </div>
+          <div class="advantage">
+            <p class="advantage__title">7 лет</p>
+            <p class="advantage__text">Официальный партнер компании 1С с 2011 года</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include('_html/_footer.html')
+</body>
+</html>
