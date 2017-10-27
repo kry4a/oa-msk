@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
+          <label class="input-group__label" for="name">Телефон*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">E-mail</label>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+  </div>
+  <header class="header">
+      <div class="container">
+        <div class="header__items">
+          <div class="header__item header__item--logo">
+            Профессиональная разработка и внедрение 1С в Москве
+          </div>
+          <div class="header__item header__item--address">
+            <a href="mailto:1c@oa-msk.ru" class="link link--green">1c@oa-msk.ru</a><br/>
+             МСК, Орджоникидзе, д. 11
+          </div>
+          <div class="header__item header__item--times">
+            Пн.-пт. с 9:00<br/>до 18:00
+          </div>
+          <div class="header__item header__item--callback">
+            <a class="header__phone phone" href="tel:+74952680749"><span>+7 (495)</span> 268-07-49</a>
+            <a href="#" class="btn btn--inline btn--orange btn--callback"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar__phone phone" href="tel:+74952680749" title="Оптимальные алгоритмы"><span>+7 (495)</span> 268-07-49</a>
+        <div class="navbar__toggler navbar-toggler" data-target="nav">
+          <span class="navbar-toggler__bar"></span>
+          <span class="navbar-toggler__bar"></span>
+          <span class="navbar-toggler__bar"></span>
+        </div>
+        <ul class="nav" id="nav">
+          <li class="nav__item nav__item--parent">
+            <a href="#" class="nav__link link">Продукты 1С</a>
+            <ul class="dropdown">
+              <li class="dropdown__block">
+                <div class="dropdown__title">
+                  Программные продукты 1С
+                </div>
+                <ul class="dropdown__list">
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Управление торговлей</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Зарплата и управление персоналом</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: ERP</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Комлексная автоматизация</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Бухгалерия</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Управление производством</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__block">
+                <div class="dropdown__title">
+                  Сервисы 1С
+                </div>
+                <ul class="dropdown__list">
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: ИТС</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: ЭДО</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Отчетность</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1СПАРК Риски</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Контрагент</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">Аренда 1С</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__block">
+                <div class="dropdown__title">
+                  Лицензии 1С
+                </div>
+              </li>
+              <li class="dropdown__block">
+                <div class="dropdown__title">
+                  Совместные отраслевые продукты и лицензии 1С
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item" data-toggle="dropdown">
+            <a href="#" class="nav__link link">Наши продукты</a>
+          
+          </li>
+          <li class="nav__item nav__item"><a href="#" class="nav__link link">Разработка</a></li>
+          <li class="nav__item"><a href="#" class="nav__link link">Интеграция</a></li>
+          <li class="nav__item nav__item"><a href="#" class="nav__link link">Сопровождение</a></li>
+          <li class="nav__item nav__item"><a href="#" class="nav__link link">Внедрение</a></li>
+          <li class="nav__item nav__item"><a href="#" class="nav__link link">Бизнес-задачи</a></li>
+        
+          <li class="nav__item nav__item--right">
+            <a href="#" class="nav__link link">О компании</a>
+            <a href="#" class="nav__link link">Отзывы</a>
+            <div id="search" class="header__search search">
+              <div class="search__toggler" data-target="search"></div>
+              <div class="search__input" style="">
+                <input class="input input--search" name="search" placeholder="Поиск" type="text">
+                <span class="search-close glyphicon glyphicon-remove"></span>
+              </div>
+            </div>
+          </li>
+        
+
+        </ul>
+      </div>
+    </nav>
+  <main class="main">
+    <div class="section section--page">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Продукты 1С</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Программные продукты 1С</a></li>
+          <li class="breadcrumbs__item">1C: Комплексная автоматизация</li>
+        </ul>
+        
+        <div class="row">
+          <div class="page__info col-lg-7">
+            <h1 class="page__title">1С: Комплексная автоматизация 8</h1>
+            <ul class="list list--dash list--info">
+              <li class="list__item">Автоматизация всего цикла производства от закупки до продаж</li>
+              <li class="list__item">Система учета с высокой степенью детализации затрат</li>
+              <li class="list__item">Контроль показателей управления и ответственности пользователей</li>
+            </ul>
+            <a href="#" class="btn btn--orange btn--inline btn--200">Заказать</a>
+          </div>
+          <div class="page__image col-lg-5">
+            <img src="./img/automatization.png" alt="Комплексная автоматизация 8" class="img img--auto">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Основные возможности</h1>
+        <p class="section__text">1С: Комплексная автоматизация 8.2 позволяет построить современную систему учета с высокой степенью детализации затрат, определить показатели управления и ответственности пользователей в рамках единого информационного пространства. Автоматизирует весь цикла сделки: от заказа до продажи, от закупки материалов до производства готовой продукции.</p>
+        <div class="row" style="margin: 0;">
+          <ul class="capabilities">
+            <li class="capabilities__item capabilities__item--target">Постановка целей</li>
+            <li class="capabilities__item capabilities__item--file-4">Оперативный учет</li>
+            <li class="capabilities__item capabilities__item--presentation-board">Анализ  отклонений результатов от плана</li>
+            <li class="capabilities__item capabilities__item--cash-register">Учет банковских и кассовых операций</li>
+            <li class="capabilities__item capabilities__item--file-3">Регламентированный учет</li>
+            <li class="capabilities__item capabilities__item--factory-stock-house">Оперативное ресурсное планирование</li>
+            <li class="capabilities__item capabilities__item--machine">Управление основными средствами и оборудованием</li>
+          </ul>
+          <ul class="capabilities">
+            <li class="capabilities__item capabilities__item--presentation">Планирование и прогнозирование</li>
+            <li class="capabilities__item capabilities__item--wallet">Мониторинг финансово-хозяйственной деятельности</li>
+            <li class="capabilities__item capabilities__item--package-for-delivery">Учет полуфабрикатов и операций с тарой</li>
+            <li class="capabilities__item capabilities__item--manager">Кадровый учет и расчет зарплаты</li>
+            <li class="capabilities__item capabilities__item--partners">Управление отношениями с клиентами (CRM)</li>
+            <li class="capabilities__item capabilities__item--icon">Производственный учет</li>
+            <li class="capabilities__item capabilities__item--percentage-2">Бухгалтерский и налоговый учет</li>
+          </ul>
+        </div>
+        <form action="#" class="form form--white">
+          <div class="form-group row">
+            <div class="col-md-6">
+              <p class="form__text">Есть вопрос по функциям и возможностям программы? Наши специалисты с радостью помогут!</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <input name="lastname" value="" id="input-lastname" class="input input--grey im--phone" type="text" placeholder="Ваш телефон">  
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <a href="#" class="btn btn--green">Заказать заонок</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h1 class="section__title">Стоимость 1С: Комплексная автоматизация 8.2</h1>
+        <p class="section__text section__text--mb">Вы можете купить программу 1С: Комплексная автоматизация по специальному предложению: 3 месяца льготного бесплатного периода на ИТС-ПРОФ или подписка на 12 месяцев по цене 8-ми.</p>
+        <div class="configs row">
+          <div class="col-lg-4">
+            <div class="config">
+              <div class="config__title">Базовая</div>
+              <div class="config__types">
+                <div class="radioblock">
+                  <input type="hidden" class="radioblock__input" name="type">
+                  <div class="radioblock__item radioblock__item--active">Электронная поставка<div class="radioblock__icon radioblock__icon--earth"></div></div>
+                  <div class="radioblock__item">Программная лицензия<div class="radioblock__icon radioblock__icon--package"></div></div>
+                </div>
+              </div>
+              <div class="config__info">
+                <div class="config__price">61 700 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="config">
+              <div class="config__title">+ КЛИЕНТ-СЕРВЕР</div>
+              <div class="config__types">
+                <div class="radioblock">
+                  <input type="hidden" class="radioblock__input" name="type">
+                  <div class="radioblock__item radioblock__item--active">Электронная поставка<div class="radioblock__icon radioblock__icon--earth"></div></div>
+                  <div class="radioblock__item">Программная лицензия<div class="radioblock__icon radioblock__icon--package"></div></div>
+                </div>
+              </div>
+              <div class="config__info">
+                <div class="config__price">133 700 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="tips">
+              <div href="#" class="tip tip--gear tip--fw">
+                <div class="tip__text">Установка бесплатно</div>
+                
+                <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
+              </div>
+              <div href="#" class="tip tip--settings tip--fw">
+                <div class="tip__text">Настройка ИПП</div>
+                
+                <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
+              </div>
+              <div href="#" class="tip tip--gift tip--fw">
+                <div class="tip__text">3 месяца ИТС в подарок</div>
+                
+                <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Последние новости по продуктам 1С</h1>
+        <p class="section__text section__text--big">Подпишитесь на рассылку и узнавайте о важных обновлениях программы, акциях и скидках  первыми!</p>
+        <form action="#" class="form--news">
+          <div class="form-group row">
+            <div class="col-sm-8 col-lg-9">
+              <input name="lastname" value="" id="input-lastname" class="input" type="text" placeholder="Ваш E-mail">  
+            </div>
+            <div class="col-sm-4 col-lg-3">
+              <a href="#" class="btn btn--tr">Подписаться</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="delivery delivery--rocket">
+              <div class="delivery__title">Доставка и оплата</div>    
+              <ul class="list list--icons">
+                <li class="list__item list__item--icon-circle">Электронная поставка (рекомендуется)</li>
+                <li class="list__item list__item--icon-circle">Курьерской службой / Самовывоз из офиса</li>
+                <li class="list__item list__item--icon-percent">Безналичный расчет</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="delivery delivery--box">
+              <div class="delivery__title">Варианты поставки</div>    
+              <ul class="list list--dash-green">
+                <li class="list__item">Электронная поставка (рекомендуется)</li>
+                <li class="list__item">Программная лицензия (доступ по ПИН-коду)</li>
+                <li class="list__item">USB-лицензия (с флеш-накопителем)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section section--white">
+      <div class="container">
+        <h1 class="section__title">1С: Комплексная автоматизация</h1>
+        <p class="section__text">Программный продукт «1С:Комплексная автоматизация 8» обеспечивает работу прикладного решения на одном рабочем месте в один момент времени. Для работы в многопользовательском режиме необходимо наличие у пользователей клиентских лицензий «1С:Предприятие 8».  Для работы в клиент-серверном режиме потребуется наличие у пользователей лицензий на сервер.</p>
+
+        <p class="section__text">1С Комплексная автоматизация – хорошо зарекомендовавшее себя решение для комплексной автоматизации учета и управления в коммерческих предприятиях. Создает единую информационную среду для сотрудников, руководителей и владельцев организации. Решение обеспечивает четкое разграничение доступа сотрудников к информации в зависимости от их статуса.  1С Комплексная автоматизация можно купить в нашей компании.</p>
+
+        <p class="section__text">Важно: Для работы в 2018 году фирма 1С рекомендует пользователям переходить на новую редакцию 2.4. Редакция 2.4 предоставляется без дополнительной оплаты зарегистрированным пользователям «Комплексная автоматизация», имеющим действующий договор информационно-технологического сопровождения 1С:ИТС.</p>
+
+        <p class="section__text">Купить 1С Комплексная автоматизация – еще не все. Почти наверняка, вам понадобится помощь специалистов 1С для внедрения и настроек. Наша компания имеет успешный опыт внедрений 1С КА, включая перенос данных из нетиповых конфигураций, объединение нескольких баз, настройку учета. Посмотреть отзывы</p>
+
+        <p class="section__text">Конфигурация 1С Комплексная автоматизация редакция 2.4 является комплексным решением, которое охватывает основные контуры оперативного управления и регламентированного учета в рамках одной информационной базы. Представленные в прикладном решении инструменты позволяют получить достоверные, с нужной детализацией данные для принятия управленческих решений. Управленческий учет по предприятию может вестись в любой выбранной валюте, бухгалтерский и налоговый учет ведется в национальной валюте.</p>
+
+        <p class="section__text">Конфигурация 1С Комплексная автоматизация разработана на технологической платформе 1С:Предприятие 8.3, которая позволяет:</p>
+        
+        <ul class="list list--dash ">
+          <li class="list__item">обеспечить высокую надежность, производительность и масштабируемость системы;</li>
+          <li class="list__item">использовать различные операционные системы (Linux, Windows, Mac OS) и системы управления базами данных (MS SQL Server, IBM DB2, Oracle Database, PostgreSQL);</li>
+          <li class="list__item">организовать работу с системой через Интернет, в режиме тонкого клиента или веб- клиента (через обычный интернет-браузер), в том числе в облачном режиме;</li>
+          <li class="list__item">создавать мобильные рабочие места с использованием планшетов и смартфонов под управлением iOS, Android, Windows;</li>
+          <li class="list__item">настраивать интерфейс для конкретного пользователя или группы пользователей с учетом роли пользователя, его прав доступа и индивидуальных настроек.</li>
+          <li class="list__item">Механизм функциональных опций позволяет включать или выключать различные функциональные части прикладного решения без программирования (изменения конфигурации).</li>
+        </ul>
+          
+
+        
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h1 class="section__title">Профессиональное Сопровождение 1С</h1>
+        <div class="accomps">
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-1.png" alt=""></div>
+            <div class="accomp__title">Начальные настройки для ведения учета</div>
+          </div>
+        
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-2.png" alt=""></div>
+            <div class="accomp__title">Доработка функционала продуктов</div>
+          </div>
+        
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-3.png" alt=""></div>
+            <div class="accomp__title">Базовая поддержка 1С: <a href="#" class="link link--grey">ИТС-ПРОФ</a></div>
+          </div>
+        
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-4.png" alt=""></div>
+            <div class="accomp__title">Консультации по ведению учета</div>
+          </div>
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-5.png" alt=""></div>
+            <div class="accomp__title">Настройка интерфейсов и прав доступа </div>
+          </div>
+      
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-6.png" alt=""></div>
+            <div class="accomp__title">Перенос данных из прошлых систем</div>
+          </div>
+      
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-7.png" alt=""></div>
+            <div class="accomp__title">Настройка обмена данными и интеграция</div>
+          </div>
+      
+          <div class="accomp">
+            <div class="accomp__icon"><img src="./img/accomp-8.png" alt=""></div>
+            <div class="accomp__title">(Не)типовое обновление конфигураций</div>
+          </div>
+        </div>
+        <div class="accomps__info">
+          <a href="#" class="btn btn--orange btn--280 btn--inline">Узнать больше об ИТС</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Почему именно мы?</h1>
+        <div class="advantages">
+          <div class="advantage">
+            <p class="advantage__title">95%</p>
+            <p class="advantage__text">95% наших клиентов рекомендует нас друзьям и партнерам</p>
+          </div>
+          <div class="advantage">
+            <p class="advantage__title">36</p>
+            <p class="advantage__text">36 сертификатов «1С Специалист» и «1С Профессионал»</p>
+          </div>
+          <div class="advantage">
+            <p class="advantage__title">7 лет</p>
+            <p class="advantage__text">Официальный партнер компании 1С с 2011 года</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+      <div class="container">
+        <div class="footer__links">
+          <div class="footer__info info">
+            <div itemprop="name" class="info__title" style="margin-bottom: 33px;">Оптимальные<br/>алгоритмы</div>
+            <div itemscope="" itemtype="http://schema.org/Organization" class="info__text">
+              <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                <span itemprop="postalCode">115419</span>,
+                <span itemprop="addressLocality">г. Москва</span>,<br/>
+                <span itemprop="streetAddress">ул., Орджоникидзе, д.11</span><br/>
+                <span>ПН.-ПТ. 9:00 - 18:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="links">
+            <div class="links__title">Продукты</div>
+            <ul class="links__list list">
+              <li class="list__item"><a href="#" class="list__link">1С:Предприятие</a></li>
+              <li class="list__item"><a href="#" class="list__link">Лицензии 1С</a></li>
+              <li class="list__item"><a href="#" class="list__link">Аренда 1С</a></li>
+              <li class="list__item"><a href="#" class="list__link">Наши продукты</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="links__title">Разработка</div>
+            <ul class="links__list list">
+              <li class="list__item"><a href="#" class="list__link">Доработка 1С на заказ</a></li>
+              <li class="list__item"><a href="#" class="list__link">Типовая доработка</a></li>
+              <li class="list__item"><a href="#" class="list__link">Интеграция 1С</a></li>
+              <li class="list__item"><a href="#" class="list__link">Внедренные решения</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="links__title">Сопровождениe</div>
+            <ul class="links__list list">
+              <li class="list__item"><a href="#" class="list__link">Абонент. обслуживание</a></li>
+              <li class="list__item"><a href="#" class="list__link">Обновление 1С</a></li>
+              <li class="list__item"><a href="#" class="list__link">Бизнес-задачи</a></li>
+              <li class="list__item"><a href="#" class="list__link">Сервисы 1С</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="links__title">О нас</div>
+            <ul class="links__list list">
+              <li class="list__item"><a href="#" class="list__link">Отзывы клиентов</a></li>
+              <li class="list__item"><a href="#" class="list__link">О компании</a></li>
+              <li class="list__item"><a href="#" class="list__link">Контакты</a></li>
+              <li class="list__item"><a href="#" class="list__link">Вакансии</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright copyright">
+          <span class="copyright__link">(С) 2011-2017 Оптимальные алгоритмы</span>
+          <span class="copyright__text">+7 (495) 268-07-49   Копирование материалов сайта запрещено</span>
+          <div class="develop">Разработано в <a href=# class="link link--green link--bold">Pixelaria</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/libs.min.js" type="text/javascript"></script>
+    <script src="./js/scripts.js" type="text/javascript"></script>
+</body>
+</html>

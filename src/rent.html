@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
+          <label class="input-group__label" for="name">Телефон*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">E-mail</label>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+  </div>
+  @@include('_html/_header.html')
+  <main class="main">
+    <div class="section section--page">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Продукты 1С</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Программные продукты 1С</a></li>
+          <li class="breadcrumbs__item">1C: Бухгалтерия</li>
+        </ul>
+        
+        <div class="row">
+          <div class="page__info col-lg-7">
+            <h1 class="page__title">Аренда 1С</h1>
+            <p class="page__subtitle">Удобный доступ к программам 1С: Предприятие<br/>через интернет без необходимости покупки</p>
+            <ul class="list list--dash list--info">
+              <li class="list__item">Ежедневное резервное копирование данных</li>
+              <li class="list__item">Бесплатная техподдержка 24/7</li>
+              <li class="list__item">Всегда актуальные версии всех программ</li>
+            </ul>
+            <a href="#" class="btn btn--orange btn--inline">Получить демо-доступ</a>
+          </div>
+          <div class="page__image col-lg-5">
+            <img src="./img/rent.png" alt="Бухгалтерия" class="img img--auto">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <div class="row">
+          <div class="rent">
+            <div class="rent__title">Без капитальных затрат</div>
+            <div class="rent__info">
+              <div class="rent__icon rent__icon--percentage"></div>
+              <div class="rent__text">Небольшая абонентская плата, от 700 руб./мес.</div>
+            </div>
+          </div>
+          <div class="rent">
+            <div class="rent__title">Прозрачность расходов</div>
+            <div class="rent__info">
+              <div class="rent__icon rent__icon--balance"></div>
+              <div class="rent__text">Вы всегда знаете, сколько и за что именно платите</div>
+            </div>
+          </div>
+          <div class="rent">
+            <div class="rent__title">Управление стоимостью</div>
+            <div class="rent__info">
+              <div class="rent__icon rent__icon--paper-pencil-and-calculator"></div>
+              <div class="rent__text">Управляйте расходами исходя из потребностей</div>
+            </div>
+          </div>
+          <div class="rent">
+            <div class="rent__title">Безопасность</div>
+            <div class="rent__info">
+              <div class="rent__icon rent__icon--shield"></div>
+              <div class="rent__text">Ваши данные хранятся в защищенном дата-центре</div>
+            </div>
+          </div>
+          <div class="rent">
+            <div class="rent__title">Техподдержка 24/7</div>
+            <div class="rent__info">
+              <div class="rent__icon rent__icon--customer-support"></div>
+              <div class="rent__text">Наши инженеры на связи круглосуточно</div>
+            </div>
+          </div>
+          <div class="rent">
+            <div class="rent__title">Резервное копирование</div>
+            <div class="rent__info">
+              <div class="rent__icon rent__icon--calendar-clock"></div>
+              <div class="rent__text">Все ваши данные копируются ежедневно</div>
+            </div>
+          </div>
+          <div class="rent">
+            <div class="rent__title">Мобильность</div>
+            <div class="rent__info">
+              <div class="rent__icon rent__icon--earth"></div>
+              <div class="rent__text">Программы будут доступны  из любой точки мира</div>
+            </div>
+          </div>
+          <div class="rent">
+            <div class="rent__title">Сохранение данных</div>
+            <div class="rent__info">
+              <div class="rent__icon rent__icon--cloud-computing"></div>
+              <div class="rent__text">Вы всегда можете загрузить данные на свой компьютер</div>
+            </div>
+          </div>
+          <div class="rent">
+            <div class="rent__title">Обновления</div>
+            <div class="rent__info">
+              <div class="rent__icon rent__icon--copy"></div>
+              <div class="rent__text">Регулярные и бесплатные обновления</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="section section--white">
+      <div class="container">
+        <h1 class="section__title">Тарифы на аренду программ 1С</h1>
+        <p class="section__text">
+           Не облагается НДС. В случае предоплаты за 6 месяцев предоставляется скидка в размере 5%. В случае предоплаты за 12 месяцев предоставляется скидка в размере 10%.
+        </p>
+        <div class="table">
+          <div class="table__head">
+            <div class="table__row table__row--head">
+              <div class="row__title">
+                <div class="table__cell">Тарифный план</div>
+              </div>
+              <div class="row__body">
+                <div class="table__cell hidden-xs">Базовая</div>
+                <div class="table__cell hidden-xs">Проф</div>
+                <div class="table__cell hidden-xs">Корп</div>  
+              </div>
+            </div>  
+          </div>
+          <div class="table__body">
+            <div class="table__row">
+              <div class="row__title">
+                <div class="table__cell">Цена подписки на тарифный план для 1 пользователя в месяц, руб.</div>
+              </div>
+              <div class="row__body">
+                <div class="table__cell"><span class="table__span">700</span></div>
+                <div class="table__cell"><span class="table__span">1 000</span></div>
+                <div class="table__cell"><span class="table__span">1 300</span></div>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="row__title">
+                <div class="table__cell">Доступ через интернет-браузер</div>
+              </div>
+              <div class="row__body">
+                <div class="table__cell"><span class="table__span table__span--checked">Базовая</span></div>
+                <div class="table__cell"><span class="table__span table__span--checked">Проф</span></div>
+                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="row__title">
+                <div class="table__cell">Доступ через удаленное приложение</div>
+              </div>
+              <div class="row__body">
+                <div class="table__cell"></div>
+                <div class="table__cell"><span class="table__span table__span--checked">Проф</span></div>
+                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="row__title">
+                <div class="table__cell">Доступ через удаленный рабочий стол</div>
+              </div>
+              <div class="row__body">
+                <div class="table__cell"></div>
+                <div class="table__cell"></div>
+                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="row__title">
+                <div class="table__cell">Максимальное количество пользователей сервиса</div>
+              </div>
+              <div class="row__body">
+                <div class="table__cell"><span class="table__span">5</span></div>
+                <div class="table__cell"><span class="table__span table__span--infinite">Проф</span></div>
+                <div class="table__cell"><span class="table__span table__span--infinite">Корп</span></div>
+              </div>
+            </div>
+            
+            <div class="table__row">
+              <div class="row__title">
+                <div class="table__cell">Максимальное количество конфигураций</div>
+              </div>
+              <div class="row__body">
+                <div class="table__cell"><span class="table__span">2</span></div>
+                <div class="table__cell"><span class="table__span table__span--infinite">Проф</span></div>
+                <div class="table__cell"><span class="table__span table__span--infinite">Корп</span></div>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="row__title">
+                <div class="table__cell">Суммарный объем информационных баз</div>
+              </div>
+              <div class="row__body">
+                <div class="table__cell"><span class="table__span">до 5 ГБ</span></div>
+                <div class="table__cell"><span class="table__span">до 10 ГБ</span></div>
+                <div class="table__cell"><span class="table__span">до 20 ГБ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="table__footer">
+            <div class="table__row">
+              <div class="row__title"><div class="table__cell"></div></div>
+              <div class="row__body">
+                <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>
+                <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>
+                <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>  
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section--wjite">
+      <div class="container">
+        <div class="tariff">
+          <div class="tariff__title">Программы доступные на тарифе Базовый</div>
+          <ul class="tariff__list list list--dash">
+            <li class="list__item">Аренда 1C:Бухгалтерия 8 ПРОФ</li>
+            <li class="list__item">Аренда 1С:Управление торговлей, редакция 11</li>
+            <li class="list__item">Аренда 1С:Бухгалтерия государственного учреждения 8</li>
+          </ul>
+          <ul class="tariff__list list list--dash">
+            <li class="list__item">Аренда 1С:Зарплата и Управление Персоналом 8</li>
+            <li class="list__item">Аренда 1С:Управление небольшой фирмой 8</li>
+          </ul>
+        </div>
+        <div class="tariff">
+          <div class="tariff__title">Программы доступные на тарифе Стандарт и Проф</div>
+          <ul class="tariff__list list list--dash">
+            <li class="list__item">Аренда 1C:Бухгалтерия 8 ПРОФ</li>
+            <li class="list__item">Аренда 1С:Управление небольшой фирмой 8</li>
+            <li class="list__item">Аренда 1С:Бухгалтерия государственного учреждения 8</li>
+            <li class="list__item">Аренда 1С:Управление торговлей, редакция 10.3</li>
+            <li class="list__item">Аренда 1С:Бухгалтерия автономного учреждения 8</li>
+            <li class="list__item">Аренда 1С:Розница 8</li>
+            <li class="list__item">Аренда 1С:Розница 8. Магазин бытовой техники</li>
+            <li class="list__item">Аренда 1С:Розница 8. Магазин автозапчастей</li>
+            <li class="list__item">Аренда 1С:Розница 8. Магазин стройматериалов</li>
+            <li class="list__item">Аренда 1С:Розница 8. Ювелирный магазин</li>
+          </ul>
+          <ul class="tariff__list list list--dash">
+            <li class="list__item">Аренда 1С:Зарплата и Управление Персоналом 8</li>
+            <li class="list__item">Аренда 1С:Управление торговлей, редакция 11</li>
+            <li class="list__item">Аренда 1С:Комплексная автоматизация 8</li>
+            <li class="list__item">Аренда 1С:Документооборот 8 ПРОФ</li>
+            <li class="list__item">Аренда 1С:Управление сервисным центром</li>
+            <li class="list__item">Аренда 1С:Розница 8. Магазин одежды и обуви</li>
+            <li class="list__item">Аренда 1С:Розница 8. Аптека</li>
+            <li class="list__item">Аренда 1С:Розница 8. Книжный магазин</li>
+            <li class="list__item">Аренда 1С:Розница 8. Салон оптики</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Начните работу с 1С прямо сейчас!</h1>
+        <p class="section__text section__text--big">Оформите заявку на сайте и мы свяжемся с вами в самое ближайшее время</p>
+        <form action="#" class="form--news">
+          <div class="form-group row">
+            <div class="col-sm-6 col-lg-8">
+              <input name="lastname" class="input" type="text" placeholder="Ваш E-mail">  
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <a href="#" class="btn btn--tr">Получить демо-доступ</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  @@include('_html/_footer.html')
+</body>
+</html>
