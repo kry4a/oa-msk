@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
+          <label class="input-group__label" for="name">Телефон*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">E-mail</label>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+  </div>
+  @@include('_html/_header.html')
+  <main class="main">
+    <div class="section section--page-sm">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Продукты 1С</a></li>
+          <li class="breadcrumbs__item">Клиентские лицензии 1С</li>
+        </ul>
+        
+        <div class="row">
+          <div class="page__info">
+            <h1 class="page__title">Клиентские Лицензии 1С</h1>
+            <p class="page__subtitle">Пользовательские лицензии 1С: Предприятие 8 предназначены для увеличения количество пользователей, одновременно использующих программы в рамках одной сети. На нашем сайте вы можете купить лицензии 1С: Предприятия 8, в том числе лицензии на сервер и мобильные рабочие места.</p>
+          </div>
+          <a href="#" class="btn btn--orange btn--inline btn--200">Заказать</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section--white">
+      <div class="container">
+        
+        <h2 class="section__title">
+          Стоимость лизенций на 1С: Предприятие 8
+        </h2>
+        <div class="licenses">
+          <div class="licenses__item license">
+            <div class="license__title">Базовая</div>
+            <div class="license__desc">
+              <div class="license__price">6 3000 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">6 300 руб./место</div>
+          </div>
+          
+          <div class="licenses__item license">
+            <div class="license__title">5 рабочих мест</div>
+            <div class="license__desc">
+              <div class="license__price">21 600 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">4 320 руб./место</div>
+          </div>
+
+          <div class="licenses__item license">
+            <div class="license__title">10 рабочих мест</div>
+            <div class="license__desc">
+              <div class="license__price">41 400 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">4 140 руб./место</div>
+          </div>
+
+          <div class="licenses__item license">
+            <div class="license__title">20 рабочих мест</div>
+            <div class="license__desc">
+              <div class="license__price">78 000 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">3 900 руб./место</div>
+          </div>
+
+        </div>
+        <h2 class="section__title">
+            Стоимость лизенций на 1С: Предприятие 8 (USB-поставка)
+        </h2>
+        <div class="licenses">
+          <div class="licenses__item license">
+            <div class="license__title">1 рабочее место</div>
+            <div class="license__desc">
+              <div class="license__price">6 3000 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">6 300 руб./место</div>
+          </div>
+          
+          <div class="licenses__item license">
+            <div class="license__title">5 рабочих мест</div>
+            <div class="license__desc">
+              <div class="license__price">21 600 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">4 320 руб./место</div>
+          </div>
+
+          <div class="licenses__item license">
+            <div class="license__title">10 рабочих мест</div>
+            <div class="license__desc">
+              <div class="license__price">41 400 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">4 140 руб./место</div>
+          </div>
+
+          <div class="licenses__item license">
+            <div class="license__title">20 рабочих мест</div>
+            <div class="license__desc">
+              <div class="license__price">78 000 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">3 900 руб./место</div>
+          </div>
+
+        </div>
+        <h2 class="section__title">
+            Стоимость лизенции на сервер
+        </h2>
+        <div class="licenses">
+          <div class="licenses__item license">
+            <div class="license__title">1С:Предприятие 8.3. Сервер</div>
+            <div class="license__desc">
+              <div class="license__price">50 400 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+          </div>
+
+          <div class="licenses__item license">
+            <div class="license__title">1С:Предприятие 8.3. Сервер (x86-64)</div>
+            <div class="license__desc">
+              <div class="license__price">86 400 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+          </div>
+        </div>
+        <h2 class="section__title">
+            Стоимость лицензии на моб. раб. места (электронная поставка)
+        </h2>
+         <div class="licenses">
+          <div class="licenses__item license">
+            <div class="license__title">1 рабочее место</div>
+            <div class="license__desc">
+              <div class="license__price">1 2000 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">1 200 руб./место</div>
+          </div>
+          
+          <div class="licenses__item license">
+            <div class="license__title">5 рабочих мест</div>
+            <div class="license__desc">
+              <div class="license__price">4 110 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">822 руб./место</div>
+          </div>
+
+          <div class="licenses__item license">
+            <div class="license__title">10 рабочих мест</div>
+            <div class="license__desc">
+              <div class="license__price">7 880 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">788 руб./место</div>
+          </div>
+
+          <div class="licenses__item license">
+            <div class="license__title">20 рабочих мест</div>
+            <div class="license__desc">
+              <div class="license__price">14 860 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+            <div class="license__info">743 руб./место</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Последние новости по продуктам 1С</h1>
+        <p class="section__text section__text--big">Подпишитесь на рассылку и узнавайте о важных обновлениях программы, акциях и скидках  первыми!</p>
+        <form action="#" class="form--news">
+          <div class="form-group row">
+            <div class="col-sm-8 col-lg-9">
+              <input name="lastname" value="" id="input-lastname" class="input" type="text" placeholder="Ваш E-mail">  
+            </div>
+            <div class="col-sm-4 col-lg-3">
+              <a href="#" class="btn btn--tr">Подписаться</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  @@include('_html/_footer.html')
+</body>
+</html>

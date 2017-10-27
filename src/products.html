@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
+          <label class="input-group__label" for="name">Телефон*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">E-mail</label>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+  </div>
+  @@include('_html/_header.html')
+  <main class="main">
+    <div class="section section--page-sm">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item">Продукты  1С</li>
+        </ul>
+        <div class="row">
+          <div class="page__info">
+            <h1 class="page__title">Продукты 1С</h1>
+            <p class="page__subtitle">Удобные и надежные программные продукты от 1С и партнеров для автоматизации учета. <br>Наши специалисты всегда будут рады помочь с подбором оптимального решения. </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <div class="products">
+          <div class="products__item">
+            <div class="products__title">1C: Предпритие 8</div>
+            <div class="products__text">Самая популярная в России система программ для автоматизации деятельности организаций </div>
+            <a href="#" class="products__btn btn btn--orange">Подробнее</a>
+          </div>
+          <div class="products__item">
+            <div class="products__title">Лицензии 1С</div>
+            <div class="products__text">Пользовательские лицензии для увеличения одновременно работающих пользователей</div>
+            <a href="#" class="products__btn btn btn--orange">Подробнее</a>
+          </div>
+          <div class="products__item">
+            <div class="products__title">Совместные лицензии 1С </div>
+            <div class="products__text">Специальные решения на базе продуктов 1С, для автоматизации компаний определенных сфер</div>
+            <a href="#" class="products__btn btn btn--orange">Подробнее</a>
+          </div>
+          <div class="products__item">
+            <div class="products__title">Сервисы 1С</div>
+            <div class="products__text">Технологичные решения, дающие дополнительные возможности для 1С: Предприятия и 1С:ИТС</div>
+            <a href="#" class="products__btn btn btn--orange">Подробнее</a>
+          </div>
+          <div class="products__item">
+            <div class="products__title">Аренда 1С</div>
+            <div class="products__text">Удобный доступ к программам 1С: Предприятие 8 через интернет без необходимости покупки</div>
+            <a href="#" class="products__btn btn btn--orange">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include('_html/_footer.html')
+</body>
+</html>
