@@ -38,6 +38,10 @@ $(function (){
     
   });
 
+  $('.accordeon__preview').click(function(e){
+    $(this).closest('.accordeon').toggleClass('accordeon--active');
+  });
+
   $('.btn--orange').click(function(e){
     $('.popup').addClass('popup--active');
     $('.popup__bg').addClass('popup__bg--active');
