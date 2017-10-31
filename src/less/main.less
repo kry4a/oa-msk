@@ -853,10 +853,15 @@ hr {
 
     font-size: 0;
     
-    &:nth-child(2n+1) {
+    &:nth-child(2n) {
       background-color: #f2f5f8;
     }
-  
+    
+
+    &--red {
+      background-color: #ffe9e4 !important;
+
+    }
     &--head {
       color:#ffffff;
       font-weight: bold;
@@ -1133,6 +1138,7 @@ hr {
       width: auto;
     }
   }
+  
 
   &--callback {
     border:none;
@@ -1238,6 +1244,14 @@ hr {
       text-align: center;
     }
   }
+  
+
+  &__desc {
+    margin-top: -25px;
+    margin-bottom: 30px;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
 
   @media @mobile-xs {
     border-radius: 0;
@@ -1256,7 +1270,32 @@ hr {
   }
 }
 
+.desc {
+  &__item {
+  
+    color: #2d3e50;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #dfdfdf;
 
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:nth-child(2n) {
+      background-color: #f2f5f8;
+    }
+
+    &--price {
+      font-weight: 700;
+    }
+  }
+
+
+}
 
 
 /* RADIO */
@@ -2792,11 +2831,14 @@ hr {
     border-radius: 10px;
     background-color: #ffffff;
 
-    padding: 30px 15px 30px 115px;
-
+    padding: 30px 15px 30px 105px;
+    
     margin-right: 20px;
     float: left;
-
+    
+    &--single {
+      line-height: 40px;
+    }
     &:before {
       content: '';
       position: absolute;
@@ -2834,6 +2876,24 @@ hr {
       }
     }
     &--cources {
+      &:before {
+        background-image: url('../img/its-cources.png');
+      }
+    }
+
+    &--useful {
+      &:before {
+        background-image: url('../img/its-useful.png');
+      }
+    }
+
+    &--economy {
+      &:before {
+        background-image: url('../img/its-economy.png');
+      }
+    }
+
+    &--checklist {
       &:before {
         background-image: url('../img/its-cources.png');
       }
