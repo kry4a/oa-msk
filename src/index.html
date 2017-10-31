@@ -1,500 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Оптимальные алгоритмы</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/bundle.css">
 </head>
+<style>
+  html,body,.section {
+    height:100%;
+  }
+</style>
 <body>
-  <div class="popup__bg"></div>
-  <div class="popup">
-    <div class="popup__closer closer"><b></b>
-    <b></b>
-    <b></b>
-    <b></b></div>
-    <div class="popup__header">
-      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
-    </div>
-    <div class="popup__body">
-      <hr>
-      <div class="popup__form">
-        <div class="input-group">
-          
-          <input class="input input--grey input--required" id="name" name="name" type="text"> 
-          <label class="input-group__label" for="name">Фамилия, Имя*</label>
-        </div>
-        <div class="input-group">
-          
-          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
-          <label class="input-group__label" for="name">Телефон*</label>
-        </div>
-        <div class="input-group">
-          
-          <input class="input input--grey" id="name" name="name" type="text"> 
-          <label class="input-group__label" for="name">E-mail</label>
-        </div>
-      </div>
-      <div class="popup__buttons">
-        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
-      </div>
+  <div class="section section--green">
+    <div class="container">
+      <h1 class="section__title">Страницы:</h1>
+      <ul class="list list--dash">
+        <li class="list__item">
+          <a href="./1C_company_8.html" class="list__link">1С организация 8</a>
+        </li>
+        <li class="list__item">
+          <a href="./automatization.html" class="list__link">Автоматизация</a>
+        </li>
+        <li class="list__item">
+          <a href="./buhgalteria.html" class="list__link">Бухгалтерия</a>
+        </li>
+        <li class="list__item">
+          <a href="./edo.html" class="list__link">ЭДО</a>
+        </li>
+        <li class="list__item">
+          <a href="./its.html" class="list__link">ИТС</a>
+        </li>
+        <li class="list__item">
+          <a href="./license.html" class="list__link">Лицензии</a>
+        </li>
+        <li class="list__item">
+          <a href="./products.html" class="list__link">Продукты</a>
+        </li>
+        <li class="list__item">
+          <a href="./rent.html" class="list__link">Аренда</a>
+        </li>
+        <li class="list__item">
+          <a href="./services.html" class="list__link">Сервисы</a>
+        </li>
+        <li class="list__item">
+          <a href="./upp.html" class="list__link">УПП</a>
+        </li>
+      </ul>
     </div>
   </div>
-	@@include('_html/_header.html')
-  <main class="main">
-    <div class="section section--page">
-      <div class="container">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Продукты 1С</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Программные продукты 1С</a></li>
-          <li class="breadcrumbs__item">1C: Бухгалтерия</li>
-        </ul>
-        
-        <div class="row">
-          <div class="page__info col-lg-7">
-            <h1 class="page__title">1С: Бухгалтерия</h1>
-            <p class="page__subtitle">Самая популярная программа для<br/>бухгалтерского и налогового учета в России</p>
-            <ul class="list list--dash list--info">
-              <li class="list__item">Автоматизация бухгалтерского и налогового учета</li>
-              <li class="list__item">Полное соответствие законодательству</li>
-              <li class="list__item">Отслеживание всех изменений в отчетности</li>
-            </ul>
-            <a href="#" class="btn btn--orange btn--inline btn--200">Заказать</a>
-          </div>
-          <div class="page__image col-lg-5">
-            <img src="./img/bookkeeping.png" alt="Бухгалтерия" class="img img--auto">
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <div class="section section--green">
-      <div class="parallax parallax--1"></div>
-      <div class="parallax parallax--2"></div>
-      <div class="container">
-        <h1 class="section__title">Основные возможности</h1>
-        <p class="section__text">1С: Бухгалтерия 8.3 автоматизирует бухгалтерский и налоговый учет компании. Применяется для удобной работы с документацией, отслеживанием производственных, торговых и логистических операций, а также подготовки обязательной, регламентной отчетности.</p>
-        <div class="row" style="margin: 0;">
-
-          
-          <ul class="capabilities">
-            <li class="capabilities__item capabilities__item--file-3">Учет документации</li>
-            <li class="capabilities__item capabilities__item--file-4">Учет основных средств и нематериальных активов</li>
-            <li class="capabilities__item capabilities__item--budget-2">Учет косвенных расходов</li>
-            <li class="capabilities__item capabilities__item--bank">Учет банковских и кассовых операций</li>
-            <li class="capabilities__item capabilities__item--broker">Учет комиссионной торговли и агентских договоров</li>
-            <li class="capabilities__item capabilities__item--factory-stock-house">Складской учет</li>
-            <li class="capabilities__item capabilities__item--graphic">Учет доходов и расходов ИП – плательщиков НДФЛ</li>
-          </ul>
-          <ul class="capabilities">
-            <li class="capabilities__item capabilities__item--stock">Учет материально-производственных запасов</li>
-            <li class="capabilities__item capabilities__item--wallet">Учет зарплаты, кадровый учет</li>
-            <li class="capabilities__item capabilities__item--package-for-delivery">Учет полуфабрикатов и операций с тарой</li>
-            <li class="capabilities__item capabilities__item--handshake">Учет расчетов с контрагентами</li>
-            <li class="capabilities__item capabilities__item--icon">Учет основного и вспомогательного производства</li>
-            <li class="capabilities__item capabilities__item--shopping-cart">Учет торговых операций</li>
-            <li class="capabilities__item capabilities__item--percentage-2">Учет деятельности, облагаемой ЕНВД или УСН</li>
-          </ul>
-        </div>
-        <form action="#" class="form form--white">
-          <div class="form-group row">
-            <div class="col-md-6">
-              <p class="form__text">Есть вопрос по функциям и возможностям программы? Наши специалисты с радостью помогут!</p>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <input name="lastname" value="" id="input-lastname" class="input input--grey im--phone" type="text" placeholder="Ваш телефон">  
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <a href="#" class="btn btn--green">Заказать заонок</a>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <h1 class="section__title">Стоимость конфигураций 1С: Бухгалтерия 8</h1>
-        <p class="section__text section__text--mb">Вы можете купить программу 1С: Бухгалтерия по специальному предложению: 3 месяца льготного бесплатного периода 
-        на ИТС-ПРОФ или подписка на 12 месяцев по цене 8-ми. Стоимость не облагается НДС.</p>
-        <div class="configs row">
-          <div class="col-lg-4">
-            <div class="config">
-              <div class="config__title">Базовая</div>
-              <div class="config__types">
-                <div class="radioblock">
-                  <input type="hidden" class="radioblock__input" name="type">
-                  <div class="radioblock__item radioblock__item--active">Электронная поставка<div class="radioblock__icon radioblock__icon--earth"></div></div>
-                  <div class="radioblock__item">Программная лицензия<div class="radioblock__icon radioblock__icon--package"></div></div>
-                </div>
-              </div>
-              <div class="config__info">
-                <div class="config__price">4 800 р.</div>
-                <a href="#" class="config__btn btn btn--orange">Заказать</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="config">
-              <div class="config__title">Проф</div>
-              <div class="config__types">
-                <div class="radioblock">
-                  <input type="hidden" class="radioblock__input" name="type">
-                  <div class="radioblock__item radioblock__item--active">Электронная поставка<div class="radioblock__icon radioblock__icon--earth"></div></div>
-                  <div class="radioblock__item">Программная лицензия<div class="radioblock__icon radioblock__icon--package"></div></div>
-                  <div class="radioblock__item">USB - лицензия<div class="radioblock__icon radioblock__icon--pendrive"></div></div>
-
-                </div>
-              </div>
-              <div class="config__info">
-                <div class="config__price">13 000 р.</div>
-                <a href="#" class="config__btn btn btn--orange">Заказать</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="config">
-              <div class="config__title">Корп</div>
-              <div class="config__types">
-                <div class="radioblock">
-                  <input type="hidden" class="radioblock__input" name="type">
-                  <div class="radioblock__item radioblock__item--active">Электронная поставка<div class="radioblock__icon radioblock__icon--earth"></div></div>
-                  <div class="radioblock__item">Программная лицензия<div class="radioblock__icon radioblock__icon--package"></div></div>
-                  <div class="radioblock__item">USB - лицензия<div class="radioblock__icon radioblock__icon--pendrive"></div></div>
-                </div>
-              </div>
-              <div class="config__info">
-                <div class="config__price">33 000 р.</div>
-                <a href="#" class="config__btn btn btn--orange">Заказать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tips">
-          <div href="#" class="tip tip--gear">
-            <div class="tip__text">Установка бесплатно</div>
-            
-            <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
-          </div>
-          <div href="#" class="tip tip--settings">
-            <div class="tip__text">Настройка ИПП</div>
-            
-            <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
-          </div>
-          <div href="#" class="tip tip--gift">
-            <div class="tip__text">3 месяца ИТС в подарок</div>
-            
-            <div class="tip__help"><span class="tip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusamus incidunt, praesentium modi, dolorem blanditiis eligendi qui.</span></div> 
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section section--white">
-      <div class="container">
-        <h1 class="section__title">Сравнение версий</h1>
-        <div class="table">
-          <div class="table__head">
-            <div class="table__row table__row--head">
-              <div class="row__title">
-                <div class="table__cell">Версии 1С:Бухгалтерия</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell hidden-xs">Базовая</div>
-                <div class="table__cell hidden-xs">Проф</div>
-                <div class="table__cell hidden-xs">Корп</div>  
-              </div>
-            </div>  
-          </div>
-          <div class="table__body baron baron__root baron__clipper _simple">
-            <div class="baron__scroller">
-              <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Готовое решение для ведения бухгалтерского и налогового учета</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"><span class="table__span table__span--checked">Базовая</span></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Проф</span></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Подготовка бухгалтерской и налоговой отчетности</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"><span class="table__span table__span--checked">Базовая</span></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Проф</span></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Ведение налогового учета по налогу на прибыль</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"><span class="table__span table__span--checked">Базовая</span></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Проф</span></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Налоговый учет: УСН и ЕНВД</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Проф</span></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Ведение партионного учета</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Проф</span></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Возможность настройки счетов учета материально-производственных  запасов и расчетов с контрагентами</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Проф</span></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Учет по нескольким организациям в отдельных информационных базах</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"><span class="table__span table__span--checked">Базовая</span></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Проф</span></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Учет по нескольким организациям в единой информационной базе</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"></div>
-                <div class="table__cell"></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Учет в обособленных подразделениях</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"></div>
-                <div class="table__cell"></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Возможность изменения (конфигурирования) прикладного решения</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"></div>
-                <div class="table__cell"></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Многопользовательский режим работы, в том числе поддержка клиент-серверного варианта работы</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"></div>
-                <div class="table__cell"></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Работа территориально распределенных информационных баз</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"></div>
-                <div class="table__cell"></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            <div class="table__row">
-              <div class="row__title">
-                <div class="table__cell">Поддержка COM-соединения и Automation-сервера</div>
-              </div>
-              <div class="row__body">
-                <div class="table__cell"></div>
-                <div class="table__cell"></div>
-                <div class="table__cell"><span class="table__span table__span--checked">Корп</span></div>
-              </div>
-            </div>
-            </div>
-            <div class="baron__track">
-              <div class="baron__control baron__up">▲</div>
-              <div class="baron__free">
-                  <div class="baron__bar"></div>
-              </div>
-              <div class="baron__control baron__down">▼</div>
-            </div>
-          </div>
-         
-          <div class="table__footer">
-            <div class="table__row">
-              <div class="row__title"><div class="table__cell"></div></div>
-              <div class="row__body">
-                <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>
-                <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>
-                <div class="table__cell"><a href="#" class="btn btn--orange">Купить</a></div>  
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <p class="table__info">У Вас уже установлена 1С: бухгалтерия? Сделайте апгрейд до последней версии, доплатив только разницу! <a href="#" class="link link--green">Рассчитать стоимость.</a></p>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="delivery delivery--rocket">
-              <div class="delivery__title">Доставка и оплата</div>    
-              <ul class="list list--icons">
-                <li class="list__item list__item--icon-circle">Электронная поставка (рекомендуется)</li>
-                <li class="list__item list__item--icon-circle">Курьерской службой / Самовывоз из офиса</li>
-                <li class="list__item list__item--icon-percent">Безналичный расчет</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="delivery delivery--box">
-              <div class="delivery__title">Варианты поставки</div>    
-              <ul class="list list--dash-green">
-                <li class="list__item">Электронная поставка (рекомендуется)</li>
-                <li class="list__item">Программная лицензия (доступ по ПИН-коду)</li>
-                <li class="list__item">USB-лицензия (с флеш-накопителем)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section section--green">
-      <div class="parallax parallax--1"></div>
-      <div class="parallax parallax--2"></div>
-      <div class="container">
-        <h1 class="section__title">Последние новости по продуктам 1С</h1>
-        <p class="section__text section__text--big">Подпишитесь на рассылку и узнавайте о важных обновлениях программы, акциях и скидках  первыми!</p>
-        <form action="#" class="form--news">
-          <div class="form-group row">
-            <div class="col-sm-8 col-lg-9">
-              <input name="lastname" value="" id="input-lastname" class="input" type="text" placeholder="Ваш E-mail">  
-            </div>
-            <div class="col-sm-4 col-lg-3">
-              <a href="#" class="btn btn--tr">Подписаться</a>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="section section--white">
-      <div class="container">
-        <h1 class="section__title">1С: Бухгалтерия 8.3 — незаменимый инструмент<br/>современного бухгалтера</h1>
-        <p class="section__text">О существовании прикладного решения от фирмы 1С знают все. Фактически, уже является отраслевым стандартом программа 1С Бухгалтерия. Купить легко, цена достаточно демократична. Но если вы никогда не пользовались этими программными продуктами, то могут возникнуть вполне обоснованные сомнения в том, стоит ли тратить деньги. Однозначно – стоит. Почему вам выгодно купить 1С Бухгалтерия?</p>
-        <p class="section__text">1. У вас большой штат бухгалтерии и рабочее время нерационально тратится на рутинные операции;<br>2. Вы вынуждены постоянно делать сверки и ревизии, чтобы контролировать персонал;<br>3. Вы хотите вести чистую белую бухгалтерию, не бояться проверок и не платить штрафы</p>
-        <p class="section__text">Этот список можно продолжать еще долго. И если вы хотите наладить работу и максимально упростить ее, то вам нужно купить программу 1С Бухгалтерия. <a href="#" data-target="readmore" class="link link--green link--readmore">Подробнее</a></p>
-        <div id="readmore" class="section__readmore">
-          <p class="section__text">Могут возникнуть вопросы: купить 1С Бухгалтерия 8 или 1С Бухгалтерия 8.3, а то и  другую, более раннюю  версию? Если у Вас несколько юридических лиц с разной системой бухгалтерского учета, то как сделать правильный выбор и понять, в чем отличительные особенности продуктов 1С Бухгалтерия базовая версия или лучше купить сразу 1С Бухгалтерия ПРОФ или даже КОРП? Как правильно настроить процессы учета?</p>
-          <p class="section__text">И это еще не все: в огромном количестве информации не всегда просто сразу разобраться, что лучше: подходит ли 1С Бухгалтерия упрощенка  или лучше 1С Бухгалтерия базовая версия, как купить в Мск программу с лицензией и гарантией качества? Ведь на рынке работает огромное количество фирм, которые предлагают, казалось бы, одно и  то же. И цена у всех тоже практически одинаковая. Как сделать правильный выбор? Часто приходится сталкиваться с вопросом: насколько универсальна  1С Бухгалтерия 8 базовая? Купить именно ее или предпочесть более функциональную следующую версию?</p>
-          <p class="section__text">При выборе программ 1С обязательно нужно учесть специфику деятельности Вашей компании, количество пользователей (бухгалтеров), юридических лиц и перспективы роста на ближайший период. Наши специалисты помогут сделать оптимальный выбор.</p>
-          <p class="section__text">Возможно, Вам будет достаточно недорогой и простой в обслуживании версии 1С 8 Бухгалтерия базовая купить ее можно достаточно бюджетно, а возможно, будет выгоднее 1С Бухгалтерия 8 3 купить программу, цена же последующих возможных улучшений будет выше, чем  стоимость более подходящего для Вас продукта. И Вам не придется  тратить в дальнейшем время и средства на апгрейды и обновления версий, доработки и страдать от нехватки функционала.</p>
-          <p class="section__text">На все эти и другие вопросы Вам ответят наши специалисты, имеющие многолетний опыт работы с разными версиями программы 1С Бухгалтерия предприятия, сертификаты 1С Специалистов и 1С Профессионалов по продукту, можно купить у нас лицензии для любого количества пользователей и получить квалифицированные услуги по установке, настройке и поддержке. <a href="#" data-target="readmore" class="link link--green link--less">Свернуть</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <h1 class="section__title">Профессиональное Сопровождение 1С</h1>
-        <div class="accomps">
-          <div class="accomp">
-            <div class="accomp__icon"><img src="./img/accomp-1.png" alt=""></div>
-            <div class="accomp__title">Начальные настройки для ведения учета</div>
-          </div>
-        
-          <div class="accomp">
-            <div class="accomp__icon"><img src="./img/accomp-2.png" alt=""></div>
-            <div class="accomp__title">Доработка функционала продуктов</div>
-          </div>
-        
-          <div class="accomp">
-            <div class="accomp__icon"><img src="./img/accomp-3.png" alt=""></div>
-            <div class="accomp__title">Базовая поддержка 1С: <a href="#" class="link link--grey">ИТС-ПРОФ</a></div>
-          </div>
-        
-          <div class="accomp">
-            <div class="accomp__icon"><img src="./img/accomp-4.png" alt=""></div>
-            <div class="accomp__title">Консультации по ведению учета</div>
-          </div>
-          <div class="accomp">
-            <div class="accomp__icon"><img src="./img/accomp-5.png" alt=""></div>
-            <div class="accomp__title">Настройка интерфейсов и прав доступа </div>
-          </div>
-      
-          <div class="accomp">
-            <div class="accomp__icon"><img src="./img/accomp-6.png" alt=""></div>
-            <div class="accomp__title">Перенос данных из прошлых систем</div>
-          </div>
-      
-          <div class="accomp">
-            <div class="accomp__icon"><img src="./img/accomp-7.png" alt=""></div>
-            <div class="accomp__title">Настройка обмена данными и интеграция</div>
-          </div>
-      
-          <div class="accomp">
-            <div class="accomp__icon"><img src="./img/accomp-8.png" alt=""></div>
-            <div class="accomp__title">(Не)типовое обновление конфигураций</div>
-          </div>
-        </div>
-        <div class="accomps__info">
-          <a href="#" class="btn btn--orange btn--280 btn--inline">Узнать больше об ИТС</a>
-        </div>
-        
-      </div>
-    </div>
-    <div class="section section--green">
-      <div class="parallax parallax--1"></div>
-      <div class="parallax parallax--2"></div>
-      <div class="container">
-        <h1 class="section__title">Почему именно мы?</h1>
-        <div class="advantages">
-          <div class="advantage">
-            <p class="advantage__title">95%</p>
-            <p class="advantage__text">95% наших клиентов рекомендует нас друзьям и партнерам</p>
-          </div>
-          <div class="advantage">
-            <p class="advantage__title">36</p>
-            <p class="advantage__text">36 сертификатов «1С Специалист» и «1С Профессионал»</p>
-          </div>
-          <div class="advantage">
-            <p class="advantage__title">7 лет</p>
-            <p class="advantage__text">Официальный партнер компании 1С с 2011 года</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-	@@include('_html/_footer.html')
+  
 </body>
 </html>
