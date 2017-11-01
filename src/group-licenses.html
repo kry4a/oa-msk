@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
+          <label class="input-group__label" for="name">Телефон*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">E-mail</label>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+  </div>
+  @@include('_html/_header.html')
+  <main class="main">
+    <div class="section section--page">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Продукты 1С</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Программные продукты 1С</a></li>
+          <li class="breadcrumbs__item">1C: Бухгалтерия</li>
+        </ul>
+        <div class="page__info page__info--sm">
+          <h1 class="page__title">Совместные отраслевые продукты и лицензии 1С</h1>
+          <p class="page__subtitle">Специальные решения, разработанные на базе продуктов 1С, для быстрой и удобной автоматизации компаний, работающих в определенных сферах. На нашем сайте вы можете купить подобные продукты и для предприятий общепита, салонов красоты, сервисных центров, строительных или транспортных компаний, а также CRM для эффективной работы с любыми клиентами.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section section--white">
+      <div class="container">
+        <h2 class="section__title">1С: CRM Управление торговлей и отношениями с клиентами</h1>
+        <div class="configs row">
+          <div class="col-lg-4">
+            <div class="config config--grey">
+              <div class="config__title">Базовая версия 1С: СRM</div>
+              <div class="config__info">
+                <div class="config__price">50 400 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="config config--grey">
+              <div class="config__title">ПРОФ Ред. 2.0: 5 рабочих мест</div>
+              <div class="config__info">
+                <div class="config__price">50 400 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="config config--grey">
+              <div class="config__title">ПРОФ Ред. 2.0: 10 рабочих мест</div>
+              <div class="config__info">
+                <div class="config__price">41 400 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="section__title">Решения в сфере услуг</h2>
+        <div class="configs row">
+          <div class="col-lg-4">
+            <div class="config config--grey">
+              <div class="config__title">1С: Предприятие 8<br>Общепит</div>
+              <div class="config__info">
+                <div class="config__price">26 400 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="config config--grey">
+              <div class="config__title">1С: Предприятие 8<br>Упр. сервис-центром</div>
+              <div class="config__info">
+                <div class="config__price">26 400 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="config config--grey">
+              <div class="config__title">1С: Предприятие 8<br>Салон красоты (USB)</div>
+              <div class="config__info">
+                <div class="config__price">30 000 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="section__title">Решения в сфере транспорта и строительства</h2>
+        <div class="configs row">
+          <div class="col-lg-4">
+            <div class="config config--grey">
+              <div class="config__title">1С: Подрядчик строительства 4.0 <br>Управление финансами</div>
+              <div class="config__info">
+                <div class="config__price">35 000 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="config config--grey">
+              <div class="config__title">Управление автотранспортом <br> Проф (USB)  </div>
+              <div class="config__info">
+                <div class="config__price">55 100 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="config config--grey">
+              <div class="config__title">1С:Управление автотранспортом <br> Проф.: 5 рабочих мест (USB)</div>
+              <div class="config__info">
+                <div class="config__price">64 300 р.</div>
+                <a href="#" class="config__btn btn btn--orange">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Последние новости по продуктам 1С</h1>
+        <p class="section__text section__text--big">Подпишитесь на рассылку и узнавайте о важных обновлениях программы, акциях и скидках&nbsp; первыми!</p>
+        <form action="#" class="form--news">
+          <div class="form-group row">
+            <div class="col-sm-8 col-lg-9">
+              <input name="lastname" value="" id="input-lastname" class="input" placeholder="Ваш E-mail" type="text">  
+            </div>
+            <div class="col-sm-4 col-lg-3">
+              <a href="#" class="btn btn--tr">Подписаться</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="section section--white">
+      <div class="container">
+        <h1 class="section__title">Лицензии на 1С-Битрикс: Управление сайтом</h1>
+        <div class="licenses">
+          <div class="licenses__item license">
+            <div class="license__title">Старт</div>
+            <div class="license__desc">
+              <div class="license__price">5 400 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+          </div>
+          
+          <div class="licenses__item license">
+            <div class="license__title">Стандарт</div>
+            <div class="license__desc">
+              <div class="license__price">15 900 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+          </div>
+
+          <div class="licenses__item license">
+            <div class="license__title">Малый бизнес</div>
+            <div class="license__desc">
+              <div class="license__price">35 900 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+          </div>
+
+          <div class="licenses__item license">
+            <div class="license__title">Эксперт</div>
+            <div class="license__desc">
+              <div class="license__price">52 900 р.</div>
+              <a href="#" class="license__btn btn btn--orange btn--cart"></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include('_html/_footer.html')
+</body>
+</html>
