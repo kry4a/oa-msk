@@ -616,6 +616,12 @@ hr {
       font-size: 20px;
       margin-bottom: 20px;
     }
+
+    &--center {
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 18px;
+    }
   }
 
   &__readmore {
@@ -740,6 +746,29 @@ hr {
         position: absolute;
         left: 0;
         color:#0b80c3;
+        
+      }
+    } 
+  }
+
+  &--check {
+    .list__item {
+      padding-left: 40px;
+      margin-bottom: 40px;
+      line-height: 20px;
+      &:before {
+        content:'';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color:#0b80c3;
+        width: 20px;
+        height: 20px;
+        background-image: url('../img/check-green.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
         
       }
     } 
@@ -1504,7 +1533,7 @@ hr {
   width: 32%;
   position: relative;
 
-  padding: 45px 30px 30px 30px;
+  padding: 50px 25px 30px 25px;
 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -1596,6 +1625,7 @@ hr {
     line-height: 28px;
     
     text-align: center;    
+    margin-bottom: 0;
   }
 
 
@@ -2708,6 +2738,7 @@ hr {
 
   margin-bottom: 20px;
   
+
   &__preview {
     padding: 40px;
     position: relative;
@@ -2717,6 +2748,8 @@ hr {
       padding: 20px 40px;
     }
   }
+  
+
 
   &__title {
     font-weight: 700;
@@ -2731,7 +2764,9 @@ hr {
   &__opener {
     position: absolute;
     right: 40px;
-    top: 50px;
+    top: 0;
+    bottom: 0;
+    margin:auto;
 
     width: 32px;
     height: 32px;
@@ -2754,20 +2789,37 @@ hr {
 
     }
   }
+  
+  &--white {
+    background-color: #ffffff;
+    color: #2d3e50;
+    
+    .accordeon__preview {
+      padding-right: 40px;
+      padding-left: 100px;  
+    }
+
+    .accordeon__opener {
+      right: auto;
+      left: 40px;
+    }
+    
+  }
 
   &__body {
     visibility: hidden;
     opacity: 0;
     max-height: 0;
     height: auto;
-  
+    overflow: hidden;
+
     background-color: #ffffff;
     padding: 0 40px ;
     
     transition: all 0.25s ease-out;
   }
   
-  &__type {
+  &__type, &__link {
     text-align: center;
     width: 100px;
     height: 40px;
@@ -2792,6 +2844,16 @@ hr {
       position: relative;
       width: 100%;
       right: 0;
+    }
+  }
+
+  &__link {
+    width: 200px;
+    background-color:#FF7959;
+
+    @media @mobiles {
+      margin-bottom: 0;
+      margin-top: 15px;
     }
   }
   &--active {
@@ -3200,4 +3262,112 @@ hr {
   &:nth-child(9) { .step__number {background-color: #01b2ae;}}
   &:nth-child(10) { .step__number {background-color: #13b89f;}}
   &:nth-child(11) { .step__number {background-color: #13b89f;}}
+}
+
+
+.requisites {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  padding: 70px 60px;
+
+  @media @mobiles {
+    padding: 30px;
+  }
+}
+
+.param {
+  color: #2d3e50;
+  font-size: 16px;
+  line-height: 28px;  
+  margin-bottom: 5px;
+  
+  &__title, &__value {
+    float: left;
+    @media @mobiles {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  &__title {
+    font-weight: 700;
+    width: 30%;
+  }
+
+  &__value {
+    font-weight: 400;
+    width: 70%;
+  }
+  
+
+
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+  @media @mobiles {
+    margin-bottom: 20px;
+  }
+}
+
+.address {
+  &__map {
+    width: 100%;
+    min-height: 345px;
+  }
+  &__block {
+    position: relative;
+    padding-left: 130px;
+    margin-bottom: 25px;
+    
+
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    @media @mobiles {
+        padding-left: 90px;
+        line-height: 25px;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: 0;
+      top: 0;
+      border-radius: 8px;
+      background-color: #f2f5f8;
+      
+      @media @mobiles {
+        height: 75px;
+        width: 75px;
+      }
+    }
+
+
+
+
+  }
+
+  
+  &__text, &__title {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  @media @not-desktop {
+    margin-bottom: 30px;
+  }
+
+  
 }

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
+          <label class="input-group__label" for="name">Телефон*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">E-mail</label>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+  </div>
+  @@include('_html/_header.html')
+  <main class="main">
+    <div class="section section--green section--page-sm">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <ul class="breadcrumbs breadcrumbs--white">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item">О компании</li>
+        </ul>
+        
+        <div class="page__info">
+          <h1 class="page__title">7 лет опыта и десятки <br>сложных проектов</h1>
+        </div>
+        <p class="section__text">Мы оказывает услуги сложной автоматизации бизнес-процессов. Наши клиенты — предприятия крупного и среднего бизнеса, холдинги и группы компаний, предприятия с филиальной сетью и обособленными подразделениями, представительства иностранных компаний. Наше преимущество — системные знания и глубокая специализация в области разработки продуктов 1С.</p>
+        <div class="advantages">
+          <div class="advantage">
+            <p class="advantage__title">95%</p>
+            <p class="advantage__text">95% наших клиентов рекомендует нас друзьям и партнерам</p>
+          </div>
+          <div class="advantage">
+            <p class="advantage__title">36</p>
+            <p class="advantage__text">36 сертификатов «1С Специалист» и «1С Профессионал»</p>
+          </div>
+          <div class="advantage">
+            <p class="advantage__title">7 лет</p>
+            <p class="advantage__text">Официальный партнер компании 1С с 2011 года</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h1 class="section__title">Наши компетенции </h1>
+        <ul class="list list--check">
+          <li class="list__item">Разработки, настройка, внедрение и сопровождение информационных систем на базе продуктов фирмы 1С</li>
+          <li class="list__item">Автоматизация бухгалтерского, налогового и управленческого учета</li>
+          <li class="list__item">Бюджетирование, консолидация</li>
+          <li class="list__item">Планирование производства, продаж, управление закупками.</li>
+          <li class="list__item">Опыт работы в разных конфигурациях, включая 1С:УПП, 1С:ERP, 1С:Консолидация, 1С:Документооборот и других</li>
+          <li class="list__item">Сложные внедрения и разработки в крупных коммерческих структурах</li>
+          <li class="list__item">Реализация мультиязычных интерфейсов</li>
+          <li class="list__item">Разработка мобильных приложений для систем контроля качества</li>  
+        </ul>
+        
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="container">
+        <p class="section__text section__text--center"><b>Высокое качество</b> работы и удовлетворенность клиентов — <b>наше кредо</b> и профессиональная гордость</p>
+      </div>
+    </div>
+    <div class="section section--white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="address">
+              <div class="address__block">
+                <p class="address__title">Адрес:</p>
+                <p class="address__text">г. Москва, ул. Орджоникидзе, д. 11</p>
+                <p class="address__text">м. Ленинский проспект</p>
+              </div>
+              <div class="address__block">
+                <p class="address__title">Телефон, e-mail:</p>
+                <p class="address__text">+7 (495) 268-07-49</p>
+                <p class="address__text"><a href="mail-to:1c@oa-msk.ru" class="link">1c@oa-msk.ru</a></p>
+              </div>
+              <div class="address__block">
+                <p class="address__title">Режим работы:</p>
+                <p class="address__text">Пн. – Пт.: с 10:00 до 18:00</p>
+                <p class="address__text">Сб. - Вс.: выходные</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-7">
+            <div id="map" class="address__map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="requisites">
+          <h1 class="section__title">Наши реквизиты</h1>
+          <div class="param">
+            <div class="param__title">Полное наименование:</div>
+            <div class="param__value">Общество с ограниченной ответственностью «Оптимальные алгоритмы»</div>
+          </div>
+          <div class="param">
+            <div class="param__title">ОГРН:</div>
+            <div class="param__value">5107746041300</div>
+          </div>
+          <div class="param">
+            <div class="param__title">ИНН/КПП:</div>
+            <div class="param__value">7728758949/772501001</div>
+          </div>
+          <div class="param">
+            <div class="param__title">Юридический адрес:</div>
+            <div class="param__value">115419, Москва г, Орджоникидзе ул, дом № 11, строение 1А, этаж 4, помещение V, комнаты 7,7Б,7В</div>
+          </div>
+          <div class="param">
+            <div class="param__title">Фактический адрес:</div>
+            <div class="param__value">115419, Москва г, Орджоникидзе ул, дом № 11, строение 1А, этаж 4, помещение V, комнаты 7,7Б,7В</div>
+          </div>
+          <div class="param">
+            <div class="param__title">Почтовый адрес:</div>
+            <div class="param__value">Орджоникидзе ул, дом № 11, Москва г., Россия, 115419</div>
+          </div>
+          <div class="param">
+            <div class="param__title">БИК:</div>
+            <div class="param__value">044525503</div>
+          </div>
+          <div class="param">
+            <div class="param__title">Р/С:</div>
+            <div class="param__value">№40702810200200000109 в АО «СМП БАНК»</div>
+          </div>
+          <div class="param">
+            <div class="param__title">Кор/c:</div>
+            <div class="param__value">30101810545250000503</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section--white">
+      <div class="container">
+        <h1 class="section__title">Сравнение версий</h1>
+        <div class="table">
+          <div class="table__head">
+            <div class="table__row table__row--head">
+              <div class="row__title row__title--50">
+                <div class="table__cell">Тип сертификата</div>
+              </div>
+              <div class="row__body row__body--50">
+                <div class="table__cell table__cell--50 hidden-xs">Кол-во 1С: Профессионал</div>
+                <div class="table__cell table__cell--50 hidden-xs">Кол-во 1С: Специалист</div>
+              </div>
+            </div>  
+          </div>
+          <div class="table__body">
+            <div class="table__row">
+              <div class="row__title row__title--50">
+                <div class="table__cell table__cell--50">Платформа 1С:Предприятие 8</div>
+              </div>
+              <div class="row__body row__body--50">
+                <div class="table__cell table__cell--50"><span class="table__span table__span--text">Профессионал</span> 6</div>
+                <div class="table__cell table__cell--50"><span class="table__span table__span--text">Специалист</span> 4</div>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="row__title row__title--50">
+                <div class="table__cell table__cell--50">1С:Бухгалтерия 8</div>
+              </div>
+              <div class="row__body row__body--50">
+                <div class="table__cell table__cell--50"><span class="table__span table__span--text">Профессионал</span> 4</div>
+                <div class="table__cell table__cell--50"><span class="table__span table__span--text">Специалист</span> 2</div>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="row__title row__title--50">
+                <div class="table__cell table__cell--50">1С:Зарплата и управление персоналом 8</div>
+              </div>
+              <div class="row__body row__body--50">
+                <div class="table__cell table__cell--50"><span class="table__span table__span--text">Профессионал</span> 1</div>
+                <div class="table__cell table__cell--50"></div>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="row__title row__title--50">
+                <div class="table__cell table__cell--50">1С:Управление торговлей 8</div>
+              </div>
+              <div class="row__body row__body--50">
+                <div class="table__cell table__cell--50"><span class="table__span table__span--text">Профессионал</span> 4</div>
+                <div class="table__cell table__cell--50"><span class="table__span table__span--text">Специалист</span> 2</div>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="row__title row__title--50">
+                <div class="table__cell table__cell--50">1С:Управление производственным предприятием 8</div>
+              </div>
+              <div class="row__body row__body--50">
+                <div class="table__cell table__cell--50"><span class="table__span table__span--text">Профессионал</span> 2</div>
+                <div class="table__cell table__cell--50"></div>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="row__title row__title--50">
+                <div class="table__cell table__cell--50">1С:УПП 8 (подсистема «Бюджетирование»)</div>
+              </div>
+              <div class="row__body row__body--50">
+                <div class="table__cell table__cell--50"><span class="table__span table__span--text">Профессионал</span> 1</div>
+                <div class="table__cell table__cell--50"></div>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="row__title row__title--50">
+                <div class="table__cell table__cell--50">1С-Логистика:Управление складом</div>
+              </div>
+              <div class="row__body row__body--50">
+                <div class="table__cell table__cell--50"></div>
+                <div class="table__cell table__cell--50"><span class="table__span table__span--text">Специалист</span> 2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="container">
+        <h1 class="section__title">Вакансии</h1>
+        <div class="accordeon accordeon--white">
+          <div class="accordeon__preview">
+            <p class="accordeon__title">Программист-консультант 1С</p>
+            <a href="#" class="btn btn--orange accordeon__link">Откликнуться</a>
+            <div class="accordeon__opener"></div>
+          </div>
+          <div class="accordeon__body">
+            <div class="param">
+              <div class="param__title">Задачи:</div>
+              <div class="param__value">
+                <ul class="list list--dash">
+                  <li class="list__item">Программирование прикладных продуктов в среде "1С:Предприятие";</li>
+                  <li class="list__item">Решение проблем, возникающих в ходе работы программы;</li>
+                  <li class="list__item">Внедрение типовых и настроенных конфигураций "1С";</li>
+                  <li class="list__item">Создание новых форм документов, отчетов, обработок;</li>
+                  <li class="list__item">Консультирование и обучение пользователей работе с ПП.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="param">
+              <div class="param__title">Требования:</div>
+              <div class="param__value">
+                <ul class="list list--dash">
+                  <li class="list__item">Высшее/неполное высшее техническое образование;</li>
+                  <li class="list__item">Навыки программирования;</li>
+                  <li class="list__item">Знание возможностей типовых конфигураций 1С приветствуется;</li>
+                  <li class="list__item">Приветствуется знание бухгалтерского и финансового учета ;</li>
+                  <li class="list__item">Ответственность, нацеленность на результат;</li>
+                  <li class="list__item">Обучаемость;</li>
+                  <li class="list__item">Опыт работы не обязателен.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="param">
+              <div class="param__title">Условия:</div>
+              <div class="param__value">
+                <ul class="list list--dash">
+                  <li class="list__item">Работа на территории работодателя, полный рабочий день;</li>
+                  <li class="list__item">Оформление по ТК РФ;</li>
+                  <li class="list__item">Возможность профессионального и карьерного роста;</li>
+                  <li class="list__item">Возможность получения сертификатов;</li>
+                  <li class="list__item">Зарплата от 30 000 Р.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordeon accordeon--white">
+          <div class="accordeon__preview">
+            <p class="accordeon__title">Программист-консультант 1С</p>
+            <a href="#" class="btn btn--orange accordeon__link">Откликнуться</a>
+            <div class="accordeon__opener"></div>
+          </div>
+          <div class="accordeon__body">
+            <div class="param">
+              <div class="param__title">Задачи:</div>
+              <div class="param__value">
+                <ul class="list list--dash">
+                  <li class="list__item">Программирование прикладных продуктов в среде "1С:Предприятие";</li>
+                  <li class="list__item">Решение проблем, возникающих в ходе работы программы;</li>
+                  <li class="list__item">Внедрение типовых и настроенных конфигураций "1С";</li>
+                  <li class="list__item">Создание новых форм документов, отчетов, обработок;</li>
+                  <li class="list__item">Консультирование и обучение пользователей работе с ПП.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="param">
+              <div class="param__title">Требования:</div>
+              <div class="param__value">
+                <ul class="list list--dash">
+                  <li class="list__item">Высшее/неполное высшее техническое образование;</li>
+                  <li class="list__item">Навыки программирования;</li>
+                  <li class="list__item">Знание возможностей типовых конфигураций 1С приветствуется;</li>
+                  <li class="list__item">Приветствуется знание бухгалтерского и финансового учета ;</li>
+                  <li class="list__item">Ответственность, нацеленность на результат;</li>
+                  <li class="list__item">Обучаемость;</li>
+                  <li class="list__item">Опыт работы не обязателен.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="param">
+              <div class="param__title">Условия:</div>
+              <div class="param__value">
+                <ul class="list list--dash">
+                  <li class="list__item">Работа на территории работодателя, полный рабочий день;</li>
+                  <li class="list__item">Оформление по ТК РФ;</li>
+                  <li class="list__item">Возможность профессионального и карьерного роста;</li>
+                  <li class="list__item">Возможность получения сертификатов;</li>
+                  <li class="list__item">Зарплата от 30 000 Р.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  @@include('_html/_footer.html')
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript">
+      ymaps.ready(init);
+      var myMap, 
+          myPlacemark;
+
+      function init(){ 
+          myMap = new ymaps.Map("map", {
+              center: [55.708262, 37.594692],
+              zoom: 13
+          }); 
+          
+          myPlacemark = new ymaps.Placemark([55.708262, 37.594692], {
+              hintContent: 'Москва!',
+              balloonContent: 'Столица России'
+          });
+          
+          myMap.geoObjects.add(myPlacemark);
+      }
+  </script>
+</body>
+</html>
