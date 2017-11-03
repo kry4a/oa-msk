@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
+          <label class="input-group__label" for="name">Телефон*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">E-mail</label>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+  </div>
+  @@include('_html/_header.html')
+  <main class="main">
+    <div class="section section--green section--page-sm">
+      <div class="container">
+        <ul class="breadcrumbs breadcrumbs--white">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Сопровождение 1С</a></li>
+          <li class="breadcrumbs__item">Обновление и настройка 1С</li>
+        </ul>
+        
+        <div class="page__info page__info--promo">
+          <h1 class="page__title">Обновление и настройка 1С</h1>
+          <p class="page__subtitle">Поддерживайте актуальную версию программ 1С, чтобы ваши сотрудники всегда могли пользоваться самими новыми возможностями, а ваш учет соответствовал требованиям законодательства</p>
+          <a href="#" class="btn btn--orange btn--inline">Заказать подключение</a>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h1 class="section__title">Задачи по обновлению и настройке</h1>
+        <div class="keys">
+          <div class="keys__item">
+            <div class="keys__desc">
+              <p class="keys__title">Регулярное обновление программ 1С</p>
+              <p class="keys__text">Заключите договор об постоянном абонентском обслуживании (ИТС) и получайте обновленные версии программ сразу после их выхода</p>
+            </div>
+            <a href="#" class="btn btn--orange keys__btn">Заказать</a>
+          </div>
+          <div class="keys__item">
+            <div class="keys__desc">
+              <p class="keys__title">Обновление типовой конфигурации 1С</p>
+              <p class="keys__text">Обновление платформы и типовых конфигураций 1С. Актуально, если вы работаете с базовыми версиями программ, без договора ИТС</p>
+            </div>
+            <a href="#" class="btn btn--orange keys__btn">Заказать</a>
+          </div>
+          <div class="keys__item">
+            <div class="keys__desc">
+              <p class="keys__title">Настройка сканеров штрих-кода для работы в 1С</p>
+              <p class="keys__text">Автоматизируйте учет товара, интегрировав 1С со сканерами штрих-кодов, пожалуй, самым популярным методом идентификации товара</p>
+            </div>
+            <a href="#" class="btn btn--orange keys__btn">Заказать</a>
+          </div>
+          <div class="keys__item">
+            <div class="keys__desc">
+              <p class="keys__title">Обновление доработанной конфигурации 1С</p>
+              <p class="keys__text">Бережное и ответственное обновление модернизированных конфигураций 1С с вниманием ко всем деталям</p>
+            </div>
+            <a href="#" class="btn btn--orange keys__btn">Заказать</a>
+          </div>
+          <div class="keys__item">
+            <div class="keys__desc">
+              <p class="keys__title">Удаленное обновление 1С</p>
+              <p class="keys__text">Выгодный способ обновить конфигураций 1С в самый короткий срок, через интернет, без необходимости выезда специалиста</p>
+            </div>
+            <a href="#" class="btn btn--orange keys__btn">Заказать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Почему важно обновлять продукты 1С?</h1>
+        <div class="tiles tiles--row">
+          <div class="tiles__row">
+            <div class="tiles__item tile">
+              <p class="tile__text tile__text--center">Максимально эффективное <b>использование</b> всех <b>возможностей</b></p>
+            </div>  
+            <div class="tiles__item tile">
+              <p class="tile__text tile__text--center">Гарантия корректной работы, <b>безопасность сохранности</b> всех ваших данных.</p>
+            </div>
+            <div class="tiles__item tile">
+              <p class="tile__text tile__text--center">Полное <b>соответствие</b> отчетности актуальным <b>требованиям законодательства</b></p>
+            </div>
+            <div class="tiles__item tile">
+              <p class="tile__text tile__text--center"><b>Исправление</b> технических <b>ошибок</b>, найденных в предыдущих версиях</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h1 class="section__title">Последние новости по продуктам 1С</h1>
+        <p class="section__text section__text--big">Подпишитесь на рассылку и узнавайте о важных обновлениях программы, акциях и скидках  первыми!</p>
+        <form action="#" class="form--news">
+          <div class="form-group row">
+            <div class="col-sm-8 col-lg-9">
+              <input name="lastname" value="" id="input-lastname" class="input" type="text" placeholder="Ваш E-mail">  
+            </div>
+            <div class="col-sm-4 col-lg-3">
+              <a href="#" class="btn btn--green">Подписаться</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  @@include('_html/_footer.html')
+</body>
+</html>
