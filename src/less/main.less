@@ -826,7 +826,47 @@ hr {
       overflow-y:scroll;
     }
   }
+  
+  &--colored {
+    .table__head {
+      .table__row {
+        .table__cell {
+          text-align: center;
+          color:#FFFFFF;
+          font-weight: 700;
+        }
+        .table__cell:nth-child(1) {
+          background-color: #02b3af;
+        }
+        .table__cell:nth-child(2) {
+          background-color: #02a9b7;
+        }
+        .table__cell:nth-child(3) {
+          background-color: #ff7959;
+        }
+      }
+    }
+    
+    .table__row:nth-child(2n) {
+      .table__cell:nth-child(1) {
+        background-color: #beedec;
+      }
+      .table__cell:nth-child(2) {
+        background-color: #c4edf1;
+      }
+      .table__cell:nth-child(3) {
+        background-color: #fff6f4;
+      }
+    }
 
+    @media @mobiles {
+      .table__cell {
+        margin-bottom: 0 !important;
+        padding: 15px 25px !important;
+      }
+    }
+
+  }
   &__footer {
     .table__row {
       background-color: #ffffff !important;
@@ -857,7 +897,10 @@ hr {
   }
   
   &__cell {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     
     font-size: 16px;
     vertical-align: middle;
@@ -866,10 +909,9 @@ hr {
     &--bold {
       font-weight: 500;
     }
-
-    @media @mobiles {
-      width: 100%;
-    }
+    
+    width: 100%;
+    
   }
 
   &__row {
@@ -959,9 +1001,11 @@ hr {
 
       @media @mobiles {
         font-size: 16px;
-        font-weight: 400;
-        margin-right: 5px;
+        font-weight: 500;
+        margin-right: 15px;
         padding-right: 10px;
+        min-width: 90px;
+
       }
       position: relative;
       &:after {
@@ -1019,6 +1063,7 @@ hr {
 
   &__body {
     width: 40%;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1037,16 +1082,19 @@ hr {
     &--50 {
       width: 50%;
     }
+    
+    &--100 {
+      width: 100%;
 
+    }
     @media @mobiles {
       display: block;
-      margin-top: -5px;
       margin-bottom: 15px;
     }
     .table__cell {
       text-align: center;
       width: 33.3333%;
-      
+      height: 100%;
       @media @mobiles {
         text-align: left;
         width: 100%;
@@ -1074,20 +1122,21 @@ hr {
       max-height: 0;
       transition: max-height 0.25s ease-out;
       overflow: hidden;
+
+      &.active {
+        max-height: 500px;
+        transition: max-height 0.35s ease-in;
+      }
     }
 
-    &.active {
-      max-height: 500px;
-      transition: max-height 0.35s ease-in;
-    }
+    
   }
 
 
 
 
   &__title, &__body {
-    display: inline-block;
-
+    
     @media @mobiles {
       display: block;
       width: 100%;
@@ -1146,6 +1195,7 @@ hr {
   &--inline {
     display: inline-block;
     width: auto;
+    margin-right: 15px;
   }
 
   &--tr {
@@ -1159,6 +1209,9 @@ hr {
   
   &--200 {
     width: 200px;
+    @media @mobiles {
+      width: auto;
+    }
   }
 
   &--280 {
@@ -2908,18 +2961,18 @@ hr {
     border-radius: 10px;
     background-color: #ffffff;
 
-    padding: 30px 15px 30px 105px;
+    padding: 30px 15px 30px 115px;
     
     margin-right: 20px;
     float: left;
     
     &--single {
-      line-height: 40px;
+      line-height: 22px;
     }
     &:before {
       content: '';
       position: absolute;
-      left: 10px;
+      left: 20px;
       top: 10px;
 
       width: 77px;
@@ -2973,6 +3026,48 @@ hr {
     &--checklist {
       &:before {
         background-image: url('../img/its-cources.png');
+      }
+    }
+    
+    &--keys-1 {
+      &:before {
+        background-image: url('../img/keys-1.png');
+      }
+    }
+    
+    &--keys-2 {
+      &:before {
+        background-image: url('../img/keys-2.png');
+      }
+    }
+    &--keys-3 {
+      &:before {
+        background-image: url('../img/keys-3.png');
+      }
+    }
+    &--keys-4 {
+      &:before {
+        background-image: url('../img/keys-4.png');
+      }
+    }
+    &--keys-5 {
+      &:before {
+        background-image: url('../img/keys-5.png');
+      }
+    }
+    &--keys-6 {
+      &:before {
+        background-image: url('../img/keys-6.png');
+      }
+    }
+    &--keys-7 {
+      &:before {
+        background-image: url('../img/keys-7.png');
+      }
+    }
+    &--keys-8 {
+      &:before {
+        background-image: url('../img/keys-8.png');
       }
     }
     
@@ -3106,6 +3201,7 @@ hr {
   justify-content: center;
   
   
+
   &__text {
     margin: 0;
     span {
@@ -3117,6 +3213,23 @@ hr {
     }
   }
   
+  &--big {
+    padding: 40px;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .tile__text {
+      margin-bottom: 30px;
+    }
+
+    @media @mobiles {
+      margin-right: 0;
+      padding: 20px;
+    }
+  }
+
   transition: background-color 0.3s ease;
   cursor: pointer;
   &--green {
@@ -3127,6 +3240,22 @@ hr {
     &:hover {
       background-color:lighten(#01bea5,3%);
     }
+  }
+
+  &__title {
+    color: #2d3e50;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+
+    @media @mobiles {
+      font-size: 21px;
+      line-height: 30px;
+    }
+  }
+
+  &__link {
+    
   }
 }
 
