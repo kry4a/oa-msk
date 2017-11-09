@@ -1694,6 +1694,16 @@ hr {
     margin-bottom: 0;
   }
 
+  &--white {
+    background-color: #ffffff;
+    box-shadow: none;
+
+    .advantage__title {
+      box-shadow: none;
+      border: 1px solid #2d3e50;
+      color: #2d3e50;
+    }
+  }
 
   @media @mobiles {
     width: 100%;
@@ -2643,6 +2653,25 @@ hr {
       }
     }
 
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  
+  &__desc {
+    width: 70%;
+  }
+
+  &__img {
+    width: 30%;
+    margin-top: 35px;
+  }
+
+  &__desc, &__img {
+    float: left;
   }
   &::after {
     display: block;
