@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
+          <label class="input-group__label" for="name">Телефон*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">E-mail</label>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+  </div>
+  @@include('_html/_header.html')
+  <main class="main">
+    <div class="section section--page">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Продукты 1С</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Программные продукты 1С</a></li>
+          <li class="breadcrumbs__item">1C: Комплексная автоматизация</li>
+        </ul>
+        
+        <div class="row">
+          <div class="page__info page__info--promo">
+            <h1 class="page__title">Автоматизация налогового учета</h1>
+            <p class="page__subtitle">Автоматизируйте весь процесс работы с налогами от подачи деклараций и своевременной оплаты до учета всех расходов и контроля измений в законодательстве </p>
+            <a href="#" class="btn btn--orange btn--inline">Получить консультацию по автоматизации</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section--white">
+      <div class="container">
+        <h1 class="section__title">3 шага для эффективной автоматизации</h1>
+        <div class="keys">
+          <div class="keys__item keys__item--gray">
+            <div class="keys__desc">
+              <p class="keys__text">Приобретите и установите специализированные программы для автоматизации работы: 1С Бухгалтерия и 1С: ERP.</p>
+            </div>
+          </div>
+          <div class="keys__item keys__item--gray">
+            <div class="keys__desc">
+              <p class="keys__text">Доработайте типовые решения под индивидуальные потребности именно вашей компании. Включите 1С в IT-систему бизнеса. </p>
+            </div>
+          </div>
+          <div class="keys__item keys__item--gray">
+            <div class="keys__desc">
+              <p class="keys__text">Обучите сотрудников и внедрите автоматизацию в рабочие бизнес-процессы. Составьте план развития систем, заключите договор профессионального сопровождения</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Основные возможности автоматизации</h1>
+        <p class="section__text">Лучшее решения для автоматизации налогового учета — использованы наиболее популярных в Росии программ 1С: Бухгалтерия и 1С: ERP. А с помощью доработок вы сможете превратить их в мощнейший инстурмент для бухгалтеров компании.</p>
+        <div class="row" style="margin: 0;">
+          <ul class="capabilities">
+            <li class="capabilities__item capabilities__item--file-3">Учет документации</li>
+            <li class="capabilities__item capabilities__item--file-4">Учет основных средств и нематериальных активов</li>
+            <li class="capabilities__item capabilities__item--budget-2">Учет косвенных расходов</li>
+            <li class="capabilities__item capabilities__item--bank">Учет банковских и кассовых операций</li>
+            <li class="capabilities__item capabilities__item--broker">Учет комиссионной торговли и агентских договоров</li>
+            <li class="capabilities__item capabilities__item--factory-stock-house">Складской учет</li>
+            <li class="capabilities__item capabilities__item--graphic">Учет доходов и расходов ИП – плательщиков НДФЛ</li>
+            <li class="capabilities__item capabilities__item--tag">Учет затрат и расчет себестоимости продукции</li>
+            <li class="capabilities__item capabilities__item--abacus-2">Регламентированный учет, мониторинг и анализ</li>
+          </ul>
+          <ul class="capabilities">
+            <li class="capabilities__item capabilities__item--stock">Учет материально-производственных запасов</li>
+            <li class="capabilities__item capabilities__item--wallet">Учет зарплаты, кадровый учет</li>
+            <li class="capabilities__item capabilities__item--package-for-delivery">Учет полуфабрикатов и операций с тарой</li>
+            <li class="capabilities__item capabilities__item--handshake">Учет расчетов с контрагентами</li>
+            <li class="capabilities__item capabilities__item--icon">Учет основного и вспомогательного производства</li>
+            <li class="capabilities__item capabilities__item--shopping-cart">Учет торговых операций</li>
+            <li class="capabilities__item capabilities__item--percentage-2">Учет деятельности, облагаемой ЕНВД или УСН</li>
+            <li class="capabilities__item capabilities__item--presentation-2">Управление продажами</li>
+            <li class="capabilities__item capabilities__item--presentation">Организация режима отдельного счета гос. контракта</li>
+          </ul>
+        </div>
+        <form action="#" class="form form--white">
+          <div class="form-group row">
+            <div class="col-md-6">
+              <p class="form__text">Есть вопрос по функциям и возможностям программы? Наши специалисты с радостью помогут!</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <input name="lastname" value="" id="input-lastname" class="input input--grey im--phone" type="text" placeholder="Ваш телефон">  
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <a href="#" class="btn btn--green">Заказать заонок</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="tariff">
+          
+          <div class="tariff__desc">
+            <h1 class="section__title">Почему нам можно доверить автоматизацию вашей компании?</h1>
+            <p class="tariff__text">Все наши сотрудники имеют качественное высшее образование, полученное в ведущих ВУЗах России – МГУ им. М. В. Ломоносова, НИУ БелГУ, САФУ, СКФУ, СПбГГИ и других. Ключевые специалисты получили от 10 до 15 квалификационных сертификатов фирмы 1С по программным продуктам и направлениям. Средний опыт работы специалистов — от 5 до 8 лет.</p>
+          </div>
+          
+          <div class="tariff__img">
+            <img src="./img/company.png" alt="" class="img--responsive">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section--white">
+      <div class="container">
+        <h1 class="section__title">Почему именно мы?</h1>
+        <div class="advantages">
+          <div class="advantage advantage--white">
+            <p class="advantage__title">95%</p>
+            <p class="advantage__text">95% наших клиентов рекомендует нас друзьям и партнерам</p>
+          </div>
+          <div class="advantage advantage--white">
+            <p class="advantage__title">36</p>
+            <p class="advantage__text">36 сертификатов «1С Специалист» и «1С Профессионал»</p>
+          </div>
+          <div class="advantage advantage--white">
+            <p class="advantage__title">7 лет</p>
+            <p class="advantage__text">Официальный партнер компании 1С с 2011 года</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Последние новости по продуктам 1С</h1>
+        <p class="section__text section__text--big">Подпишитесь на рассылку и узнавайте о важных обновлениях программы, акциях и скидках  первыми!</p>
+        <form action="#" class="form--news">
+          <div class="form-group row">
+            <div class="col-sm-8 col-lg-9">
+              <input name="lastname" value="" id="input-lastname" class="input" type="text" placeholder="Ваш E-mail">  
+            </div>
+            <div class="col-sm-4 col-lg-3">
+              <a href="#" class="btn btn--tr">Подписаться</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  @@include('_html/_footer.html')
+</body>
+</html>
