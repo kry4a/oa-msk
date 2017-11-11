@@ -15,7 +15,6 @@ $(function (){
   $('.nav__item--parent').click(function(e){
     console.log('clicked');
     $(this).toggleClass('nav__item--active');
-    return false;
   });
 
   $('.link--readmore').click(function(e){
