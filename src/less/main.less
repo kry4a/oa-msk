@@ -21,6 +21,16 @@ hr {
 }
 
 .row {
+
+  @media @desktop-xl {
+    &--main {
+      background-image: url('../img/main.png');
+      background-position: right center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
   @media @mobile-xs {
     display: block;
   }
@@ -601,6 +611,15 @@ hr {
       margin-bottom: 15px;
     }
   }
+  
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
 
   &__text {
     font-size:16px;
@@ -679,7 +698,8 @@ hr {
   &__image {
     
     text-align: right;
-  
+    overflow: hidden;
+
     @media @not-desktop {
       display: none;
     }
@@ -1702,6 +1722,21 @@ hr {
       box-shadow: none;
       border: 1px solid #2d3e50;
       color: #2d3e50;
+    }
+  }
+
+  &--tr {
+    background-color: transparent;
+    box-shadow: none;
+
+    .advantage__title {
+      box-shadow: none;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      background-color: transparent;
+    }
+    .advantage__text {
+      color:#ffffff;
     }
   }
 
@@ -3637,4 +3672,239 @@ hr {
   }
 
   
+}
+
+
+
+.infoblocks {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  
+  margin-bottom: 40px;
+
+  &__item {
+    
+    width: 49%;
+    
+    @media @mobiles {
+    
+      width: 100% !important;
+    }
+  }
+
+  &--bordered {
+    .infoblocks__item {
+      width: 32%;
+    }
+  }
+}
+
+.infoblock {
+  font-size: 16px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  
+  overflow: hidden;
+  @media @mobiles {
+    display: block;
+  }
+
+  &--bordered {
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+    color: #2d3e50;
+    .infoblock__text {
+      margin-bottom: 0;
+      line-height: 22px;
+    }
+    .infoblock__desc {
+      width:77%;
+
+    }
+    .infoblock__img {
+      width:33%;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background-color: #737373;
+      color:#ffffff;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+
+     
+    }
+     &:nth-child(1):before {
+      content:'1';
+    }
+    &:nth-child(2):before {
+      content:'2';
+    }
+    &:nth-child(3):before {
+      content:'3';
+    }
+
+  }
+  &__title {
+    
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+
+  &__desc, &__img {
+    width: 49%;
+    position: relative;
+    @media @mobiles { 
+      width: 100% !important;
+    }
+  }
+
+  &__desc {
+    @media @mobiles {
+      margin-bottom: 15px;
+    }
+  }
+  
+  &__img {
+    text-align: right;
+    @media @mobiles { 
+     text-align: center;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+    @media @mobiles { 
+      position: relative;
+
+    }
+  }
+}
+
+
+.unslider {
+  margin: -15px;
+}
+.unslider-arrow {
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  height: 50px;
+  width: 50px;
+
+  font-size: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  @media @mobiles {
+    width: 30px;
+    height: 30px;
+  }
+  &.next {
+    background-image: url('../img/right-arrow.png');
+    right: 0;
+    @media @mobiles {
+      right: 5px;
+    }
+  }
+
+  &.prev {
+    background-image: url('../img/left-arrow.png');
+    left: 0;
+    @media @mobiles {
+      left: 5px;
+    }
+  }
+}
+
+.review {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  
+  margin:50px;
+
+  display: flex;
+
+  @media @mobiles {
+    display: block;
+  }
+  
+  &__company {
+    width: 35%;
+    padding:25px;
+    
+    @media @mobiles {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+
+  &__desc {
+    width: 65%;
+    box-shadow: -1px 0 0 rgba(0, 0, 0, 0.1);
+    padding: 40px 25px 40px 40px;
+
+    @media @mobiles {
+      width: 100%;
+      box-shadow: none;
+      padding: 15px;
+    }
+    
+  }
+  
+  &__text {
+    line-height: 26px;
+  }
+
+  &__manager {
+    text-align: right;
+    font-style: italic;
+  }
+
+}
+
+.company {
+  line-height: 26px;
+  &__img, &__info {
+    margin-bottom: 30px;
+    @media @mobiles {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__title,&__text {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
 }

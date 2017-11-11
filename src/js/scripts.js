@@ -82,24 +82,29 @@ $(function (){
     
   });
   
-  baron({
-      root: '.baron',
-      scroller: '.baron__scroller',
-      bar: '.baron__bar',
-      scrollingCls: '_scrolling',
-      draggingCls: '_dragging'
-  }).fix({
-      elements: '.header__title',
-      outside: 'header__title_state_fixed',
-      before: 'header__title_position_top',
-      after: 'header__title_position_bottom',
-      clickable: true
-  }).controls({
-      // Element to be used as interactive track. Note: it could be different from 'track' param of baron.
-      track: '.baron__track',
-      forward: '.baron__down',
-      backward: '.baron__up'
-  });
+
+  $('.slider').unslider();
+
+  if ($('.baron').length) {
+    baron({
+        root: '.baron',
+        scroller: '.baron__scroller',
+        bar: '.baron__bar',
+        scrollingCls: '_scrolling',
+        draggingCls: '_dragging'
+    }).fix({
+        elements: '.header__title',
+        outside: 'header__title_state_fixed',
+        before: 'header__title_position_top',
+        after: 'header__title_position_bottom',
+        clickable: true
+    }).controls({
+        // Element to be used as interactive track. Note: it could be different from 'track' param of baron.
+        track: '.baron__track',
+        forward: '.baron__down',
+        backward: '.baron__up'
+    });
+  }
   
   var parallax_1 = document.querySelectorAll(".parallax--1"),
       parallax_2 = document.querySelectorAll(".parallax--2"),
