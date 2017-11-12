@@ -68,16 +68,17 @@ hr {
 
     
     &--logo {
-      padding-left: 55px;
-      width: 25%;
-      max-width: 270px;
+      padding-left: 90px;
+      width: 30%;
+      max-width: 305px;
 
       &:before {
         content: '';
         position: absolute;
         left: 0;
-        width: 40px;
-        height: 40px;
+        top: 5px;
+        width: 70px;
+        height: 30px;
         background-image: url('../img/logo.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -210,11 +211,13 @@ hr {
     
     line-height: 22px !important;
     
+
     &:before {
       content: '';
       position: absolute;
-      left: 20px;
-      width: 22px;
+      left: 0;
+      top:1px;
+      width: 45px;
       height: 20px;
       background-image: url('../img/logo.png');
       background-repeat: no-repeat;
@@ -420,30 +423,38 @@ hr {
   &__block {
     margin-bottom: 15px;
 
-    &::last-child {
+    &:last-child {
       margin-bottom: 0;
     }
 
-    &::after {
-      display: block;
-      content: "";
-      clear: both;
-    }
-  }
-
-  &__item {
     
   }
 
+  &__item {
+    width: 50%;
+    float: left;
+  }
+
   &__title {
+    display: inline-block;
     color: #000000;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
 
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 
     white-space: nowrap;
+
+    text-decoration: none;
+    
+    border-bottom: 1px dotted transparent;
+    
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 1px dotted #000000;
+    }
   }
 
   &__list {
@@ -453,10 +464,14 @@ hr {
 
     padding: 0;
 
-    width: 48%;
-    float: left;
+    
     
     margin-right: 2%;
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
   }
 
   &__link {
@@ -468,6 +483,13 @@ hr {
 
     text-decoration: none;
     white-space: nowrap;
+
+    border-bottom: 1px dotted transparent;
+
+    transition: border-color 0.3s ease;
+    &:hover {
+      border-bottom: 1px dotted #000000;
+    }
   }
 
   @media @mobiles {
