@@ -308,7 +308,7 @@ hr {
     &--parent {
       padding-right:11px;
       
-      transition: transform 0.3s ease;
+      transition: transform 0.5s ease;
 
       &:after {
         content: "";
@@ -334,11 +334,6 @@ hr {
     }
 
     &:hover {
-      &:after {
-        transform: rotateZ(135deg);  
-        top: 23px;
-      }
-      
       .dropdown {
         visibility: visible;
         opacity: 1;
@@ -380,7 +375,7 @@ hr {
     line-height: 50px;
     text-decoration:none;
     
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     
     &:hover {
       text-decoration: underline;
@@ -419,7 +414,7 @@ hr {
   z-index: 2;
   overflow: hidden;
   
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
 
   
 
@@ -442,7 +437,7 @@ hr {
     display: inline-block;
     color: #000000;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 20px;
 
     margin-bottom: 0px;
@@ -451,12 +446,12 @@ hr {
 
     text-decoration: none;
     
-    border-bottom: 1px dotted transparent;
     
-    transition: border-color 0.3s ease;
+    
+    
     cursor: pointer;
     &:hover {
-      border-bottom: 1px dotted #000000;
+      color:#02A9B7;
     }
   }
 
@@ -467,7 +462,7 @@ hr {
 
     padding: 0;
 
-    
+    margin-top: 15px;
     
     margin-right: 2%;
     &::after {
@@ -487,11 +482,8 @@ hr {
     text-decoration: none;
     white-space: nowrap;
 
-    border-bottom: 1px dotted transparent;
-
-    transition: border-color 0.3s ease;
     &:hover {
-      border-bottom: 1px dotted #000000;
+      color:#02A9B7;
     }
   }
 
@@ -587,7 +579,7 @@ hr {
   } 
 
   &__link {
-    color: #1682c0;
+    color: #149aa8;
   }
 }
 
@@ -598,7 +590,7 @@ hr {
   background-color: #f2f5f8;
   
   
-  transition: height 0.3s ease;
+  transition: height 0.5s ease;
   
   .container {
     padding: 0 70px;
@@ -678,7 +670,7 @@ hr {
     opacity: 0;
     height: 0;
 
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 
     &--active {
       visibility: visible;
@@ -702,7 +694,7 @@ hr {
   &__title {
     font-size: 46px;
     font-weight: 700;
-    line-height: 66px;
+    line-height: 50px;
     
     margin-top: 20px;
     margin-bottom: 20px;
@@ -840,7 +832,7 @@ hr {
     
     border-bottom: 1px dashed transparent;
 
-    transition: border-color 0.3s ease;
+    transition: border-color 0.5s ease;
     &:hover,&:active {
       border-bottom: 1px dashed #ffffff;
     }
@@ -1224,7 +1216,7 @@ hr {
   
   cursor: pointer;
   
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 
   &--orange {
     background-color: #ff7959;
@@ -1296,6 +1288,10 @@ hr {
     background-image: url('../img/cart.png');
     background-repeat: no-repeat;
     background-position: center;    
+  }
+
+  &--full {
+    width: 100%;
   }
 }
 
@@ -1480,7 +1476,7 @@ hr {
       border-radius: 6px;
       z-index: 2;
 
-      transition:background-color 0.3s ease;
+      transition:background-color 0.5s ease;
     }
 
     &--active, &:hover {
@@ -1747,7 +1743,7 @@ hr {
   &--white {
     background-color: #ffffff;
     box-shadow: none;
-
+    padding: 50px 25px 0 25px;
     .advantage__title {
       box-shadow: none;
       border: 1px solid #2d3e50;
@@ -1758,7 +1754,7 @@ hr {
   &--tr {
     background-color: transparent;
     box-shadow: none;
-
+    padding: 50px 25px 0 25px;
     .advantage__title {
       box-shadow: none;
       border: 1px solid #ffffff;
@@ -1944,7 +1940,7 @@ hr {
   border: 1px solid transparent;
   background-color: #ffffff;
   
-  transition: border 0.3s ease;
+  transition: border 0.5s ease;
 
   font-size: 14px;
 
@@ -2117,7 +2113,7 @@ hr {
     visibility: hidden;
     opacity: 0;
 
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
 
     &--active {
       visibility: visible;
@@ -2161,7 +2157,7 @@ hr {
   visibility: hidden;
   opacity: 0;
   
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
 
   &--active {
     visibility: visible;
@@ -2467,7 +2463,7 @@ hr {
     position: absolute;
     right: 30px;
     top:10px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
 
   &--active {
@@ -2573,6 +2569,8 @@ hr {
     border-style: solid;
     border-width:  0  1px 1px  0;
     
+
+    transition: background-color 0.5s ease;
 
     &:hover {
       background-color: #ffffff;
@@ -2877,7 +2875,7 @@ hr {
     padding: 30px 0;
     text-decoration: none;
     
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
     &:hover {
       background-color: #FFFFFF;
     }
@@ -2892,7 +2890,7 @@ hr {
   
   min-height: 100px;
 
-  transition: height 0.3s ease;
+  transition: height 0.5s ease;
   
   font-size: 16px;
   line-height: 26px;
@@ -2939,7 +2937,7 @@ hr {
     background-size: contain;
     cursor: pointer;
 
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 
     @media @mobiles {
       width: 15px;
@@ -3331,7 +3329,7 @@ hr {
     }
   }
 
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
   cursor: pointer;
   &--green {
     background-color: #01bea5;
@@ -3550,7 +3548,7 @@ hr {
     cursor: pointer;
     background-image: linear-gradient(180deg, #ff9e5a 0%, #ff7959 100%);
     
-    transition:background 0.3s ease;
+    transition:background 0.5s ease;
 
     &:hover {
       background-image: linear-gradient(180deg, lighten(#ff9e5a, 10%) 0%, #ff7959 100%);      
@@ -3662,6 +3660,7 @@ hr {
   &__map {
     width: 100%;
     min-height: 345px;
+    overflow: hidden;
   }
   &__block {
     position: relative;
@@ -3727,7 +3726,7 @@ hr {
   align-items: stretch;
   align-content: stretch;
   
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 
   &__item {
     
@@ -4098,5 +4097,54 @@ hr {
     display: block;
     content: "";
     clear: both;
+  }
+}
+
+
+.results {
+  &__item {
+
+    display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    margin-bottom: 20px;
+
+    background-color: #FFFFFF;
+
+    padding: 35px;
+    
+    color: #171717;
+    text-decoration: none;
+
+    transition: box-shadow 0.5s ease;
+    &:hover {
+      box-shadow:inset 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      .results__title {
+        border-bottom: 1px solid #000000;
+      }
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    color: #171717;
+    
+    border-bottom: 1px solid transparent;
+    
+    transition: border-color 0.5s ease;
+    cursor: pointer;
+   
+
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-weight: 400;
+    margin-bottom: 0;
   }
 }
