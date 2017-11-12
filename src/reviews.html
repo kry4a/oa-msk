@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
+          <label class="input-group__label" for="name">Телефон*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">E-mail</label>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+  </div>
+  @@include('_html/_header.html')
+  <main class="main">
+    <div class="section section--green section--page-sm">
+      <div class="container">
+        <ul class="breadcrumbs breadcrumbs--white">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Сервисы 1С</a></li>
+          <li class="breadcrumbs__item">1С: Контрагент</li>
+        </ul>
+        
+        <div class="page__info page__info--promo">
+          <h1 class="page__title">Последние отзывы</h1>
+          <p class="page__subtitle">Узнайте, что говорят о нас наши клиенты</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="review">
+          <div class="review__company company">
+            <div class="company__img">
+              <img src="/img/fincont-sm.png" alt="" class="img img--auto">
+            </div>
+            <div class="company__info">
+              <p class="company__title">Компания Финкорт</p>
+              <p class="company__text">Москва, Санкт-Петербург</p>
+            </div>
+            <div class="company__info">
+              <p class="company__title">Отрасль</p>
+              <p class="company__text">Организация доп.образования, аудит и бухгалтерские услуги</p>
+            </div>
+          </div>
+          <div class="review__desc">
+            <p class="review__text">«Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва <b>Текст полного отзыва</b> Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва <b>Текст полного отзыва</b></p> 
+
+            <p class="review__text">Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва»</p>
+            <p class="review__manager">Должность, Фамилия Имя</p>
+            <p class="review__links">
+              <a href="#" class="link link--green">Оригинал отзыва</a>     
+              <a href="#" class="link link--green"><b>Внедренные решения</b></a>  
+            </p>
+          </div> 
+        </div>
+        <div class="review">
+          <div class="review__company company">
+            <div class="company__img">
+              <img src="/img/fti-sm.png" alt="" class="img img--auto">
+            </div>
+            <div class="company__info">
+              <p class="company__title">Компания Финкорт</p>
+              <p class="company__text">Москва, Санкт-Петербург</p>
+            </div>
+            <div class="company__info">
+              <p class="company__title">Отрасль</p>
+              <p class="company__text">Организация доп.образования, аудит и бухгалтерские услуги</p>
+            </div>
+          </div>
+          <div class="review__desc">
+            <p class="review__text">«Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва <b>Текст полного отзыва</b> Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва <b>Текст полного отзыва</b></p> 
+
+            <p class="review__text">Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва»</p>
+            <p class="review__manager">Должность, Фамилия Имя</p>
+            <p class="review__links">
+              <a href="#" class="link link--green">Оригинал отзыва</a>     
+              <a href="#" class="link link--green"><b>Внедренные решения</b></a>  
+            </p>
+          </div> 
+        </div>
+        <div class="review">
+          <div class="review__company company">
+            <div class="company__img">
+              <img src="/img/bittner-sm.png" alt="" class="img img--auto">
+            </div>
+            <div class="company__info">
+              <p class="company__title">Компания Финкорт</p>
+              <p class="company__text">Москва, Санкт-Петербург</p>
+            </div>
+            <div class="company__info">
+              <p class="company__title">Отрасль</p>
+              <p class="company__text">Организация доп.образования, аудит и бухгалтерские услуги</p>
+            </div>
+          </div>
+          <div class="review__desc">
+            <p class="review__text">«Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва <b>Текст полного отзыва</b> Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва <b>Текст полного отзыва</b></p> 
+
+            <p class="review__text">Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва»</p>
+            <p class="review__manager">Должность, Фамилия Имя</p>
+            <p class="review__links">
+              <a href="#" class="link link--green">Оригинал отзыва</a>     
+              <a href="#" class="link link--green"><b>Внедренные решения</b></a>  
+            </p>
+          </div> 
+        </div>
+        <div class="review">
+          <div class="review__company company">
+            <div class="company__img">
+              <img src="/img/fincont-sm.png" alt="" class="img img--auto">
+            </div>
+            <div class="company__info">
+              <p class="company__title">Компания Финкорт</p>
+              <p class="company__text">Москва, Санкт-Петербург</p>
+            </div>
+            <div class="company__info">
+              <p class="company__title">Отрасль</p>
+              <p class="company__text">Организация доп.образования, аудит и бухгалтерские услуги</p>
+            </div>
+          </div>
+          <div class="review__desc">
+            <p class="review__text">«Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва <b>Текст полного отзыва</b> Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва <b>Текст полного отзыва</b></p> 
+
+            <p class="review__text">Текст полного отзыва Текст полного отзыва Текст полного отзыва Текст полного отзыва»</p>
+            <p class="review__manager">Должность, Фамилия Имя</p>
+            <p class="review__links">
+              <a href="#" class="link link--green">Оригинал отзыва</a>     
+              <a href="#" class="link link--green"><b>Внедренные решения</b></a>  
+            </p>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="section section--green">
+      <div class="parallax parallax--1"></div>
+      <div class="parallax parallax--2"></div>
+      <div class="container">
+        <h1 class="section__title">Начните повышать эффективность работы уже сегодня</h1>
+        <p class="section__text section__text--big">Оставьте заявку, и наши специалисты подробно проконсультируют вас по всем аспектам разработки</p>
+        <form action="#" class="form--news">
+          <div class="form-group row">
+            <div class="col-sm-8 col-lg-7">
+              <input name="lastname" value="" id="input-lastname" class="input" type="text" placeholder="Ваш E-mail">  
+            </div>
+            <div class="col-sm-4 col-lg-5">
+              <a href="#" class="btn btn--tr">Получить консультацию</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+  @@include('_html/_footer.html')
+</body>
+</html>

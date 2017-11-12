@@ -71,7 +71,9 @@ hr {
       padding-left: 90px;
       width: 30%;
       max-width: 305px;
-
+      
+      text-decoration: none;
+      cursor: pointer;
       &:before {
         content: '';
         position: absolute;
@@ -85,6 +87,10 @@ hr {
       }
       @media @tablet {
         width: auto;
+      }
+
+      &:hover,&:visited,&:active {
+        color:#2d3e50;
       }
     }
     &--callback {
@@ -149,7 +155,8 @@ hr {
     vertical-align: middle;
     height: 50px;
     padding: 15px 0;
-
+    
+    margin-left: 15px;
   }
 }
 
@@ -167,6 +174,13 @@ hr {
 
     @media @mobiles {
       padding: 0 20px;
+    }
+  }
+
+  .list__link {
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-bottom: 1px solid;
     }
   }
 }
@@ -516,23 +530,25 @@ hr {
     }
   }
 
-  &:hover{
-
-  }
-
   &--green {
     color:#149aa8;
-    border-bottom: 1px dashed #149aa8;
   }
   
   &--grey {
     color: #2d3e50;
-    border-bottom: 1px dashed #2d3e50;
   }
+
   &--bold {
     font-weight: 400;
   }
+  
+  &--solid {
+    border-bottom: 1px solid;
+  }
 
+  &--dashed {
+    border-bottom: 1px dashed;
+  }
   &--white {
     color:#FFFFFF;
   }
@@ -2445,6 +2461,9 @@ hr {
 .search {
 
   &__toggler {
+    position: absolute;
+    right: 0;
+
     width: 20px;
     height: 20px;
 
@@ -2499,6 +2518,11 @@ hr {
     &:last-child {
       margin-bottom: 0;
     }
+    
+    &--gray {
+      background-color: #f2f5f8;
+      box-shadow: none;
+    }
 
     @media @mobiles {
       text-align: center;
@@ -2530,6 +2554,19 @@ hr {
       display: inline-block;
     }
   }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 700;
+
+    position: absolute;
+    right: 200px;
+    top: 0;
+    bottom: 0;
+
+    margin: auto;
+    height: 20px;
+  }
 }
 
 .lip-tiles {
@@ -2538,6 +2575,7 @@ hr {
   overflow: hidden;
   display: flex; 
   flex-wrap: wrap;
+  border: none;
   
   @media @mobiles {
     display: block;
@@ -2576,7 +2614,17 @@ hr {
       background-color: #ffffff;
     }
 
+    &--green {
+      background-color: #02b3af;
+      color:#ffffff;
+      border-color: #02b3af;
+      
+      &:hover {
+        background-color: lighten(#02b3af, 5%);
+      }      
+    }
 
+    
     @media @mobiles {
       display: block;
       width: 100%;
@@ -3394,7 +3442,10 @@ hr {
       background-size: contain;
       background-repeat: no-repeat;
     }
-
+  
+    &--check {
+      &:before { background-image: url('../img/keys-check.png') !important; }
+    }
     &:nth-child(1){
       &:before { background-image: url('../img/keys-1.png'); }
     }
@@ -3888,12 +3939,19 @@ hr {
   }
 }
 
+.reviews__item {
+  .review {
+    margin-bottom: 5px !important;
+  }
+}
 .review {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin:5px 50px;
   
-  margin:50px;
-
+  margin-bottom: 30px;
   display: flex;
 
   @media @mobiles {
@@ -3903,6 +3961,7 @@ hr {
   &__company {
     width: 35%;
     padding:25px;
+    background-color: #fbfdff;
     
     @media @mobiles {
       width: 100%;

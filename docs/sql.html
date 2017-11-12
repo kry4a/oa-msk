@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Оптимальные алгоритмы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <div class="popup__bg"></div>
+  <div class="popup">
+    <div class="popup__closer closer"><b></b>
+    <b></b>
+    <b></b>
+    <b></b></div>
+    <div class="popup__header">
+      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
+    </div>
+    <div class="popup__body">
+      <hr>
+      <div class="popup__form">
+        <div class="input-group">
+          
+          <input class="input input--grey input--required" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">Фамилия, Имя*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
+          <label class="input-group__label" for="name">Телефон*</label>
+        </div>
+        <div class="input-group">
+          
+          <input class="input input--grey" id="name" name="name" type="text"> 
+          <label class="input-group__label" for="name">E-mail</label>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
+      </div>
+    </div>
+  </div>
+  <header class="header">
+      <div class="container">
+        <div class="header__items">
+          <a class="header__item header__item--logo" href="/">
+            Профессиональная разработка и внедрение 1С в Москве
+          </a>
+          <div class="header__item header__item--address">
+            <a href="mailto:1c@oa-msk.ru" class="link link--green">1c@oa-msk.ru</a><br/>
+             МСК, Орджоникидзе, д. 11
+          </div>
+          <div class="header__item header__item--times">
+            Пн.-пт. с 9:00<br/>до 18:00
+          </div>
+          <div class="header__item header__item--callback">
+            <a class="header__phone phone" href="tel:+74952680749"><span>+7 (495)</span> 268-07-49</a>
+            <a href="#" class="btn btn--inline btn--orange btn--callback"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar__phone phone" href="tel:+74952680749" title="Оптимальные алгоритмы"><span>+7 (495)</span> 268-07-49</a>
+        <div class="navbar__toggler navbar-toggler" data-target="nav">
+          <span class="navbar-toggler__bar"></span>
+          <span class="navbar-toggler__bar"></span>
+          <span class="navbar-toggler__bar"></span>
+        </div>
+        <ul class="nav" id="nav">
+          <li class="nav__item nav__item--parent">
+            <a href="#" class="nav__link link">Продукты 1С</a>
+            <ul class="dropdown">
+              <li class="dropdown__block">
+                <div class="dropdown__title">
+                  Программные продукты 1С
+                </div>
+                <ul class="dropdown__list">
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Управление торговлей</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Зарплата и управление персоналом</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: ERP</a></li>
+              
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Комлексная автоматизация</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Бухгалерия</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Управление производством</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__block">
+                <div class="dropdown__title">
+                  Сервисы 1С
+                </div>
+                <ul class="dropdown__list">
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: ИТС</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: ЭДО</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Отчетность</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1СПАРК Риски</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">1С: Контрагент</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">Аренда 1С</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__block">
+                <div class="dropdown__title">
+                  Лицензии 1С
+                </div>
+              </li>
+              <li class="dropdown__block">
+                <div class="dropdown__title">
+                  Совместные отраслевые продукты и лицензии 1С
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item" data-toggle="dropdown">
+            <a href="#" class="nav__link link">Наши продукты</a>
+          
+          </li>
+          <li class="nav__item nav__item"><a href="#" class="nav__link link">Разработка</a></li>
+          <li class="nav__item"><a href="#" class="nav__link link">Интеграция</a></li>
+          <li class="nav__item nav__item"><a href="#" class="nav__link link">Сопровождение</a></li>
+          <li class="nav__item nav__item"><a href="#" class="nav__link link">Внедрение</a></li>
+          <li class="nav__item nav__item"><a href="#" class="nav__link link">Бизнес-задачи</a></li>
+        
+          <li class="nav__item nav__item--right">
+            <a href="#" class="nav__link link">О компании</a>
+            <a href="#" class="nav__link link">Отзывы</a>
+            <div id="search" class="header__search search">
+              <div class="search__toggler" data-target="search"></div>
+              <div class="search__input" style="">
+                <input class="input input--search" name="search" placeholder="Поиск" type="text">
+                <span class="search-close glyphicon glyphicon-remove"></span>
+              </div>
+            </div>
+          </li>
+        
+
+        </ul>
+      </div>
+    </nav>
+  <main class="main">
+    <div class="section section--page-sm">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item">MS SQL SERVER </li>
+        </ul>
+        <div class="row">
+          <div class="page__info">
+            <h1 class="page__title">MS SQL SERVER </h1>
+            <p class="page__subtitle">Высокая производительность и надежная защита. Все функциональные возможности без дорогостоящих надстроек. Получите оптимальное решение для организаций любых размеров. SQL Server 2017 доступен для Windows, Linux и контейнеров Docker. Наши специалисты будут рады помочь с выбором и ответить на все вопросы. </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="section section--white">
+      <div class="container">
+        <h1 class="section__title">MS SQL SERVER STANDARD</h1>
+        <div class="products">
+          <div class="products__item products__item--gray">
+            <div class="products__text">Лицензия на сервер MS SQL Server 2016 Standard Runtime для пользователей<br/> 1С:Предприятие 8. Электронная поставка</div>
+            <div class="products__price">18 654 Р.</div>
+            <a href="#" class="products__btn btn btn--orange">Заказать</a>
+          </div>
+          <div class="products__item products__item--gray">
+            <div class="products__text">Клиентский доступ на <b>1 р.м.к</b> MS SQL Server 2016 Runtime для<br/> 1С:Предприятие 8. Электронная поставка</div>
+            <div class="products__price">9 442 Р.</div>
+            <a href="#" class="products__btn btn btn--orange">Заказать</a>
+          </div>
+          <div class="products__item products__item--gray">
+            <div class="products__text">Клиентский доступ на <b>5 р.м.к</b> MS SQL Server 2016 Runtime для<br/> 1С:Предприятие 8. Электронная поставка</div>
+            <div class="products__price">47 212 Р.</div>
+            <a href="#" class="products__btn btn btn--orange">Заказать</a>
+          </div>
+          <div class="products__item products__item--gray">
+            <div class="products__text">Клиентский доступ на <b>10 р.м.к</b> MS SQL Server 2016 Runtime для<br/> 1С:Предприятие 8. Электронная поставка</div>
+            <div class="products__price">94 423 Р.</div>
+            <a href="#" class="products__btn btn btn--orange">Заказать</a>
+          </div>
+          <div class="products__item products__item--gray">
+            <div class="products__text">Клиентский доступ на <b>20 р.м.к</b> MS SQL Server 2016 Runtime для<br/> 1С:Предприятие 8. Электронная поставка</div>
+            <div class="products__price">188 847 Р.</div>
+            <a href="#" class="products__btn btn btn--orange">Заказать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+      <div class="container">
+        <div class="footer__links">
+          <div class="footer__info info">
+            <div itemprop="name" class="info__title" style="margin-bottom: 33px;">Оптимальные<br/>алгоритмы</div>
+            <div itemscope="" itemtype="http://schema.org/Organization" class="info__text">
+              <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                <span itemprop="postalCode">115419</span>,
+                <span itemprop="addressLocality">г. Москва</span>,<br/>
+                <span itemprop="streetAddress">ул., Орджоникидзе, д.11</span><br/>
+                <span>ПН.-ПТ. 9:00 - 18:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="links">
+            <div class="links__title">Продукты</div>
+            <ul class="links__list list">
+              <li class="list__item"><a href="#" class="list__link">1С:Предприятие</a></li>
+              <li class="list__item"><a href="#" class="list__link">Лицензии 1С</a></li>
+              <li class="list__item"><a href="#" class="list__link">Аренда 1С</a></li>
+              <li class="list__item"><a href="#" class="list__link">Наши продукты</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="links__title">Разработка</div>
+            <ul class="links__list list">
+              <li class="list__item"><a href="#" class="list__link">Доработка 1С на заказ</a></li>
+              <li class="list__item"><a href="#" class="list__link">Типовая доработка</a></li>
+              <li class="list__item"><a href="#" class="list__link">Интеграция 1С</a></li>
+              <li class="list__item"><a href="#" class="list__link">Внедренные решения</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="links__title">Сопровождениe</div>
+            <ul class="links__list list">
+              <li class="list__item"><a href="#" class="list__link">Абонент. обслуживание</a></li>
+              <li class="list__item"><a href="#" class="list__link">Обновление 1С</a></li>
+              <li class="list__item"><a href="#" class="list__link">Бизнес-задачи</a></li>
+              <li class="list__item"><a href="#" class="list__link">Сервисы 1С</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="links__title">О нас</div>
+            <ul class="links__list list">
+              <li class="list__item"><a href="#" class="list__link">Отзывы клиентов</a></li>
+              <li class="list__item"><a href="#" class="list__link">О компании</a></li>
+              <li class="list__item"><a href="#" class="list__link">Контакты</a></li>
+              <li class="list__item"><a href="#" class="list__link">Вакансии</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright copyright">
+          <span class="copyright__link">(С) 2011-2017 Оптимальные алгоритмы</span>
+          <span class="copyright__text">+7 (495) 268-07-49   Копирование материалов сайта запрещено</span>
+          <div class="develop">Разработано в <a href=# class="link link--green link--bold">Pixelaria</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/libs.min.js" type="text/javascript"></script>
+    <script src="./js/scripts.js" type="text/javascript"></script>
+</body>
+</html>

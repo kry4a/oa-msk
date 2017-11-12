@@ -9,6 +9,7 @@ $(function (){
   $('.search__toggler').click(function(e){
     var target = $(this).data('target');
     $('#'+target).toggleClass('search--active');
+    return false;
   });
 
 
@@ -51,10 +52,16 @@ $(function (){
     $('.popup').removeClass('popup--active');
     $('.popup__bg').removeClass('popup__bg--active');
   });
+  
+  $('html').click(function() {
+    $('.search--active').removeClass('search--active');
+  });
+
+  $('.search').click(function(e){
+    return false;
+  });
 
   $('.im--phone').mask('+7 (000) 000-00-00');
-
-
 
   $('.row__title').click(function(){
     $(this).next('.row__body').toggleClass('active');
@@ -82,7 +89,15 @@ $(function (){
   });
   
 
-  $('.slider').unslider();
+  $('.slider').unslider({ 
+    nav: false,
+    autoplay: true, 
+    delay: 4500,
+    arrows: {
+      prev: '<a class="unslider-arrow prev">Previous slide</a>',
+      next: '<a class="unslider-arrow next">Next slide</a>',
+    }
+  });
 
   if ($('.baron').length) {
     baron({
