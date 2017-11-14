@@ -653,6 +653,7 @@ hr {
   &__subtitle {
     text-transform: uppercase;
     font-size: 16px;
+    line-height: 28px;
     font-weight: 700;
 
     margin-bottom: 40px;
@@ -661,8 +662,13 @@ hr {
 
   &__text {
     font-size:16px;
-    line-height: 26px;
+    line-height: 28px;
     font-weight: 200px;
+    margin-bottom: 28px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &--mb {
       margin-bottom: 40px;
@@ -671,6 +677,7 @@ hr {
 
     &--big {
       font-size: 20px;
+      line-height: 32px;
       margin-bottom: 20px;
     }
 
@@ -713,7 +720,7 @@ hr {
     line-height: 50px;
     
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     @media @mobiles {
       font-size: 30px;
@@ -724,12 +731,19 @@ hr {
   &__subtitle {
     font-size: 20px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 32px;
+
+    &--sm {
+      margin-bottom: 20px;
+    }
   }
   
   &__info {
     &--promo {
       text-align: center;
+    }
+    .list {
+      margin-bottom: 40px;
     }
   }
 
@@ -866,6 +880,7 @@ hr {
   margin-bottom: 50px;
   
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
   border-radius: 10px;
   overflow: hidden;
   
@@ -933,6 +948,7 @@ hr {
       &--green {
         background-color: #01bea5 !important;
         font-size: 16px;
+        line-height: 28px;
         padding: 25px;
         text-align: center;
         color: #FFFFFF;
@@ -961,6 +977,7 @@ hr {
     align-content: center;
     
     font-size: 16px;
+    line-height: 28px;
     vertical-align: middle;
     padding:25px;
     
@@ -1013,6 +1030,7 @@ hr {
 
   &__span {
     font-size: 16px;
+    line-height: 28px;
     font-weight: 400;
   
     &--checked, &--infinite, &--plus {
@@ -1042,6 +1060,7 @@ hr {
       
       @media @mobiles {
         font-size: 16px;
+        line-height: 28px;
         padding: 0 0 0 40px;
         width: auto;
         height: auto;
@@ -1059,6 +1078,7 @@ hr {
 
       @media @mobiles {
         font-size: 16px;
+        line-height: 28px;
         font-weight: 500;
         margin-right: 15px;
         padding-right: 10px;
@@ -1224,7 +1244,7 @@ hr {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   color: #ffffff;
   line-height: 50px;
   text-align: center;
@@ -1419,7 +1439,7 @@ hr {
 
     .config__title {
       font-size: 16px;
-      line-height: 25px;
+      line-height: 28px;
       padding: 15px 0;
       height: auto;
       text-transform: none;
@@ -1433,7 +1453,7 @@ hr {
     color: #2d3e50;
     font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 28px;
     text-align: center;
     padding: 20px;
     border-bottom: 1px solid #dfdfdf;
@@ -1585,6 +1605,7 @@ hr {
   &__title {
     color: #16a69f;
     font-size: 16px;
+    line-height: 28px;
     font-weight: 700;
     margin-bottom: 20px;
   }
@@ -1813,7 +1834,7 @@ hr {
     color: #333333;
     font-size: 20px;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 32px;
     margin-bottom: 12px;
 
     @media @mobile-xs {
@@ -2028,6 +2049,7 @@ hr {
     position: relative;
     padding-left: 65px;
     font-size: 16px;
+    line-height: 28px;
     font-weight: 400;
     
     
@@ -2087,7 +2109,7 @@ hr {
       float: none;
       height: 40px;
       font-size: 16px;
-      line-height: 26px;
+      line-height: 28px;
     }
   }
 }
@@ -2105,7 +2127,7 @@ hr {
   &__text {
     font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 28px;
     color: #2d3e50;
     margin: 0;
 
@@ -2162,6 +2184,7 @@ hr {
   }
   &__title {
     font-size: 20px;
+    line-height: 32px;
     font-weight: 700;
     margin: 0;
     color:#ffffff;
@@ -2327,6 +2350,7 @@ hr {
   padding-right: 30px;
 
   font-size: 16px;
+  line-height: 28px;
   font-weight: 200;
   
 
@@ -2500,14 +2524,24 @@ hr {
 /************* SECOND PAGE STYLES *******************/
 
 .products {
-
+  
+  &--flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
 
   &__item {
+    min-height: 100px;
     position: relative;
     background-color: #FFFFFF;
 
     color:#2d3e50;
     font-size: 16px;
+    line-height: 28px;
     padding: 30px;
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -2533,7 +2567,7 @@ hr {
   &__title {
     font-size: 16px;
     font-weight: 700;
-    line-height: 22px;
+    line-height: 28px;
     
   }
 
@@ -2547,7 +2581,10 @@ hr {
   &__btn {
     position: absolute;
     right: 30px;
-    top: 25px;
+    top:0;
+    bottom: 0;
+    margin: auto;
+
     width: 150px;
     @media @mobiles {
       position: relative;
@@ -2558,6 +2595,7 @@ hr {
   &__price {
     font-size: 20px;
     font-weight: 700;
+    line-height: 32px;
 
     position: absolute;
     right: 200px;
@@ -2565,7 +2603,7 @@ hr {
     bottom: 0;
 
     margin: auto;
-    height: 20px;
+    height: 32px;
   }
 }
 
@@ -2594,6 +2632,7 @@ hr {
     padding: 15px;
     color: #222f3f;
     font-size: 20px;
+    line-height: 32px;
     font-weight: 700;
     
 
@@ -2631,7 +2670,7 @@ hr {
       height: auto;
       padding: 15px 30px;
       font-size: 16px;
-
+      line-height: 28px;
       min-height: auto;
     }
   }
@@ -2670,7 +2709,7 @@ hr {
   &__title {
     font-size: 16px;
     font-weight: 700;
-    line-height: 25px;
+    line-height: 28px;
     color:#ffffff;
 
     padding: 15px 30px;
@@ -2736,7 +2775,7 @@ hr {
     color: #333333;
     font-size: 20px;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 32px;
 
     margin-bottom: 20px;
 
@@ -2822,7 +2861,7 @@ hr {
   &__title {
     font-size: 16px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 28px;
     
     margin-bottom: 28px;
     @media @mobiles {
@@ -2834,7 +2873,7 @@ hr {
   &__text {
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 28px;
 
     @media @mobiles {
       font-size: 14px;
@@ -2941,11 +2980,9 @@ hr {
   transition: height 0.5s ease;
   
   font-size: 16px;
-  line-height: 26px;
-
+  line-height: 28px;
 
   margin-bottom: 20px;
-  
 
   &__preview {
     padding: 40px;
@@ -3101,7 +3138,7 @@ hr {
     border-radius: 10px;
     background-color: #ffffff;
 
-    padding: 30px 15px 30px 115px;
+    padding: 30px 15px 30px 105px;
     
     margin-right: 20px;
     float: left;
@@ -3112,8 +3149,10 @@ hr {
     &:before {
       content: '';
       position: absolute;
-      left: 20px;
-      top: 10px;
+      left: 10px;
+      top:0;
+      bottom: 0;
+      margin: auto;
 
       width: 77px;
       height: 77px;
@@ -3223,7 +3262,7 @@ hr {
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 28px;
     width: ~"calc(100% - 280px)";
 
     @media @mobiles {
@@ -3332,7 +3371,7 @@ hr {
   color: #2d3e50;
   font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 28px;
   
   font-weight: 400;
 
@@ -3411,6 +3450,14 @@ hr {
 
 .keys {
   &__item {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    
     position: relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -3497,7 +3544,7 @@ hr {
   &__desc {
     color: #171717;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 28px;
   }
 
   &__title {
@@ -3516,7 +3563,7 @@ hr {
     color: #171717;
     font-size: 16px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 28px;
 
     cursor: pointer;
 
@@ -3581,7 +3628,7 @@ hr {
   background-color: #ffffff;
   
   padding: 30px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   
 
   @media @tablet {
@@ -3673,7 +3720,7 @@ hr {
 .param {
   color: #2d3e50;
   font-size: 16px;
-  line-height: 28px;  
+  line-height: 28px;
   margin-bottom: 5px;
   
   &__title, &__value {
@@ -3720,7 +3767,7 @@ hr {
     
 
     font-size: 16px;
-    line-height: 30px;
+    line-height: 28px;
     font-weight: 400;
     @media @mobiles {
         padding-left: 90px;
@@ -3798,6 +3845,7 @@ hr {
 
 .infoblock {
   font-size: 16px;
+  line-height: 28px;
   padding: 25px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
@@ -3884,7 +3932,28 @@ hr {
   }
   
   &__img {
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+
     text-align: right;
+    
+    &--develop {
+      background-image: url('../img/develop-sm.png');
+    }
+
+    &--abonents {
+      background-image: url('../img/abonents-sm.png');
+    }
+
+    &--its {
+      background-image: url('../img/its-sm.png');
+    }
+
+    &--integration {
+      background-image: url('../img/integration-sm.png');
+    }
+
     @media @mobiles { 
      text-align: center;
     }
@@ -3989,6 +4058,7 @@ hr {
   &__manager {
     text-align: right;
     font-style: italic;
+    margin-bottom: 40px;
   }
 
 }
