@@ -2003,7 +2003,15 @@ hr {
   &--search {
     height: 30px;
   }
-  
+   
+  &--text {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 80px;
+    max-height: 80px;
+    line-height: 26px;
+    resize: none;
+  }
 
   &.used + .input-group__label, 
   &:active + .input-group__label, 
@@ -2147,73 +2155,52 @@ hr {
 
 
 .popup {
-  &__bg {
-    top: 0;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
-    z-index: 2000;
-    
-    visibility: hidden;
-    opacity: 0;
-
-    transition: opacity 0.5s ease;
-
-    &--active {
-      visibility: visible;
-      opacity: 1;
-      .popup__closer {
-        display: block;
-      }
-    }
-
-  }
-
-  position: fixed;
-  width: 600px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  margin-top: 150px;
   
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   background-color: #ffffff;
 
-  z-index: 2201;
-  overflow: hidden;
-  
-
   &__header {
-    padding: 30px 40px;
+    padding: 15px 40px;
     background-color: #02a9b7;
+
+    
   }
+
+  &__info {
+    color: #000000;
+    span {
+      float: right;
+      font-weight: bold;
+    }   
+  }
+
   &__title {
     font-size: 20px;
     line-height: 32px;
-    font-weight: 700;
-    margin: 0;
+    font-weight: 500;
+    margin:0;
+   
     color:#ffffff;
+
+    
   }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom:0;
+    color:#ffffff; 
+  }
+
   &__body {
-    padding: 40px;
+    padding: 15px 40px;
   }
   
-  visibility: hidden;
-  opacity: 0;
-  
-  transition: opacity 0.5s ease;
-
-  &--active {
-    visibility: visible;
-    opacity: 1;
-  }
-
   &__closer {
     position: absolute;
     right: 40px;
-    top: 33px;
+    top: 25px;
     display: none;
   }
 }
@@ -2270,13 +2257,24 @@ hr {
   }
 }
 
-
+.jqmWindow {
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  top:10% !important;
+  left:0;
+  right:0;
+  margin: auto !important;
+}
 
 
 
 .input-group {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
   &__label {
 
