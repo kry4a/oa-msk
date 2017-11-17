@@ -100,11 +100,11 @@ hr {
 
     &--address {
       padding-left: 55px;
+      
       @media @desktop-xl {
         margin-left: -80px;  
       }
       
-
       &:before {
         content: '';
         position: absolute;
@@ -116,6 +116,7 @@ hr {
         background-position: center;
         background-size: contain;
       }
+      
       @media @tablet {
         display: none;
       }
@@ -2265,8 +2266,8 @@ hr {
   border-radius: 10px;
   overflow: hidden;
   top:10% !important;
-  left:0;
-  right:0;
+  left:0 !important;
+  right:0 !important;
   margin: auto !important;
 }
 
@@ -2499,7 +2500,7 @@ hr {
     background-image: url('../img/search.png');
     background-position: center;
     background-repeat: no-repeat;
-
+    background-size: contain;
     cursor: pointer;
   }
 
@@ -3828,18 +3829,29 @@ hr {
     min-height: 345px;
     overflow: hidden;
   }
+
   &__block {
+    height: 100px;
     position: relative;
     padding-left: 130px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+
     margin-bottom: 25px;
     
-
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
+
     @media @mobiles {
-        padding-left: 90px;
-        line-height: 25px;
+      height: 75px;
+      padding-left: 90px;
+      line-height: 25px;
     }
     
     &:last-child {
@@ -3853,8 +3865,10 @@ hr {
       height: 100px;
       left: 0;
       top: 0;
-      border-radius: 8px;
-      background-color: #f2f5f8;
+      
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
       
       @media @mobiles {
         height: 75px;
@@ -3863,6 +3877,25 @@ hr {
     }
 
 
+    &--point {
+      &:before {
+        background-image: url('../img/address-point.png');
+      }
+    }
+
+    &--time {
+      &:before {
+        background-image: url('../img/address-time.png'); 
+      }
+    }
+
+
+    &--phone {
+      &:before {
+        background-image: url('../img/address-phone.png');
+      }
+    }
+  
 
 
   }
@@ -4107,9 +4140,13 @@ hr {
   }
 
   &__desc {
+    position: relative;
+
     width: 65%;
     box-shadow: -1px 0 0 rgba(0, 0, 0, 0.1);
     padding: 40px 25px 40px 40px;
+
+    border-radius: 0 0 0 8px;
 
     @media @mobiles {
       width: 100%;
@@ -4127,6 +4164,12 @@ hr {
     text-align: right;
     font-style: italic;
     margin-bottom: 40px;
+  }
+
+  &__links {
+    position: absolute;
+    bottom: 25px;
+    margin-bottom: 0;
   }
 
 }
