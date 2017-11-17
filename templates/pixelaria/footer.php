@@ -16,37 +16,34 @@
           <div class="links">
             <div class="links__title">Продукты</div>
             <ul class="links__list list">
-              <li class="list__item"><a href="#" class="list__link">1С:Предприятие</a></li>
-              <li class="list__item"><a href="#" class="list__link">Лицензии 1С</a></li>
-              <li class="list__item"><a href="#" class="list__link">Аренда 1С</a></li>
-              <li class="list__item"><a href="#" class="list__link">Наши продукты</a></li>
+              <li class="list__item"><a href="/new/products/software-products-1c/" class="list__link">1С:Предприятие</a></li>
+              <li class="list__item"><a href="/new/products/licenses-1c/" class="list__link">Лицензии 1С</a></li>
+              <li class="list__item"><a href="/new/products/rent-1c/" class="list__link">Аренда 1С</a></li>
+              <li class="list__item"><a href="/new/products/checklist/" class="list__link">Наши продукты</a></li>
             </ul>
           </div>
           <div class="links">
             <div class="links__title">Разработка</div>
             <ul class="links__list list">
-              <li class="list__item"><a href="#" class="list__link">Доработка 1С на заказ</a></li>
-              <li class="list__item"><a href="#" class="list__link">Типовая доработка</a></li>
-              <li class="list__item"><a href="#" class="list__link">Интеграция 1С</a></li>
-              <li class="list__item"><a href="#" class="list__link">Внедренные решения</a></li>
+              <li class="list__item"><a href="/new/develop/" class="list__link">Доработка 1С на заказ</a></li>
+              <li class="list__item"><a href="/new/integration/" class="list__link">Интеграция 1С</a></li>
+              <li class="list__item"><a href="/new/solutions/" class="list__link">Внедренные решения</a></li>
             </ul>
           </div>
           <div class="links">
             <div class="links__title">Сопровождениe</div>
             <ul class="links__list list">
-              <li class="list__item"><a href="#" class="list__link">Абонент. обслуживание</a></li>
-              <li class="list__item"><a href="#" class="list__link">Обновление 1С</a></li>
-              <li class="list__item"><a href="#" class="list__link">Бизнес-задачи</a></li>
-              <li class="list__item"><a href="#" class="list__link">Сервисы 1С</a></li>
+              <li class="list__item"><a href="/new/accompaniment/subscription-service/" class="list__link">Абонент. обслуживание</a></li>
+              <li class="list__item"><a href="/new/accompaniment/update-and-configure-1c/" class="list__link">Обновление 1С</a></li>
+              <li class="list__item"><a href="/new/automation/" class="list__link">Бизнес-задачи</a></li>
+              <li class="list__item"><a href="/new/products/services-1c/" class="list__link">Сервисы 1С</a></li>
             </ul>
           </div>
           <div class="links">
             <div class="links__title">О нас</div>
             <ul class="links__list list">
-              <li class="list__item"><a href="#" class="list__link">Отзывы клиентов</a></li>
-              <li class="list__item"><a href="#" class="list__link">О компании</a></li>
-              <li class="list__item"><a href="#" class="list__link">Контакты</a></li>
-              <li class="list__item"><a href="#" class="list__link">Вакансии</a></li>
+              <li class="list__item"><a href="/new/reviews/" class="list__link">Отзывы клиентов</a></li>
+              <li class="list__item"><a href="/new/company/" class="list__link">О компании</a></li>
             </ul>
           </div>
         </div>

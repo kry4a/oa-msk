@@ -21,19 +21,19 @@
     <header class="header">
       <div class="container">
         <div class="header__items">
-          <div class="header__item header__item--logo">
+          <a class="header__item header__item--logo" title="Профессиональная разработка и внедрение 1С в Москве" href="/new/">
             Профессиональная разработка и внедрение 1С в Москве
-          </div>
+          </a>
           <div class="header__item header__item--address">
             <a href="mailto:1c@oa-msk.ru" class="link link--green">1c@oa-msk.ru</a><br>
              МСК, Орджоникидзе, д. 11
           </div>
           <div class="header__item header__item--times">
-            Пн.-пт. с 9:00<br>до 18:00
+            Пн.-пт. с 9:00<br>до 19:00
           </div>
           <div class="header__item header__item--callback">
             <a class="header__phone phone" href="tel:+74952680749"><span>+7 (495)</span> 268-07-49</a>
-            <a href="#" class="btn btn--inline btn--orange btn--callback"></a>
+            <span class="btn btn--inline btn--orange btn--callback" data-param-id="26" data-event="jqm" data-name="callback"></span>
           </div>
         </div>
       </div>
@@ -65,6 +65,8 @@
             )
           );?>
           <li class="nav__item nav__item--right">
+            <a href="/new/company/" class="nav__link link">О компании</a>
+            <a href="/new/reviews/" class="nav__link link">Отзывы</a>
             <?$APPLICATION->IncludeComponent("pixelaria:search.title", "catalog", array(
               "NUM_CATEGORIES" => "1",
               "TOP_COUNT" => "5",

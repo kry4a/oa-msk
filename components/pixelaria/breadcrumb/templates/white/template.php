@@ -14,7 +14,8 @@ foreach($arResult as $index => $arItem){
 	}
 }
 
-$strReturn = '<ul class="breadcrumbs">';
+$strReturn = '<ul class="breadcrumbs breadcrumbs--white">';
+$strReturn .='<li class="breadcrumbs__item"><a href="/new/" class="breadcrumbs__link">Главная</a></li>';
 foreach($arResult as $arItem){
 	$title = htmlspecialcharsex($arItem["TITLE"]);
 	if( $arItem["LINK"] <> "" && $arItem['LINK'] != GetPagePath() && $arItem['LINK']."index.php" != GetPagePath())

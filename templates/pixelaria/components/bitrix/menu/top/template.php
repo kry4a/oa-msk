@@ -2,9 +2,10 @@
 
 <?if (!empty($arResult)):?> 
 <?foreach($arResult as $arItem):?> 
-  <li class="nav__item <?=($arItem["CHILD"] ? "nav__item--parent" : "")?> <?=($arItem["SELECTED"] ? "active" : "")?>">
+
+  <? $class=($arItem['PARAMS'] && $arItem['PARAMS']['right'] =='1')? "nav__item--right":"";?>
+  <li class="nav__item <?=($arItem["CHILD"] ? "nav__item--parent" : "")?> <?=($arItem["SELECTED"] ? "active" : "")?> <?=$class?>">
     <a href="<?=$arItem["LINK"]?>" class="nav__link link"  title="<?=$arItem["TEXT"]?>"><?=$arItem["TEXT"]?></a>
-    
     <?if($arItem["CHILD"]):?>
       <ul class="dropdown">
         <?foreach($arItem["CHILD"] as $arSubItem):?>
