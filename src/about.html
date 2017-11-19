@@ -10,39 +10,6 @@
   <link rel="stylesheet" href="./css/bundle.css">
 </head>
 <body>
-  <div class="popup__bg"></div>
-  <div class="popup">
-    <div class="popup__closer closer"><b></b>
-    <b></b>
-    <b></b>
-    <b></b></div>
-    <div class="popup__header">
-      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
-    </div>
-    <div class="popup__body">
-      <hr>
-      <div class="popup__form">
-        <div class="input-group">
-          
-          <input class="input input--grey input--required" id="name" name="name" type="text"> 
-          <label class="input-group__label" for="name">Фамилия, Имя*</label>
-        </div>
-        <div class="input-group">
-          
-          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
-          <label class="input-group__label" for="name">Телефон*</label>
-        </div>
-        <div class="input-group">
-          
-          <input class="input input--grey" id="name" name="name" type="text"> 
-          <label class="input-group__label" for="name">E-mail</label>
-        </div>
-      </div>
-      <div class="popup__buttons">
-        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
-      </div>
-    </div>
-  </div>
   @@include('_html/_header.html')
   <main class="main">
     <div class="section section--green section--page-sm">
@@ -91,6 +58,34 @@
         
       </div>
     </div>
+    <section class="section section--white">
+      <div class="container">
+        <h1 class="section__title">Наши сертификаты</h1>
+        <div class="sertificate">
+          <div class="sertificate__img">
+            <img src="./img/sert-1.jpg" alt="Совместимо!" class="img img--responsive">
+          </div>
+          <div class="sertificate__desc">
+            <p class="sertificate__title">"Совместимо! Система программ 1С:Предприятие"<br>на программный продукт "Чек-лист" </p>
+            <p class="sertificate__date">Дата выдачи: 24.04.2017 г.</p>
+            
+            <p class="sertificate__text">Собственная разработка.</p>
+            <p class="sertificate__text">Мобильное приложение для автоматизации системы контроля качества.</p>
+            <p class="sertificate__text">Программный продукт прошел пилотное тестирование и внедрение в компаниях на территории РФ.</p>
+            <p class="sertificate__text">Выпускается как самостоятельный продукт, возможна адаптация и доработка по индивидуальному проекту.</p>
+          </div>
+        </div>
+        <div class="sertificate">
+          <div class="sertificate__img">
+            <img src="./img/sert-2.jpg" alt="Официальный партнер фирмы «1С»" class="img img--responsive">
+          </div>
+          <div class="sertificate__desc">
+            <p class="sertificate__title">Официальный партнер фирмы «1С» </p>
+            <p class="sertificate__date">Дата выдачи: 11.02.2011 г.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="section section--green">
       <div class="container">
         <p class="section__text section__text--center"><b>Высокое качество</b> работы и удовлетворенность клиентов — <b>наше кредо</b> и профессиональная гордость</p>
