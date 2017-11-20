@@ -756,6 +756,10 @@ hr {
     color: #ffffff !important;
   }
   
+  &--blue {
+   background-color: #02AAB7;
+    color: #ffffff !important;
+  }
   &__title {
     font-size: 30px;
     line-height: 42px;
@@ -3390,6 +3394,45 @@ hr {
     cursor: pointer;
     padding-right: 220px;
       
+    &--icon {
+      padding-left: 120px;
+      
+      @media @mobiles {
+        padding-left: 120px !important;    
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 25px;
+
+        width: 75px;
+        height: 75px;
+
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+
+      }
+    }
+
+    &--edo {&:before {background-image: url('../img/edo.png');}}
+    &--konnekt {&:before {background-image: url('../img/konnekt.png');}}
+    &--kontragent {&:before {background-image: url('../img/kontragent.png');}}
+    &--lektoriy {&:before {background-image: url('../img/lektoriy.png');}}
+    &--link {&:before {background-image: url('../img/link.png');}}
+    &--oblako {&:before {background-image: url('../img/oblako.png');}}
+    &--obnovl {&:before {background-image: url('../img/obnovl.png');}}
+    &--ot4etnost {&:before {background-image: url('../img/ot4etnost.png');}}
+    &--podpis {&:before {background-image: url('../img/podpis.png');}}
+    &--sverka {&:before {background-image: url('../img/sverka.png');}}
+
     @media @mobiles {
       padding: 20px 40px;
     }
@@ -4337,18 +4380,22 @@ hr {
     border-radius: 8px;
     position: relative;
     overflow: hidden;
-    font-size: 12px;
+    
     color: #2d3e50;
     .infoblock__text {
       margin-bottom: 0;
       line-height: 22px;
     }
     .infoblock__desc {
-      width:77%;
+      width:100%;
 
     }
-    .infoblock__img {
-      width:33%;
+    .infoblock__text {
+      img {
+        width: 60px;
+        float: right;
+        margin-left: 15px;
+      }
     }
     &:before {
       content: '';
@@ -4387,6 +4434,7 @@ hr {
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 30px;
+    vertical-align: top;
   }
 
   &__desc, &__img {
@@ -4466,6 +4514,8 @@ hr {
   &.next {
     background-image: url('../img/right-arrow.png');
     right: 0;
+
+
     @media @mobiles {
       right: 3px !important;
     }
@@ -4854,4 +4904,57 @@ hr {
 
 div[id^="wait_comp"], .bx-core-waitwindow {
     display: none;
+}
+
+
+
+.clients {
+  position: relative;
+  
+  .slick-arrow.next {
+    right: -50px !important;
+  }
+
+  .slick-arrow.prev {
+    left: -50px !important;
+  }
+}
+
+.client {
+  cursor: pointer;
+  &__link {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &__img {
+    display: inline-block;
+    
+    width: 100%;
+    max-width: 120px;
+    @media @mobiles {
+      max-width: 100%;
+    }
+  }
+
+  @media @mobiles {
+    margin: 0 30px;
+  }
+
+  
+}
+
+
+.slick-track {
+  display: flex !important;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.slick-slider {
+  padding: 0;
+  margin:0;
 }

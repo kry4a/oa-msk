@@ -10,39 +10,6 @@
   <link rel="stylesheet" href="./css/bundle.css">
 </head>
 <body>
-  <div class="popup__bg"></div>
-  <div class="popup">
-    <div class="popup__closer closer"><b></b>
-    <b></b>
-    <b></b>
-    <b></b></div>
-    <div class="popup__header">
-      <p class="popup__title">Заказать 1С:Бухгалтерия</p>
-    </div>
-    <div class="popup__body">
-      <hr>
-      <div class="popup__form">
-        <div class="input-group">
-          
-          <input class="input input--grey input--required" id="name" name="name" type="text"> 
-          <label class="input-group__label" for="name">Фамилия, Имя*</label>
-        </div>
-        <div class="input-group">
-          
-          <input class="input input--grey im--phone input--required" id="name" name="name" type="text" required> 
-          <label class="input-group__label" for="name">Телефон*</label>
-        </div>
-        <div class="input-group">
-          
-          <input class="input input--grey" id="name" name="name" type="text"> 
-          <label class="input-group__label" for="name">E-mail</label>
-        </div>
-      </div>
-      <div class="popup__buttons">
-        <input class="btn btn--orange popup__close" id="callback_btn" value="Оформить заказ">  
-      </div>
-    </div>
-  </div>
   <header class="header">
       <div class="container">
         <div class="header__items">
@@ -114,7 +81,7 @@
                 </div>
               </li>
             </ul>
-            <div class="dropdown__toggler navbar-toggler" data-target="nav">
+            <div class="dropdown__toggler navbar-toggler">
               <span class="navbar-toggler__bar navbar-toggler__bar--sm"></span>
               <span class="navbar-toggler__bar navbar-toggler__bar--sm"></span>
               <span class="navbar-toggler__bar navbar-toggler__bar--sm"></span>
@@ -209,7 +176,7 @@
       <div class="container">
         <h1 class="section__title">Дополнительные сервисы в рамках ИТС</h1>
         <div class="accordeon">
-          <div class="accordeon__preview">
+          <div class="accordeon__preview accordeon__preview--icon accordeon__preview--obnovl">
             <p class="accordeon__title">1С: Обновление программ</p>
             <p class="accordeon__text">Cвоевременное обновления  в соответствии с изменениями законодательства.</p>
             <div class="accordeon__opener"></div>
@@ -220,7 +187,7 @@
           </div>
         </div>
         <div class="accordeon">
-          <div class="accordeon__preview">
+          <div class="accordeon__preview accordeon__preview--icon accordeon__preview--lektoriy">
             <div class="accordeon__type">Проф</div>
             <p class="accordeon__title">1С: Лекторий</p>
             <p class="accordeon__text">Обучающие лекции и регулярные встречи с методистами 1С</p>
@@ -232,7 +199,7 @@
           </div>
         </div>
         <div class="accordeon">
-          <div class="accordeon__preview">
+          <div class="accordeon__preview accordeon__preview--icon">
             <div class="accordeon__type">Проф</div>
             <p class="accordeon__title">1С: Отчетность</p>
             <p class="accordeon__text">Подготовка и отправка отчетности непосредственно из программ 1С</p>
@@ -244,7 +211,7 @@
           </div>
         </div>
         <div class="accordeon">
-          <div class="accordeon__preview">
+          <div class="accordeon__preview accordeon__preview--icon">
             <div class="accordeon__type">Проф</div>
             <p class="accordeon__title">1С: Контрагент</p>
             <p class="accordeon__text">Автоматическое заполнение реквизитов контрагентов в 1С</p>
@@ -256,7 +223,7 @@
           </div>
         </div>
         <div class="accordeon">
-          <div class="accordeon__preview">
+          <div class="accordeon__preview accordeon__preview--icon">
             <p class="accordeon__title">1С: ЭДО</p>
             <p class="accordeon__text">Обмен электронными счетами-фактурами и другими документами</p>
             <div class="accordeon__opener"></div>
@@ -267,7 +234,7 @@
           </div>
         </div>
         <div class="accordeon">
-          <div class="accordeon__preview">
+          <div class="accordeon__preview accordeon__preview--icon">
             <div class="accordeon__type">Проф</div>
             <p class="accordeon__title">Облачное хранилище</p>
             <p class="accordeon__text">Защита базы 1С и работа с программами из любой точки мира через Интернет</p>
@@ -279,7 +246,7 @@
           </div>
         </div>
         <div class="accordeon">
-          <div class="accordeon__preview">
+          <div class="accordeon__preview accordeon__preview--icon">
             <div class="accordeon__type">Проф</div>
             <p class="accordeon__title">1С: Линк</p>
             <p class="accordeon__text">Безопасный удаленный доступ к программам, установленным на компьютере</p>
@@ -291,7 +258,7 @@
           </div>
         </div>
         <div class="accordeon">
-          <div class="accordeon__preview">
+          <div class="accordeon__preview accordeon__preview--icon">
             <p class="accordeon__title">1С: Коннект</p>
             <p class="accordeon__text">Технология для связи со специалистом поддержки и общения с коллегами</p>
             <div class="accordeon__opener"></div>
@@ -302,7 +269,7 @@
           </div>
         </div>
         <div class="accordeon">
-          <div class="accordeon__preview">
+          <div class="accordeon__preview accordeon__preview--icon">
             <p class="accordeon__title">1С: Сверка</p>
             <p class="accordeon__text">Автоматическая сверка счетов-фактур с контрагентами в 1С в любое время</p>
             <div class="accordeon__opener"></div>
@@ -313,7 +280,7 @@
           </div>
         </div>
         <div class="accordeon">
-          <div class="accordeon__preview">
+          <div class="accordeon__preview accordeon__preview--icon">
             <div class="accordeon__type">Проф</div>
             <p class="accordeon__title">1С: Подпись</p>
             <p class="accordeon__text">Получение сертификата электронной подписи непосредственно в 1С</p>
