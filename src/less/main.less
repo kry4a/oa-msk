@@ -83,6 +83,8 @@ hr {
       
       text-decoration: none;
       cursor: pointer;
+      color: #2d3e50;
+      
       &:before {
         content: '';
         position: absolute;
@@ -2474,6 +2476,11 @@ hr {
     top: 25px;
     display: none;
   }
+
+  &__error {
+    margin-top: 5px;
+    color:#BC0101;
+  }
 }
 
 
@@ -2539,7 +2546,7 @@ hr {
   left:0 !important;
   right:0 !important;
   margin: auto !important;
-
+  z-index: 10001 !important;
   @media @mobiles {
     width:90% !important;
     top:1% !important;
@@ -4843,4 +4850,8 @@ hr {
     font-size: 14px;
     color: #313438;
   }
+}
+
+div[id^="wait_comp"], .bx-core-waitwindow {
+    display: none;
 }
