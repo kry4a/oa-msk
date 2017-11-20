@@ -31,4 +31,5 @@ $successMessage = ($isCallBack ? "<p class='popup__subtitle'>Наш менедж
 		"CLOSE_BUTTON_NAME" => "Закрыть",
 		"CLOSE_BUTTON_CLASS" => "jqmClose btn btn-primary bottom-close"
 	)
+	,false
 );?>

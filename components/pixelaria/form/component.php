@@ -1,5 +1,6 @@
 <?if( !defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true ) die();
 
+
 if( CModule::IncludeModule("iblock") ){
   $GLOBALS['strError'] = '';
   
@@ -41,7 +42,7 @@ if( CModule::IncludeModule("iblock") ){
       $arResult["ERROR"] = "FORM_NOT_FOUND";
     }
     
-    $arResult["EVENT_TYPE"] = "ASPRO_SEND_FORM";
+    $arResult["EVENT_TYPE"] = "PIXELARIA_SEND_FORM";
     
     $arIBlock = CIBlock::GetList( false, array( "ID" => $arParams["IBLOCK_ID"] ) )->Fetch();
     $arResult["IBLOCK_CODE"] = $arIBlock["CODE"];
@@ -231,7 +232,7 @@ if( CModule::IncludeModule("iblock") ){
         }
       }
       
-      $required = $arQuestion["IS_REQUIRED"] == "Y" ? 'input--required' : '';
+      $required = $arQuestion["IS_REQUIRED"] == "Y" ? 'required input--required' : '';
       $phone = strpos( $arQuestion["CODE"], "PHONE" ) !== false ? 'im--phone' : '';
       $placeholder = $arParams["IS_PLACEHOLDER"] == "Y" ? 'placeholder="'.$arQuestion["NAME"].'"' : '';
       
@@ -316,6 +317,7 @@ if( CModule::IncludeModule("iblock") ){
         foreach( $arResult["QUESTIONS"] as $FIELD_CODE => $arQuestion ){
           if( empty( $_REQUEST[$FIELD_CODE] ) && $arQuestion["IS_REQUIRED"] == "Y" ){
             $arResult["FORM_ERRORS"][] = GetMessage("FORM_REQUIRED_INPUT").$arQuestion["NAME"];
+            $arResult["QUESTIONS"][$FIELD_CODE]["ERROR"] = true;
           }
         }
       }
@@ -356,12 +358,12 @@ if( CModule::IncludeModule("iblock") ){
             "PROPERTY_VALUES" => $arPropFields,
           );
           
-          foreach( GetModuleEvents("aspro.form", "OnBeforeFormSend", true) as $arEvent )
+          foreach( GetModuleEvents("pixelaria.form", "OnBeforeFormSend", true) as $arEvent )
             ExecuteModuleEventEx($arEvent, array(&$arFields));
           
           if( $RESULT_ID = $el->Add( $arFields ) ){
             $arResult["FORM_RESULT"] = "ADDOK";
-            foreach( GetModuleEvents("aspro.form", "OnAfterFormSend", true) as $arEvent )
+            foreach( GetModuleEvents("pixelaria.form", "OnAfterFormSend", true) as $arEvent )
               ExecuteModuleEventEx($arEvent, array(&$arFields));
 
             $arEventFields = array(
@@ -425,14 +427,14 @@ if( CModule::IncludeModule("iblock") ){
     if( $arParams["USE_CAPTCHA"] == "Y" )
       $arResult["CAPTCHACode"] = $APPLICATION->CaptchaGetCode();
     
-
+    
     $arResult = array_merge(
       $arResult,
       array(
         "isFormNote" => strlen( $arResult["FORM_NOTE"] ) ? "Y" : "N",
         "FORM_HEADER" => sprintf(
-          "<form name=\"%s\" action=\"%s\" method=\"%s\" enctype=\"multipart/form-data\">",
-          $arResult["IBLOCK_CODE"], POST_FORM_ACTION_URI, "POST"
+          "<form class=\"%s\" name=\"%s\" action=\"%s\" method=\"%s\" enctype=\"multipart/form-data\">",
+          $arParams["FORM_CLASS"],$arResult["IBLOCK_CODE"], POST_FORM_ACTION_URI, "POST"
         ).bitrix_sessid_post(),
         "isIblockTitle" => strlen( $arResult["IBLOCK_TITLE"] ) > 0 ? "Y" : "N",
         "isIblockDescription" => strlen( $arResult["IBLOCK_DESCRIPTION"] ) > 0 ? "Y" : "N",
@@ -441,6 +443,8 @@ if( CModule::IncludeModule("iblock") ){
         "FORM_FOOTER" => "</form>"
       )
     );
+    
+    
 
     if( $arResult["isFormErrors"] == "Y" ){
       ob_start();
@@ -462,7 +466,7 @@ if( CModule::IncludeModule("iblock") ){
     $arResult["CAPTCHA_FIELD"] = "<input type=\"text\" name=\"captcha_word\" value=\"".$captcha_val."\" class=\"form-control captcha required\" autocomplete=\"off\" />".($captcha_error ? "<label for=\"captcha_word\" class=\"error\">".GetMessage("CAPTCHA_ERROR")."</label>" : "");
     $arResult["CAPTCHA_ERROR"] = $captcha_error ? "Y" : "N";
     
-    $this->initComponentTemplate();
+    //$this->initComponentTemplate();
     
     
     $this->IncludeComponentTemplate();

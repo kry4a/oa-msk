@@ -94,9 +94,14 @@ $.fn.jqmEx = function(){
 $(function (){
   console.log('init');
 
-  $('.navbar-toggler').click(function(e){
+  $('.navbar__toggler').click(function(e){
     var target = $(this).data('target');
     $('#'+target).toggleClass('nav--active');
+  });
+
+  $('.droprown__toggler').click(function(e){
+    var target = $(this).closest('.nav__item');
+    $('#'+target).toggleClass('nav__item--active');
   });
 
   $('.search__toggler').click(function(e){
@@ -171,6 +176,17 @@ $(function (){
     
   });
   
+  $('.table__switcher').click(function(e){
+    console.log('table__switcher');
+    var target = $(this).data('target');
+    console.log(target);
+    $('.body__inner').removeClass('body__inner--active');
+    $('.table__switcher').removeClass('table__switcher--active');
+    $(this).addClass('table__switcher--active');
+
+    $('.body__inner[data-body="'+target+'"]').addClass('body__inner--active');
+    return false;
+  });
 
   $('.radioblock__item').click(function(e){
     $(this).parent().find('.radioblock__item').removeClass('radioblock__item--active');
@@ -197,15 +213,26 @@ $(function (){
   if ($('.slider').length) {
     $('.slider').unslider({ 
       nav: false,
-      autoplay: true, 
-      delay: 4500,
+      autoplay: false, 
       arrows: {
         prev: '<a class="unslider-arrow prev">Previous slide</a>',
         next: '<a class="unslider-arrow next">Next slide</a>',
       }
     });
   }
-
+  
+  if ($('.slider-clients').length) {
+    $('.slider-clients').unslider({ 
+      nav: false,
+      autoplay: false, 
+      infinite: true,
+      arrows: {
+        prev: '<a class="unslider-arrow prev">Previous slide</a>',
+        next: '<a class="unslider-arrow next">Next slide</a>',
+      }
+    });
+  }
+  
   if ($('.baron').length) {
     baron({
         root: '.baron',
@@ -228,7 +255,8 @@ $(function (){
   }
   
 
-  if ($('.parallax').length) {
+  var w_width = $(window).width();
+  if (w_width>767 && $('.parallax').length) {
     var parallax_1 = document.querySelectorAll(".parallax--1"),
       parallax_2 = document.querySelectorAll(".parallax--2"),
       speed_big = 0.25,
@@ -250,18 +278,11 @@ $(function (){
     };
   }
   
-  /*$('*[data-event="jqm"]').click(function(e){
-    $(this).jqmEx();
-    $(this).trigger('click');
-  });*/
-  
   $('body').delegate('*[data-event="jqm"]','click', function(e){
     e.preventDefault();
     $(this).jqmEx();
     $(this).trigger('click');
   });
-  
-  //$('*[data-event="jqm"]').jqmEx();
   
   console.log('complete...');
 });

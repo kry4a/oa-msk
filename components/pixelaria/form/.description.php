@@ -6,8 +6,8 @@ $arComponentDescription = array(
 	"ICON" => "/images/comp_result_new.gif",
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => "aspro",
-		"NAME" => GetMessage("ASPRO")
+		"ID" => "pixelaria",
+		"NAME" => "pixelaria"
 	),
 	"COMPLEX" => "N"
 );?>

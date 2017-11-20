@@ -94,9 +94,14 @@ $.fn.jqmEx = function(){
 $(function (){
   console.log('init');
 
-  $('.navbar-toggler').click(function(e){
+  $('.navbar__toggler').click(function(e){
     var target = $(this).data('target');
     $('#'+target).toggleClass('nav--active');
+  });
+
+  $('.droprown__toggler').click(function(e){
+    var target = $(this).closest('.nav__item');
+    $('#'+target).toggleClass('nav__item--active');
   });
 
   $('.search__toggler').click(function(e){
@@ -215,7 +220,19 @@ $(function (){
       }
     });
   }
-
+  
+  if ($('.slider-clients').length) {
+    $('.slider-clients').unslider({ 
+      nav: false,
+      autoplay: false, 
+      infinite: true,
+      arrows: {
+        prev: '<a class="unslider-arrow prev">Previous slide</a>',
+        next: '<a class="unslider-arrow next">Next slide</a>',
+      }
+    });
+  }
+  
   if ($('.baron').length) {
     baron({
         root: '.baron',

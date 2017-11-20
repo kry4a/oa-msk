@@ -13,6 +13,7 @@
     <?$APPLICATION->ShowHead()?>
     
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH.'/js/libs.min.js');?>
+    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH.'/js/jquery.validate.min.js');?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH.'/js/scripts.js');?>
 
   </head>
@@ -21,8 +22,8 @@
     <header class="header">
       <div class="container">
         <div class="header__items">
-          <a class="header__item header__item--logo" title="Профессиональная разработка и внедрение 1С в Москве" href="/new/">
-            Профессиональная разработка и внедрение 1С в Москве
+          <a class="header__item header__item--logo" title="Оптимальные алгоритмы Разработка и внедрение 1С" href="/new/">
+            Оптимальные алгоритмы Разработка и внедрение 1С
           </a>
           <div class="header__item header__item--address">
             <a href="mailto:1c@oa-msk.ru" class="link link--green">1c@oa-msk.ru</a><br>
@@ -40,6 +41,7 @@
     </header>
     <nav class="navbar">
       <div class="container">
+        <a href="/new/" class="navbar__logo" title="Опитимальные алгоритмы"></a>
         <a class="navbar__phone phone" href="tel:+74952680749" title="Оптимальные алгоритмы"><span>+7 (495)</span> 268-07-49</a>
         <div class="navbar__toggler navbar-toggler" data-target="nav">
           <span class="navbar-toggler__bar"></span>

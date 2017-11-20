@@ -28,7 +28,7 @@ if($arParams["SHOW_INPUT"] !== "N"):?>
 	    <form  id="<?echo $CONTAINER_ID?>" class="search__input" action="<?echo $arResult["FORM_ACTION"]?>">
 	      <input class="input input--search" id="<?echo $INPUT_ID?>" type="text" name="q" value="" size="40" maxlength="50" autocomplete="off" placeholder="Поиск">
 	      <span class="search-close glyphicon glyphicon-remove"></span>
-	    </div>	
+	    </form>	
 		</div>
   </div>
 <?endif?>

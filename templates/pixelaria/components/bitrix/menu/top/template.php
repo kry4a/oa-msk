@@ -28,6 +28,11 @@
           </li>
         <?endforeach;?>
       </ul>
+      <div class="dropdown__toggler navbar-toggler">
+        <span class="navbar-toggler__bar navbar-toggler__bar--sm"></span>
+        <span class="navbar-toggler__bar navbar-toggler__bar--sm"></span>
+        <span class="navbar-toggler__bar navbar-toggler__bar--sm"></span>
+      </div>
     <?endif;?>
   </li>
 <?endforeach?> 

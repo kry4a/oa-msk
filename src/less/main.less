@@ -18,6 +18,9 @@ p {
 
 hr {
   margin-bottom: 30px;
+  @media @mobiles {
+    margin-bottom: 5px;
+  }
 }
 
 .row {
@@ -304,6 +307,12 @@ hr {
     width: 100%;
     height: 3px;
     margin-bottom: 6px;
+    
+
+    &--sm {
+      height: 2px;
+      margin-bottom: 5px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -370,11 +379,11 @@ hr {
       }
 
       @media @mobiles {
-        margin-right: 40px;
+        .link {
+          margin-right: 60px;
+        }
         &:after {
-          right: 15px;
-          border-bottom: 1px solid #2D3E50;
-          border-left: 1px solid #2D3E50;
+          content:none;
         }
       }
 
@@ -395,26 +404,25 @@ hr {
       }  
     }
     
-
-   
-    &--active {
-      @media @mobiles {
-
-        &:after {
-          border-color: #ffffff;
-        }
+  
+    @media @mobiles {
+      &--active {
+        /*background-color:#01bda6; 
         .nav__link {
-          background-color:#01bda6; 
           color:#ffffff;
 
-        }
+        }*/
         .dropdown {
           visibility: visible;
           opacity: 1;
           max-height: 1000px;
           padding: 15px; 
-          border-bottom: 2px solid #01bda6;
+          //border-bottom: 2px solid #01bda6;
         }
+
+        /*.navbar-toggler__bar {
+          background-color: #ffffff;
+        }*/
       }
     }
 
@@ -445,6 +453,14 @@ hr {
       display: block;
       width: 100%;
       padding-right: 0;
+      
+      //transition: background-color 0.6s ease;
+      &:hover {
+        //background-color: #01BDA6;
+        .nav__link {
+        //  color:#ffffff;
+        }
+      }
     }
   }
 
@@ -465,8 +481,8 @@ hr {
       padding: 0 15px;
 
       &:hover {
-        color:#ffffff;
-        background-color: #01BDA6;
+        //color:#ffffff;
+        
       }
     }
   }
@@ -578,6 +594,17 @@ hr {
     @media @mobiles {
       white-space: normal;
     }
+  }
+
+
+  &__toggler {
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    margin: auto;
+    z-index: 2;
+    height: 17px;
+    width: 20px;
   }
 
   @media @mobiles {
@@ -1727,6 +1754,7 @@ hr {
       transition:background-color 0.5s ease;
     }
 
+    
     &--active, &:hover {
       &:after {
         background-color: #ff7959;
@@ -2230,7 +2258,18 @@ hr {
   }
 }
 
-
+@media @mobiles {
+  .popup {
+    .input {
+      height: 40px;
+      line-height: 40px;
+    }
+    .input-group__label {
+      font-size: 14px;
+      top:10px;
+    }
+  }
+}
 
 /* IMAGES */
 
@@ -2383,7 +2422,9 @@ hr {
     padding: 15px 40px;
     background-color: #02a9b7;
 
-    
+    @media @mobiles {
+      padding: 15px;
+    }
   }
 
   &__info {
@@ -2401,7 +2442,13 @@ hr {
     margin:0;
    
     color:#ffffff;
+  
 
+    @media @mobiles {
+
+      font-size: 18px;
+      line-height: 28px;
+    }
     
   }
 
@@ -2416,6 +2463,9 @@ hr {
 
   &__body {
     padding: 15px 40px;
+    @media @mobiles {
+      padding: 15px;
+    }
   }
   
   &__closer {
@@ -2492,6 +2542,7 @@ hr {
 
   @media @mobiles {
     width:90% !important;
+    top:1% !important;
   }
 }
 
@@ -2512,7 +2563,9 @@ hr {
     font-weight: 200;
   }
 
-
+  @media @mobiles {
+    margin-bottom: 15px;
+  }
 }
 
 
@@ -3463,6 +3516,9 @@ hr {
     margin-top: 0;
   }
   &__splash {
+    display: flex;
+    align-items:center;
+    
     position: relative;
 
     width: 250px;
@@ -4444,8 +4500,7 @@ hr {
   &__company {
     width: 35%;
     padding:25px;
-    background-color: #fbfdff;
-    
+
     @media @mobiles {
       width: 100%;
       padding: 15px 10px;
@@ -4508,6 +4563,18 @@ hr {
 
 .company {
   line-height: 26px;
+
+  background-color: #FFFFFF;
+
+  &--blue {
+    background-color: #fbfdff;
+  }
+
+  &--gray {
+    background-color: #F2F5F8;
+  }
+
+
   &__img, &__info {
     margin-bottom: 30px;
     @media @mobiles {
@@ -4569,7 +4636,7 @@ hr {
   background-color: #ffffff;  
   
   width: 235px;
-  height: 200px;
+  height: 100%;
 
   text-align: center;
   text-decoration: none;
@@ -4593,10 +4660,6 @@ hr {
   }
 
   &__icon {
-    margin-bottom: 30px;
-    img {
-      
-    }
   }
 
 }
