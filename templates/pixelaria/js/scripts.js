@@ -132,6 +132,10 @@ $(function (){
     $('#'+target).removeClass('section__readmore--active');
     
     $('.link--readmore').show();
+
+    $('html, body').animate({
+        scrollTop: $(".link--readmore").offset().top-300
+    }, 500);
     return false;
     
   });
@@ -222,14 +226,32 @@ $(function (){
   }
   
   if ($('.slider-clients').length) {
-    $('.slider-clients').unslider({ 
-      nav: false,
-      autoplay: false, 
+    $('.slider-clients').slick({
       infinite: true,
-      arrows: {
-        prev: '<a class="unslider-arrow prev">Previous slide</a>',
-        next: '<a class="unslider-arrow next">Next slide</a>',
-      }
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      prevArrow: $('.unslider-arrow.prev.slick'),
+      nextArrow: $('.unslider-arrow.next.slick'),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '25px',
+            slidesToShow: 1
+          }
+        }
+      ]
     });
   }
   

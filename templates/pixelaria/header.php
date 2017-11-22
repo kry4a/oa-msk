@@ -23,7 +23,7 @@
       <div class="container">
         <div class="header__items">
           <a class="header__item header__item--logo" title="Оптимальные алгоритмы Разработка и внедрение 1С" href="/new/">
-            Оптимальные алгоритмы Разработка и внедрение 1С
+            ООО «Оптимальные алгоритмы»<br>Разработка и внедрение 1С
           </a>
           <div class="header__item header__item--address">
             <a href="mailto:1c@oa-msk.ru" class="link link--green">1c@oa-msk.ru</a><br>
@@ -66,37 +66,58 @@
               "COUNT_ITEM" => "6"
             )
           );?>
+
           <li class="nav__item nav__item--right">
-            <a href="/new/company/" class="nav__link link">О компании</a>
-            <a href="/new/reviews/" class="nav__link link">Отзывы</a>
-            <?$APPLICATION->IncludeComponent("pixelaria:search.title", "catalog", array(
-              "NUM_CATEGORIES" => "1",
-              "TOP_COUNT" => "5",
-              "ORDER" => "date",
-              "USE_LANGUAGE_GUESS" => "Y",
-              "CHECK_DATES" => "N",
-              "SHOW_OTHERS" => "N",
-              "PAGE" => SITE_DIR."search/",
-              "CATEGORY_0_TITLE" => "",
-              "CATEGORY_0" => array(
-                0 => "main",
-                1 => "iblock_aspro_allcorp_catalog",
-                2 => "iblock_aspro_allcorp_content",
-              ),
-              "CATEGORY_0_main" => array(
-              ),
-              "CATEGORY_0_iblock_aspro_allcorp_catalog" => array(
-                0 => "all",
-              ),
-              "CATEGORY_0_iblock_aspro_allcorp_content" => array(
-                0 => "all",
-              ),
-              "SHOW_INPUT" => "Y",
-              "INPUT_ID" => "title-search-input",
-              "CONTAINER_ID" => "title-search"
-              ),
-              false
-            );?>
+            <ul class="sub-nav">
+              <li class="nav__item nav__item--parent">
+                <a href="/new/company/" class="nav__link link" style="margin:0">О компании</a>
+                <ul class="dropdown">
+                  <li class="dropdown__block">
+                    <a href="/new/company/contacts/" class="dropdown__title " title="Автоматизация бухгалтерского учета">
+                      Контакты
+                    </a>
+                  </li>
+                  <li class="dropdown__block">
+                    <a href="/new/company/contacts/#requisites" class="dropdown__title " title="Автоматизация бухгалтерского учета">
+                      Реквизиты
+                    </a>
+                  </li>
+                </ul>
+                <div class="dropdown__toggler navbar-toggler"></div>
+              </li>
+              <li class="nav__item">
+                
+                <a href="/new/reviews/" class="nav__link link">Отзывы</a>
+                <?$APPLICATION->IncludeComponent("pixelaria:search.title", "catalog", array(
+                  "NUM_CATEGORIES" => "1",
+                  "TOP_COUNT" => "5",
+                  "ORDER" => "date",
+                  "USE_LANGUAGE_GUESS" => "Y",
+                  "CHECK_DATES" => "N",
+                  "SHOW_OTHERS" => "N",
+                  "PAGE" => SITE_DIR."search/",
+                  "CATEGORY_0_TITLE" => "",
+                  "CATEGORY_0" => array(
+                    0 => "main",
+                    1 => "iblock_aspro_allcorp_catalog",
+                    2 => "iblock_aspro_allcorp_content",
+                  ),
+                  "CATEGORY_0_main" => array(
+                  ),
+                  "CATEGORY_0_iblock_aspro_allcorp_catalog" => array(
+                    0 => "all",
+                  ),
+                  "CATEGORY_0_iblock_aspro_allcorp_content" => array(
+                    0 => "all",
+                  ),
+                  "SHOW_INPUT" => "Y",
+                  "INPUT_ID" => "title-search-input",
+                  "CONTAINER_ID" => "title-search"
+                  ),
+                  false
+                );?>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>

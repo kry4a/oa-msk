@@ -44,6 +44,18 @@ hr {
     clear: both;
   }
 }
+
+.col {
+  &--flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+}
+
 /* Main grid */
 
 .header {
@@ -177,9 +189,8 @@ hr {
 
     @media @mobiles {
       margin: 0;
-      padding: 0 45px 0 15px;
+      padding: 0 15px;
       width: 100%;
-
     }
   }
 }
@@ -610,8 +621,14 @@ hr {
     top: 17px;
     margin: auto;
     z-index: 2;
-    height: 17px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
+
+    display: block;
+    background-image: url('../img/down.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media @mobiles {
@@ -1020,8 +1037,8 @@ hr {
     width: auto;
     box-shadow: none;
     border-radius: 0;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -15px;
+    margin-right: -15px;
 
   }
 
@@ -2188,15 +2205,30 @@ hr {
 
   text-align: center;
   
+  
+  
   @media @mobiles {
-    
+
     margin-left: auto;
     margin-right: auto;
 
   }
   &__title {
     font-size: 16px;
-    text-align: center;  
+    line-height: 28px;
+    text-align: center; 
+    font-weight: 400; 
+    color:#4b4b4b;
+
+    height: 50px;
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
   }
 
   &__icon {
@@ -2205,6 +2237,18 @@ hr {
     img {
       height: 60px;
       width: auto;
+    }
+  }
+
+  &--big {
+    padding: 30px 45px;
+    .accomp__icon {
+      margin-bottom: 15px;
+      margin-top: 0;
+      img {
+        width: 100px;
+        height: 100px;
+      }
     }
   }
 
@@ -2802,12 +2846,7 @@ hr {
 
 
     @media @mobiles {
-      background-image: url('../img/search-green.png');
-
-      right: 15px;
-      top:0;
-      bottom:0;
-      margin: auto;
+      display: none;
     }
   }
 
@@ -2830,6 +2869,7 @@ hr {
 
       .input {
         background-color: #f2f5f8;
+        border: 1px solid #999999 !important;
       }
     }
   }

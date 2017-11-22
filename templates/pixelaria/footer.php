@@ -9,7 +9,7 @@
                 <span itemprop="postalCode">115419</span>,
                 <span itemprop="addressLocality">г. Москва</span>,<br/>
                 <span itemprop="streetAddress">ул., Орджоникидзе, д.11</span><br/>
-                <span>ПН.-ПТ. 9:00 - 18:00</span>
+                <span>ПН.-ПТ. 9:00 - 19:00</span>
               </div>
             </div>
           </div>
@@ -44,6 +44,9 @@
             <ul class="links__list list">
               <li class="list__item"><a href="/new/reviews/" class="list__link">Отзывы клиентов</a></li>
               <li class="list__item"><a href="/new/company/" class="list__link">О компании</a></li>
+              <li class="list__item"><a href="/img/files/privacy_policy.pdf" target="_blank" class="list__link">Пользовательское соглашение</a></li>
+
+              
             </ul>
           </div>
         </div>

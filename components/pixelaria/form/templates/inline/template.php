@@ -27,7 +27,7 @@
 						} else { ?>
 							
 							<div class="input-group" data-sid="<?=$question['CODE']?>" style="margin-bottom: 0;">
-				        <input id="<?=$question['CODE']?>" name="<?=$question['CODE']?>" class="input <?=$arParams['FIELD_CLASS']?> <?=$error?>" value="" maxlength="18" type="text">
+				        <input id="<?=$question['CODE']?>" name="<?=$question['CODE']?>" class="input <?=$arParams['FIELD_CLASS']?> <?=$error?>" value="" type="text">
 				        <label class="input-group__label" for="<?=$question['CODE']?>"><?=$question['NAME']?></label>                
 				      </div>
 						<?}
