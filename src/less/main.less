@@ -412,7 +412,7 @@ hr {
     
     
     @media @not-mobiles {
-      &:hover {
+      &--parent:hover {
         .dropdown {
           visibility: visible;
           opacity: 1;
@@ -623,12 +623,16 @@ hr {
     z-index: 2;
     height: 15px;
     width: 15px;
+    display:none;
 
-    display: block;
     background-image: url('../img/down.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    
+    @media @mobiles {
+      display: block;
+    }  
   }
 
   @media @mobiles {
@@ -3864,6 +3868,12 @@ hr {
     height: 100%;
     
     margin-bottom: 20px;
+  }
+
+  &--nh {
+    .tiles__item {
+      cursor: auto;
+    }
   }
 }
 
